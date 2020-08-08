@@ -1,0 +1,41 @@
+
+
+---sshd
+service sshd status  
+chkconfig --list   sshd 
+
+service sshd  stop
+chkconfig  sshd  off
+
+--telnet
+service xinetd status
+chkconfig --list|grep telnet
+ls  -lrt    /etc/xinetd.d/
+
+--登录限制
+/etc/pam.d/password-auth-ac
+/etc/pam.d/system-auth
+
+加入如下内容：
+auth        required      pam_tally2.so  deny=4  unlock_time=600 
+
+
+
+pam_tally2  -u zfmd
+pam_tally2  -u zfmd  -r
+
+
+
+cd   /etc/pam.d/
+grep  lock_time  *
+
+gedit password-auth-ac
+在第3行后加入如下内容：
+auth        required      pam_tally2.so  deny=4  unlock_time=600 
+
+gedit  system-auth
+在第3行后加入如下内容：
+auth        required      pam_tally2.so  deny=4  unlock_time=600 
+
+pam_tally2  -u zfmd  -r
+然后上界面界面验证

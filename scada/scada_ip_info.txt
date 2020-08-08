@@ -1,0 +1,35 @@
+---------------------------------------------print Data Center----
+
+Data Center
+        In:  lcalIp=100.110.120.30   lcalPort=5406  rmtIp=100.110.120.20   rmtPort=9009  
+        Out: lcalIp=100.110.120.30   lcalPort=5407  rmtIp=100.110.120.20   rmtPort=9009  
+-----------------------------------------------print channels--begine-->
+
+chNo:0  stationNum:   prtlNo:106   putStagFlag:1                          采测风塔的通道
+        local:  role=1  equipmentID=    ip=100.110.120.30   port=501  
+        remote: role=2  equipmentID=    ip=100.110.120.30   port=502  
+
+chNo:1  stationNum:   prtlNo:106   putStagFlag:1                          采风机的通道
+        local:  role=1  equipmentID=    ip=193.122.0.101    port=503  
+        remote: role=2  equipmentID=    ip=193.122.0.10     port=5020 
+
+chNo:2  stationNum:   prtlNo:104   putStagFlag:1                         采整场的通道
+        local:  role=1  equipmentID=    ip=198.124.0.1      port=5406 
+        remote: role=2  equipmentID=    ip=198.124.0.200    port=2404 
+
+chNo:3  stationNum:   prtlNo:104   putStagFlag:2                        转发通道
+        local:  role=2  equipmentID=    ip=198.123.0.1      port=2404 
+        remote: role=1  equipmentID=    ip=198.123.0.200    port=2404 
+<-------------------------------------------------print channels--end--
+
+
+modbus-tcp 采测风塔的通道  local_ip=100.110.120.30    remote_ip=100.110.120.30:502
+modbus-tcp 采风机的通道    local_ip=193.122.0.101     remote_ip=193.122.0.10:5020
+104协议    采整场的通道    local_ip=198.124.0.1       remote_ip=198.124.0.200:2404
+104协议    转发通道        local_ip=198.123.0.1:2404  remote_ip=198.123.0.200
+
+也就是说采集时，scada本机端口是随机，远程是固定端口；
+转发时，scada本机端口固定，远程端口随机
+
+
+ss -atnp | grep -i CommSubsystem | grep -v "127.0.0.1"
