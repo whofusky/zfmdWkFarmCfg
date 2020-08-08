@@ -154,11 +154,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_RTV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="1"/>
 			</phyObjVal>
 			<!--90米风速瞬时值-->
-			<phyObjVal phyType="5" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="5" calcMethd="PHY_CALC_CCNT" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>95</pntAddr>
-					<pntAddr>96</pntAddr>
+					<pntAddr>157</pntAddr>
+					<pntAddr>158</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -324,11 +324,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_MAX" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="1"/>
 			</phyObjVal>
 			<!--90米风速1分钟平均值-->
-			<phyObjVal phyType="19" calcMethd="PHY_CALC_CCNT_AND_SUM" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="19" calcMethd="PHY_CALC_CCNT_AND_SUM" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>95</pntAddr>
-					<pntAddr>96</pntAddr>
+					<pntAddr>157</pntAddr>
+					<pntAddr>158</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -348,11 +348,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WD" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="90" itype="INTERVALUNIT_MINUTE" ivalue="1">1</dataId>
 			</phyObjVal>
 			<!--90米风速最大值-->
-			<phyObjVal phyType="21" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="21" calcMethd="PHY_CALC_CCNT" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>99</pntAddr>
-					<pntAddr>100</pntAddr>
+					<pntAddr>161</pntAddr>
+					<pntAddr>162</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -705,12 +705,12 @@
 			</phyObjVal>
 			<!--90米层高-->
 			<!--90米风速5分钟平均值-->
-			<phyObjVal phyType="50" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="50" calcMethd="PHY_CALC_CCNT" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
 					<!--物理量对应的点地址配置,numOfAdd:对应点地址的个数-->
-					<pntAddr>89</pntAddr>
-					<pntAddr>90</pntAddr>
+					<pntAddr>151</pntAddr>
+					<pntAddr>152</pntAddr>
 					<!--点地址-->
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
@@ -734,8 +734,8 @@
 			<phyObjVal phyType="52" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>93</pntAddr>
-					<pntAddr>94</pntAddr>
+					<pntAddr>155</pntAddr>
+					<pntAddr>156</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -743,11 +743,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_SDV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="90" itype="INTERVALUNIT_MINUTE" ivalue="5">1</dataId>
 			</phyObjVal>
 			<!--90米风速5分钟最大值-->
-			<phyObjVal phyType="53" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="53" calcMethd="PHY_CALC_CCNT" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>101</pntAddr>
-					<pntAddr>102</pntAddr>
+					<pntAddr>163</pntAddr>
+					<pntAddr>164</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -755,11 +755,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_MAX" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="90" itype="INTERVALUNIT_MINUTE" ivalue="5">1</dataId>
 			</phyObjVal>
 			<!--90米风速5分钟最小值-->
-			<phyObjVal phyType="54" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="54" calcMethd="PHY_CALC_CCNT" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>103</pntAddr>
-					<pntAddr>104</pntAddr>
+					<pntAddr>165</pntAddr>
+					<pntAddr>166</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -1138,11 +1138,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_MAX" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="15"/>
 			</phyObjVal>
 			<!--90米风速15分钟平均值-->
-			<phyObjVal phyType="83" calcMethd="PHY_CALC_CCNT_AND_SUM" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="83" calcMethd="PHY_CALC_CCNT_AND_SUM" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>95</pntAddr>
-					<pntAddr>96</pntAddr>
+					<pntAddr>157</pntAddr>
+					<pntAddr>158</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
@@ -1162,11 +1162,11 @@
 				<dataId funcType="1" dcatalog="DATACATALOG_WD" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="90" itype="INTERVALUNIT_MINUTE" ivalue="15">1</dataId>
 			</phyObjVal>
 			<!--90米风速最大值-->
-			<phyObjVal phyType="85" calcMethd="PHY_CALC_CCNT" multFactor="1" phyValLng="8">
+			<phyObjVal phyType="85" calcMethd="PHY_CALC_CCNT" multFactor="1.12" phyValLng="8">
 				<!--物理量配置结构-->
 				<pntAddrs numOfAdd="2">
-					<pntAddr>99</pntAddr>
-					<pntAddr>100</pntAddr>
+					<pntAddr>161</pntAddr>
+					<pntAddr>162</pntAddr>
 				</pntAddrs>
 				<!--dataId数据id的配置:根据调用生成id的接口配置的入参-->
 				<!--funcType 配置 1:调用MakeMeteorSingle；2:调用MakePeriodSingle-->
