@@ -1,0 +1,27 @@
+---------------------------------------------print Data Center----
+
+Data Center
+        In:  lcalIp=100.110.120.10   lcalPort=5406  rmtIp=100.110.120.20   rmtPort=9009  
+        Out: lcalIp=100.110.120.10   lcalPort=6407  rmtIp=100.110.120.20   rmtPort=9009  
+-----------------------------------------------print channels--begine-->
+
+chNo:0  stationNum:   prtlNo:106   putStagFlag:1                         从风机系统采集数据
+        local:  role=1  equipmentID=    ip=10.128.99.160    port=503  
+        remote: role=2  equipmentID=    ip=10.128.99.11     port=5020 
+
+chNo:1  stationNum:   prtlNo:106   putStagFlag:1                         从测风塔采集数据
+        local:  role=1  equipmentID=    ip=192.168.144.5    port=501  
+        remote: role=2  equipmentID=    ip=192.168.144.4    port=502  
+
+chNo:2  stationNum:   prtlNo:104   putStagFlag:2                         传测风数据给一区远动
+        local:  role=2  equipmentID=    ip=198.123.0.101    port=2404 
+        remote: role=1  equipmentID=    ip=198.123.0.198    port=2404 
+
+chNo:3  stationNum:   prtlNo:104   putStagFlag:1                         功率从综自系统采集数据 
+        local:  role=1  equipmentID=    ip=198.124.0.100    port=5406 
+        remote: role=2  equipmentID=    ip=198.124.0.202    port=2404 
+
+chNo:4  stationNum:   prtlNo:104   putStagFlag:2                         上传理论功率给一区远动
+        local:  role=2  equipmentID=    ip=198.122.0.100    port=5406 
+        remote: role=1  equipmentID=    ip=198.122.0.198    port=2404 
+<-------------------------------------------------print channels--end--

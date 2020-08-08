@@ -1,0 +1,32 @@
+
+1. 超短导回日志让安超判断是否有异常卡死的情况,如果没有则不需要换软件
+    最后结论是不需要换软件
+2. 各主机执行 df命令并反馈加图片
+3. 从预测主机的root用户桌面上的统计空间脚本复制到其他没有的主机上，并在预测主和备机上执行脚本
+
+4.如果目录删除2020前以前的日志
+/zfmd/wpfs20/datapp/log
+/zfmd/wpfs20/datapp/dilog
+
+/zfmd/wpfs20/dph/wjlog
+/zfmd/wpfs20/dph/log
+/zfmd/wpfs20/dph/cllog
+
+
+5. 修改/zfmd/wpfs20/datapp/config.ini中的logSwitch=1为logSwitch=0,然后重启DataCener程序
+
+6. 切换数据库用户处理数据库文件空间的问题
+
+--查询表空间文件大小（正常一个文件最大不超过32G)
+select tablespace_name, 
+       file_name, 
+       bytes / 1024 / 1024 || 'M' as MB
+  from dba_data_files;
+  
+  
+--增加某个表空间的数据文件（下面语句表空间是USERS）
+ALTER TABLESPACE USERS ADD DATAFILE
+    '/zfmd/wpfs20/oradata/mqzorcl/users02.dbf'
+  size 7167M autoextend on   
+  
+7. 部署操作系统和数据库用户密码自动延期的脚本  

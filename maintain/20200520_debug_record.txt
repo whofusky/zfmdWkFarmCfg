@@ -1,0 +1,99 @@
+102log\102log\102Slave\2020\202005\
+
+数据查询-》综合数据查询-》上传下载记录
+
+/zfmd/wpfs20/dph/102log/102Slave/2020/202006
+
+mgr是102协议库上传成功失败的日志
+comu是重新连接的日志
+
+/zfmd/wpfs20/dph/sftplog
+zfmd/wpfs20/dph/UploadConfig.xml
+SftpChannelInfo 节点
+10.11.0.10,22,hnhn,hnhn@123,/fgl/
+10.11.0.20,22,hnhn,hnhn@123,/fgl/
+
+sftp hnhn@10.11.0.10
+cd /fgl/
+lcd /zfmd/wpfs20/dphdata/2020/05/17/CDQ-jk/
+put SSFD68_20200517_0030_CDQ.WPD
+
+ssh-keygen -R 10.11.0.10
+put /zfmd/wpfs20/dphdata/2020/05/17/CDQ-jk/SSFD68_20200517_0030_CDQ.WPD
+
+
+zfmd/wpfs20/dph/file102slavefrmdef.xml
+
+
+从日志来看就是网络链路有问题：有时候是咱们收不到调度那边的回复，有时候就直接断开了，如果正好赶上上传时间点就会导致少传文件
+
+集控：
+hnhn@10.11.0.10
+和hnhn@10.11.0.20 环境上需要建立/fgl/这个文件夹，并为hnhn分配上送文件的权限
+
+fu.sky:
+这个找集控的人处理
+
+fu.sky:
+调度那个需要问调度他们
+
+
+@zfmd-傅世凯 ，上传给集控的sftp路径信息(2台一样)：
+路径：/sftpdata/wind/upload
+账号密码：sftpuser  sftp@123
+
+service iptables status
+
+
+gedit /zfmd/wpfs20/safe/network.conf
+
+./fw_ps1.sh
+
+在文件中搜索 10.11.0.20 改成  10.11.0.21
+
+
+nc   -vz     10.11.0.21     22
+
+linux:
+    mtr        43.10.23.3
+    traceroute        43.10.23.3
+
+win:
+    tracert        43.10.23.3
+
+---------------------------------------------------------2020-06-12_15:43 交互记录
+route -n
+Destination    Gateway         Genmask           Iface
+43.115.13.64   0.0.0.0         255.255.255.240   eth1
+43.113.82.0    0.0.0.0         255.255.255.224   eth0
+10.11.0.0      100.110.120.100 255.255.255.0     eth2
+100.110.120.0  0.0.0.0         255.255.255.0     eth2
+0.0.0.0        43.113.82.30    0.0.0.0           eth0
+
+ifcnfig -a
+eth0:   43.113.82.2   255.255.255.224
+eth1:   43.115.13.66  255.255.255.240
+
+
+
+
+cat /etc/sysconfig/network-scripts/ifcfg-eth0
+43.113.82.2   Gateway 43.113.82.30
+
+cat /etc/sysconfig/network-scripts/ifcfg-eth1
+43.115.13.66  Gateway 43.115.13.78  --不通
+
+mtr        43.113.82.30
+
+上传走的是eth0：
+      10.43.31.109  --不通
+      43.10.23.3    --通
+ 
+集控走的是eth2
+ 集控的有一路从10.11.0.20改成了10.11.0.21
+ 集控另外一路10.11.0.10  没改动
+
+
+#上传的模板路径
+/zfmd/wpfs20/dph/template
+
