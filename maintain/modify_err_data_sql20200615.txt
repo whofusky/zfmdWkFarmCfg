@@ -1,0 +1,112 @@
+
+/**
+    香山6场因scada配置中的did值错误，导致入库的层高存在如下错乱关系
+**/
+/* 错乱层高对应关系
+错误值   对应正确值  （此对应关系是通过对比同一时刻scada日志打出的值与数据库的值对应而得到）
+380 ---- 800
+340 ---- 700
+260 ---- 500
+180 ---- 300
+*/
+
+/*********************1分钟测风数据修改 begin*************************************************/
+--修改1分钟测试数据表80m层高
+update amt_wnd_1mi a
+  set a.ht=800
+where a.ht=380
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改1分钟测试数据表70m层高
+update amt_wnd_1mi a
+  set a.ht=700
+where a.ht=340
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改1分钟测试数据表50m层高
+update amt_wnd_1mi a
+  set a.ht=500
+where a.ht=260
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改1分钟测试数据表30m层高
+update amt_wnd_1mi a
+  set a.ht=300
+where a.ht=180
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+
+/*********************1分钟测风数据修改 end*************************************************/
+
+/*********************5分钟测风数据修改 begin*************************************************/
+--修改5分钟测试数据表80m层高
+update amt_wnd_5mi a
+  set a.ht=800
+where a.ht=380
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改5分钟测试数据表70m层高
+update amt_wnd_5mi a
+  set a.ht=700
+where a.ht=340
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改5分钟测试数据表50m层高
+update amt_wnd_5mi a
+  set a.ht=500
+where a.ht=260
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改5分钟测试数据表30m层高
+update amt_wnd_5mi a
+  set a.ht=300
+where a.ht=180
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+ 
+/*********************5分钟测风数据修改 end*************************************************/
+
+/*********************15分钟测风数据修改 begin*************************************************/
+--修改15分钟测试数据表80m层高
+update amt_wnd_15mi a
+  set a.ht=800
+where a.ht=380
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改15分钟测试数据表70m层高
+update amt_wnd_15mi a
+  set a.ht=700
+where a.ht=340
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改15分钟测试数据表50m层高
+update amt_wnd_15mi a
+  set a.ht=500
+where a.ht=260
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+--修改15分钟测试数据表30m层高
+update amt_wnd_15mi a
+  set a.ht=300
+where a.ht=180
+ and a.dd>=to_date('2020/05/11 12:00:00','YYYY/MM/DD HH24:MI:SS')
+ and a.dd<=to_date('2020/06/15 16:05:00','YYYY/MM/DD HH24:MI:SS');
+
+/*********************15分钟测风数据修改 end*************************************************/
+
+
+
+ 
+ 
+ 
+ 
