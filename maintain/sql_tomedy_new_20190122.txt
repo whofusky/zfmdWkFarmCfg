@@ -1,0 +1,161 @@
+------主测风数据10分钟
+select *
+  from (select k.dd     as dd,
+               k.ht     as ht,
+               k.ws_avg as "主:风速十分钟平均值",
+               k.wd_avg as "主:风向十分钟平均值"， k.at_avg as "主:温度十分钟平均值",
+               k.ap_avg as "主:气压十分钟平均值"， k.ah_avg as "主:湿度十分钟平均值",
+               k.ws_sdv as "主:风速十分钟标准差"， k.wd_sdv as "主:风向十分钟标准差",
+               k.at_sdv as "主:温度十分钟标准差",
+               k.ap_sdv as "主:气压十分钟标准差"， k.ah_sdv as "主:湿度十分钟标准差"
+          from amt_wnd_10mi k
+         where k.dd = k.dd
+           and k.ec = 'AMT1'
+           and k.ht in (700, 800, 830, 900, 930, 1080, 1200)
+           and k.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and k.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')
+        union all
+        select a.dd     as dd,
+               a.ht     as ht,
+               a.ws_avg as "主:风速十分钟平均值",
+               a.wd_avg as "主:风向十分钟平均值"， b.at_avg as "主:温度十分钟平均值",
+               b.ap_avg as "主:气压十分钟平均值"， b.ah_avg as "主:湿度十分钟平均值",
+               a.ws_sdv as "主:风速十分钟标准差"， a.wd_sdv as "主:风向十分钟标准差",
+               b.at_sdv as "主:温度十分钟标准差",
+               b.ap_sdv as "主:气压十分钟标准差"， b.ah_sdv as "主:湿度十分钟标准差"
+          from amt_wnd_10mi a, amt_wnd_10mi b
+         where a.dd = b.dd
+           and a.ht = 300
+           and b.ht = 300
+           and a.ec = 'AMT3'
+           and b.ec = 'AMT1'
+           and b.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and b.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')) t
+ order by t.dd, t.ht;
+
+------主测风数据1分钟
+select *
+  from (select k.dd     as dd,
+               k.ht     as ht,
+               k.ws_avg as "主:风速1分钟平均值",
+               k.wd_avg as "主:风向1分钟平均值"， k.at_avg as "主:温度1分钟平均值",
+               k.ap_avg as "主:气压1分钟平均值"， k.ah_avg as "主:湿度1分钟平均值",
+               k.ws_sdv as "主:风速1分钟标准差"， k.wd_sdv as "主:风向1分钟标准差",
+               k.at_sdv as "主:温度1分钟标准差",
+               k.ap_sdv as "主:气压1分钟标准差"， k.ah_sdv as "主:湿度1分钟标准差"
+          from amt_wnd_1mi k
+         where k.dd = k.dd
+           and k.ec = 'AMT1'
+           and k.ht in (700, 800, 830, 900, 930, 1080, 1200)
+           and k.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and k.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')
+        union all
+        select a.dd     as dd,
+               a.ht     as ht,
+               a.ws_avg as "主:风速1分钟平均值",
+               a.wd_avg as "主:风向1分钟平均值"， b.at_avg as "主:温度1分钟平均值",
+               b.ap_avg as "主:气压1分钟平均值"， b.ah_avg as "主:湿度1分钟平均值",
+               a.ws_sdv as "主:风速1分钟标准差"， a.wd_sdv as "主:风向1分钟标准差",
+               b.at_sdv as "主:温度1分钟标准差",
+               b.ap_sdv as "主:气压1分钟标准差"， b.ah_sdv as "主:湿度1分钟标准差"
+          from amt_wnd_1mi a, amt_wnd_1mi b
+         where a.dd = b.dd
+           and a.ht = 300
+           and b.ht = 300
+           and a.ec = 'AMT3'
+           and b.ec = 'AMT1'
+           and b.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and b.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')) t
+ order by t.dd, t.ht;
+
+------备测风数据10分钟
+select *
+  from (select k.dd     as dd,
+               k.ht     as ht,
+               k.ws_avg as "备:风速十分钟平均值",
+               k.wd_avg as "备:风向十分钟平均值"， k.at_avg as "备:温度十分钟平均值",
+               k.ap_avg as "备:气压十分钟平均值"， k.ah_avg as "备:湿度十分钟平均值",
+               k.ws_sdv as "备:风速十分钟标准差"， k.wd_sdv as "备:风向十分钟标准差",
+               k.at_sdv as "备:温度十分钟标准差",
+               k.ap_sdv as "备:气压十分钟标准差"， k.ah_sdv as "备:湿度十分钟标准差"
+          from amt_wnd_10mi k
+         where k.dd = k.dd
+           and k.ec = 'AMT2'
+           and k.ht in (700, 800, 830, 900, 930, 1080, 1200)
+           and k.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and k.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')
+        union all
+        select a.dd     as dd,
+               a.ht     as ht,
+               a.ws_avg as "备:风速十分钟平均值",
+               a.wd_avg as "备:风向十分钟平均值"， b.at_avg as "备:温度十分钟平均值",
+               b.ap_avg as "备:气压十分钟平均值"， b.ah_avg as "备:湿度十分钟平均值",
+               a.ws_sdv as "备:风速十分钟标准差"， a.wd_sdv as "备:风向十分钟标准差",
+               b.at_sdv as "备:温度十分钟标准差",
+               b.ap_sdv as "备:气压十分钟标准差"， b.ah_sdv as "备:湿度十分钟标准差"
+          from amt_wnd_10mi a, amt_wnd_10mi b
+         where a.dd = b.dd
+           and a.ht = 300
+           and b.ht = 300
+           and a.ec = 'AMT4'
+           and b.ec = 'AMT2'
+           and b.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and b.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')) t
+ order by t.dd, t.ht;
+
+------备测风数据1分钟
+select *
+  from (select k.dd     as dd,
+               k.ht     as ht,
+               k.ws_avg as "备:风速1分钟平均值",
+               k.wd_avg as "备:风向1分钟平均值"， k.at_avg as "备:温度1分钟平均值",
+               k.ap_avg as "备:气压1分钟平均值"， k.ah_avg as "备:湿度1分钟平均值",
+               k.ws_sdv as "备:风速1分钟标准差"， k.wd_sdv as "备:风向1分钟标准差",
+               k.at_sdv as "备:温度1分钟标准差",
+               k.ap_sdv as "备:气压1分钟标准差"， k.ah_sdv as "备:湿度1分钟标准差"
+          from amt_wnd_1mi k
+         where k.dd = k.dd
+           and k.ec = 'AMT2'
+           and k.ht in (700, 800, 830, 900, 930, 1080, 1200)
+           and k.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and k.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')
+        union all
+        select a.dd     as dd,
+               a.ht     as ht,
+               a.ws_avg as "备:风速1分钟平均值",
+               a.wd_avg as "备:风向1分钟平均值"， b.at_avg as "备:温度1分钟平均值",
+               b.ap_avg as "备:气压1分钟平均值"， b.ah_avg as "备:湿度1分钟平均值",
+               a.ws_sdv as "备:风速1分钟标准差"， a.wd_sdv as "备:风向1分钟标准差",
+               b.at_sdv as "备:温度1分钟标准差",
+               b.ap_sdv as "备:气压1分钟标准差"， b.ah_sdv as "备:湿度1分钟标准差"
+          from amt_wnd_1mi a, amt_wnd_1mi b
+         where a.dd = b.dd
+           and a.ht = 300
+           and b.ht = 300
+           and a.ec = 'AMT4'
+           and b.ec = 'AMT2'
+           and b.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+           and b.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')) t
+ order by t.dd, t.ht;
+
+
+-----------风机数据
+
+select t.dd,
+       t.ec           as "风机编号"， t.ws_avg as "风速一分钟平均值",
+       t.wd_avg       as "风向一分钟平均值",
+       t.at           as "环境温度一分钟平均值",
+       t.ap           as "气压一分钟平均值",
+       t.pp_avg       as "有功功率一分钟平均值",
+       t.pq_avg       as "无功功率一分钟平均值",
+       t.ya           as "偏航角一分钟平均值",
+       t.pa           as "变桨角一分钟平均值",
+       t.rs_tbn       as "发电机转速一分钟平均值",
+       t.as_tbn       as "加速度一分钟平均值",
+       t.sf_tbn_ogn   as "风机状态一分钟平均值",
+       t.bt_generator as "电机轴承温度一分钟平均值",
+       t.ge_amv       as "出口断路器发电量"
+  from tss_tbn_1mi t
+ where t.dd <= to_date('2019-01-22 09:00:00','yyyy-mm-dd hh24:mi:ss')
+   and t.dd >= to_date('2019-01-21 18:00:00','yyyy-mm-dd hh24:mi:ss')
+ order by t.dd, to_number(substr(t.ec, 2, length(t.ec) - 1));

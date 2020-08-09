@@ -1,0 +1,20 @@
+
+
+##预测主在root下执行的语句（新加到198.123.6.101/102:443的访问）
+ iptables -A OUTPUT -d 198.123.6.101 -s 198.123.6.3  -p tcp  --dport 443  -m state --state NEW,ESTABLISHED -j ACCEPT
+ iptables -A INPUT -s 198.123.6.101 -d 198.123.6.3  -p tcp  --sport 443  -m state --state ESTABLISHED -j ACCEPT
+ iptables -A OUTPUT -d 198.123.6.102 -s 198.123.6.3  -p tcp  --dport 443  -m state --state NEW,ESTABLISHED -j ACCEPT
+ iptables -A INPUT -s 198.123.6.102 -d 198.123.6.3  -p tcp  --sport 443  -m state --state ESTABLISHED -j ACCEPT
+
+ /etc/rc.d/init.d/iptables save
+ service iptables restart
+ iptables -L -n -v
+
+##scada主机在root下执行的语句（新加美迪访问scada modbus作为被的 502端口）
+
+ iptables -A OUTPUT -d 192.168.121.12 -s 192.168.121.11  -p tcp   --sport 502 -m state --state ESTABLISHED -j ACCEPT
+ iptables -A INPUT -s 192.168.121.12 -d 192.168.121.11  -p tcp   --dport 502 -m state --state NEW,ESTABLISHED -j ACCEPT
+ 
+  /etc/rc.d/init.d/iptables save
+ service iptables restart
+ iptables -L -n -v
