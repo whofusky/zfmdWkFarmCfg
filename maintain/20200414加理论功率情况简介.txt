@@ -1,0 +1,53 @@
+
+
+--------------------------------------------------------------------------------
+2020-04-28_13:42 记录
+    来源:宁夏中卫香山理论功率qq讨论
+```
+    2020/4/9 14:05:24
+    朱丽静 2020/4/9 14:05:24
+        机舱风速和样板机
+
+    朱丽静 2020/4/9 14:38:24
+        理论功率 替代 机舱风速法
+        可用功率  替代 样板机法
+        样板机法缩放系数 0.956
+
+    高春鹏 2020/4/9 14:44:35
+        单位先按MW传
+
+```
+    
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+
+理论功率 替代 机舱风速法
+可用功率  替代 样板机法
+样板机法缩放系数 0.956
+
+单位先按MW传
+
+
+---高龙山配置
+
+			<!--理论功率-->
+				<dataId funcType="2" dcatalog="DATACATALOG_TP" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="0" ectype="ENCODETYPE_FARM" ecsn="0" srctype="SOURCETYPE_TPS" srcsn="0" itype="INTERVALUNIT_MINUTE" ivalue="1">2</dataId>
+
+			<!--可用功率-->
+				<dataId funcType="2" dcatalog="DATACATALOG_VP" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="0" ectype="ENCODETYPE_FARM" ecsn="0" srctype="SOURCETYPE_TPS" srcsn="0" itype="INTERVALUNIT_MINUTE" ivalue="1">2</dataId>
+
+---点地址
+问了售后，说在测风塔的基础上加就行
+朱丽静 2020/4/9 11:41:47
+就是用原来测风塔的
+朱丽静 2020/4/9 11:41:51
+累加
+11:42:17
+朱丽静 2020/4/9 11:42:17
+向后排
+
+
+
+
+egrep -A 1 "(chnlID = 1|chanlID = 1)" apdu.txt
+grep SQLInsrtDBSsn scada.txt|grep chnl1
