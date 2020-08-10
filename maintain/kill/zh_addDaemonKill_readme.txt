@@ -1,41 +1,41 @@
 
 
 ---------------------
-2019/06/14 ×¯ºÓ·çµç³¡
+2019/06/14 åº„æ²³é£ç”µåœº
 ================================================================================
-        °Ñ Daemon ³ÌĞò¼ÓÈëÈÕÖ¾²»±äÔòkillµÄ½Å±¾²½ÖèÈçÏÂ£º
+        æŠŠ Daemon ç¨‹åºåŠ å…¥æ—¥å¿—ä¸å˜åˆ™killçš„è„šæœ¬æ­¥éª¤å¦‚ä¸‹ï¼š
 -------------------------------------------------------
-    Ò»¡¢Ô¤²âÖ÷»ú
-    1¡¢ÓÃrootÓÃ»§µÇÂ¼
-    2¡¢ÔÚ/zfmd/wpfs20/startupÄ¿Â¼ÏÂ´ò¿ªÖÕ¶ËÖ´ĞĞ£º
+    ä¸€ã€é¢„æµ‹ä¸»æœº
+    1ã€ç”¨rootç”¨æˆ·ç™»å½•
+    2ã€åœ¨/zfmd/wpfs20/startupç›®å½•ä¸‹æ‰“å¼€ç»ˆç«¯æ‰§è¡Œï¼š
         (1) cp killByDaCentModifyTm.sh  killByDaemonModifyTm.sh
         (2) gedit killByDaemonModifyTm.sh
-        (3) ÔÚ´ò¿ªµÄÎÄ¼şÖĞĞŞ¸ÄÈçÏÂÄÚÈİ£º
-            pName="DataCenterForScada" ÖĞµÄ DataCenterForScada ĞŞ¸ÄÎª Daemon 
-            toWaitModifySec=80 ÖĞµÄ80ĞŞ¸ÄÎª420
-            tpidRunSeconds=60 ÖĞµÄ60ĞŞ¸ÄÎª420
-            toBaseDir=/zfmd/wpfs20/datappForScada/log ÖĞµÈºÅÓÒ±ß¸ÄÎª /zfmd/wpfs20/monitor/wjlog
+        (3) åœ¨æ‰“å¼€çš„æ–‡ä»¶ä¸­ä¿®æ”¹å¦‚ä¸‹å†…å®¹ï¼š
+            pName="DataCenterForScada" ä¸­çš„ DataCenterForScada ä¿®æ”¹ä¸º Daemon 
+            toWaitModifySec=80 ä¸­çš„80ä¿®æ”¹ä¸º420
+            tpidRunSeconds=60 ä¸­çš„60ä¿®æ”¹ä¸º420
+            toBaseDir=/zfmd/wpfs20/datappForScada/log ä¸­ç­‰å·å³è¾¹æ”¹ä¸º /zfmd/wpfs20/monitor/wjlog
 
-            ±£´æĞŞ¸ÄµÄÄÚÈİ²¢¹Ø±Õ±à¼­µÄÎÄ¼ş
+            ä¿å­˜ä¿®æ”¹çš„å†…å®¹å¹¶å…³é—­ç¼–è¾‘çš„æ–‡ä»¶
 
-        (4) ÔÚÖÕ¶ËÊäÈëÃüÁî gedit /var/spool/cron/root
-            ÔÚ´ò¿ªµÄÎÄ¼şÖĞÕÒµ½²¢¸´ÖÆ killByDaCentModifyTm.sh µÄÕâÒ»ĞĞ£¬È»ºóÕ³Ìù 
-            µ½ÎÄ¼şÎ²£¬ĞŞ¸ÄĞÂĞĞÖĞµÄ
-                killByDaCentModifyTm.sh ĞŞ¸ÄÎª killByDaemonModifyTm.sh
-                cronkillByDaCentModifyTm.log  ĞŞ¸ÄÎª cronkillByDaemonModifyTm.log 
-            ±£´æ²¢¹Ø±ÕĞŞ¸ÄºóµÄÎÄ¼ş
+        (4) åœ¨ç»ˆç«¯è¾“å…¥å‘½ä»¤ gedit /var/spool/cron/root
+            åœ¨æ‰“å¼€çš„æ–‡ä»¶ä¸­æ‰¾åˆ°å¹¶å¤åˆ¶ killByDaCentModifyTm.sh çš„è¿™ä¸€è¡Œï¼Œç„¶åç²˜è´´ 
+            åˆ°æ–‡ä»¶å°¾ï¼Œä¿®æ”¹æ–°è¡Œä¸­çš„
+                killByDaCentModifyTm.sh ä¿®æ”¹ä¸º killByDaemonModifyTm.sh
+                cronkillByDaCentModifyTm.log  ä¿®æ”¹ä¸º cronkillByDaemonModifyTm.log 
+            ä¿å­˜å¹¶å…³é—­ä¿®æ”¹åçš„æ–‡ä»¶
            
 
-        (5) ¹ı2·ÖÖÓ²é¿´ 
-            /zfmd/wpfs20/startup/logÏÂÊÇ·ñÓĞ cronkillByDaemonModifyTm.log 
-            /zfmd/wpfs20/startup ÏÂÊÇ·ñÓĞ version_killByDaemonModifyTm.txt
+        (5) è¿‡2åˆ†é’ŸæŸ¥çœ‹ 
+            /zfmd/wpfs20/startup/logä¸‹æ˜¯å¦æœ‰ cronkillByDaemonModifyTm.log 
+            /zfmd/wpfs20/startup ä¸‹æ˜¯å¦æœ‰ version_killByDaemonModifyTm.txt
 
-    ¶ş¡¢Ô¤²â±¸»ú
-        ±¸»úÏÈ²é¿´/zfmd/wpfs20/startupÏÂÊÇ·ñÓĞ killByDaCentModifyTm.sh½Å±¾£¬
-        1¡¢Èç¹ûÓĞ£¬Ôò°´Ö÷»úµÄ²Ù×÷Ë³Ğò½øĞĞ²Ù×÷¼´¿É£»
-        2¡¢Èç¹ûÃ»ÓĞ£¬Ôò¿´ÊÇ·ñ¿ÉÒÔÏÈÖ÷»úĞŞ¸ÄºóµÄ killByDaemonModifyTm.sh½Å±¾¿½±´
-            µ½±¸»ú½øĞĞ²¼Êğ¡£
-        3¡¢Èç¹ûÉÏÃæÁ½¸öÌõ¼ş¶¼²»¾ß±¸Ôò¿ÉÒÔ²»²¼Êğ
+    äºŒã€é¢„æµ‹å¤‡æœº
+        å¤‡æœºå…ˆæŸ¥çœ‹/zfmd/wpfs20/startupä¸‹æ˜¯å¦æœ‰ killByDaCentModifyTm.shè„šæœ¬ï¼Œ
+        1ã€å¦‚æœæœ‰ï¼Œåˆ™æŒ‰ä¸»æœºçš„æ“ä½œé¡ºåºè¿›è¡Œæ“ä½œå³å¯ï¼›
+        2ã€å¦‚æœæ²¡æœ‰ï¼Œåˆ™çœ‹æ˜¯å¦å¯ä»¥å…ˆä¸»æœºä¿®æ”¹åçš„ killByDaemonModifyTm.shè„šæœ¬æ‹·è´
+            åˆ°å¤‡æœºè¿›è¡Œå¸ƒç½²ã€‚
+        3ã€å¦‚æœä¸Šé¢ä¸¤ä¸ªæ¡ä»¶éƒ½ä¸å…·å¤‡åˆ™å¯ä»¥ä¸å¸ƒç½²
 
     
 
