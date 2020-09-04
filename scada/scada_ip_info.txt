@@ -6,20 +6,26 @@ Data Center
 -----------------------------------------------print channels--begine-->
 
 chNo:0  stationNum:   prtlNo:106   putStagFlag:1                          采测风塔的通道
-        local:  role=1  equipmentID=    ip=100.110.120.30   port=501  
+        local:  role=1  equipmentID=3   ip=100.110.120.30   port=501  
         remote: role=2  equipmentID=    ip=100.110.120.30   port=502  
 
 chNo:1  stationNum:   prtlNo:106   putStagFlag:1                          采风机的通道
-        local:  role=1  equipmentID=    ip=193.122.0.101    port=503  
+        local:  role=1  equipmentID=2   ip=193.122.0.101    port=503  
         remote: role=2  equipmentID=    ip=193.122.0.10     port=5020 
 
 chNo:2  stationNum:   prtlNo:104   putStagFlag:1                         采整场的通道
-        local:  role=1  equipmentID=    ip=198.124.0.1      port=5406 
+        local:  role=1  equipmentID=4   ip=198.124.0.1      port=5406 
         remote: role=2  equipmentID=    ip=198.124.0.200    port=2404 
 
+----old
 chNo:3  stationNum:   prtlNo:104   putStagFlag:2                        转发通道
-        local:  role=2  equipmentID=    ip=198.123.0.1      port=2404 
+        local:  role=2  equipmentID=6   ip=198.123.0.1      port=2404 
         remote: role=1  equipmentID=    ip=198.123.0.200    port=2404 
+
+----new: 增加了irnetd转发工具将198.123.0.200发往198.123.0.1:2404端口的内容转发到192.123.0.1:2405
+chNo:3  stationNum:   prtlNo:104   putStagFlag:2                        转发通道
+        local:  role=2  equipmentID=6   ip=198.123.0.1      port=2405 
+        remote: role=1  equipmentID=    ip=198.123.0.1      port=2404 
 <-------------------------------------------------print channels--end--
 
 
