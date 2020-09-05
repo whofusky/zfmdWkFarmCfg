@@ -72,14 +72,14 @@
     </protocolSet>
     <sysCfg>
         <!--数据中心入库-->
-        <dataInIP rmtPort="9009" lcalIp="192.168.0.145" lcalPort="5406" rmtIp="192.168.0.51">
+        <dataInIP rmtPort="9009" lcalIp="100.110.120.135" lcalPort="5406" rmtIp="100.110.120.131">
             <lcalIpNote/>
             <lcalPortNote/>
             <rmtIpNote/>
             <rmtPortNote/>
         </dataInIP>
         <!--数据中心出库-->
-        <dataOutIP rmtPort="9009" lcalIp="192.168.0.145" lcalPort="6407" rmtIp="192.168.0.51">
+        <dataOutIP rmtPort="9009" lcalIp="100.110.120.135" lcalPort="6407" rmtIp="100.110.120.131">
             <lcalIpNote/>
             <lcalPortNote/>
             <rmtIpNote/>
@@ -1829,10 +1829,10 @@
     <stations num="5">
         <stationCfg bStationConfig="1" stationNum="0">
             <localStation name="采集测风塔1" role="1" equipmentID="17">
-                <netAddr port="0" ip="192.168.0.145"/>
+                <netAddr port="0" ip="192.168.10.200"/>
             </localStation>
             <remoteStation name="测风塔1" role="2" bigEndian="0">
-                <netAddr port="502" ip="192.168.0.221"/>
+                <netAddr port="502" ip="192.168.10.100"/>
             </remoteStation>
             <stationSon>
                 <pntAddr remoteAddr="22" pntDataLng="16" encoding="0" localAddr="22" codCoefficient="1" type="3" name="80米风速1分钟平均值低" unitDesc="1" offset="0" didName="1分钟80m一期测风塔风速平均值">2</pntAddr>
@@ -1989,10 +1989,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="1">
             <localStation name="采集测风塔2" role="1" equipmentID="18">
-                <netAddr port="0" ip="192.168.0.145"/>
+                <netAddr port="0" ip="192.168.20.200"/>
             </localStation>
             <remoteStation name="测风塔2" role="2" bigEndian="0">
-                <netAddr port="502" ip="192.168.0.192"/>
+                <netAddr port="502" ip="192.168.20.100"/>
             </remoteStation>
             <stationSon>
                 <pntAddr remoteAddr="22" pntDataLng="16" encoding="0" localAddr="22" codCoefficient="1" type="3" name="80米风速1分钟平均值低" unitDesc="1" offset="0" didName="1分钟80m二期测风塔风速平均值">2</pntAddr>
@@ -2149,10 +2149,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="2">
             <localStation name="采集风机" role="1" equipmentID="2">
-                <netAddr port="0" ip="192.168.0.145"/>
+                <netAddr port="0" ip="10.100.100.101"/>
             </localStation>
             <remoteStation name="风机" role="2" bigEndian="0">
-                <netAddr port="502" ip="192.168.0.99"/>
+                <netAddr port="502" ip="10.100.100.100"/>
             </remoteStation>
             <stationSon>
                 <pntAddr remoteAddr="0" pntDataLng="16" encoding="0" localAddr="0" codCoefficient="1" type="3" name="1分钟风机1有功功率低" unitDesc="1" offset="0" didName="1分钟风机1有功功率实时值">2</pntAddr>
@@ -2891,10 +2891,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="3">
             <localStation name="采集整场" role="1" equipmentID="7">
-                <netAddr port="0" ip="192.168.0.145"/>
+                <netAddr port="0" ip="100.110.120.140"/>
             </localStation>
             <remoteStation name="远动" role="2" bigEndian="0">
-                <netAddr port="2404" ip="192.168.0.119"/>
+                <netAddr port="2404" ip="100.110.120.170"/>
             </remoteStation>
             <stationSon>
                 <pntAddr remoteAddr="16385" pntDataLng="32" encoding="0" localAddr="16385" codCoefficient="1" type="3" name="实时有功功率" unitDesc="1" offset="0" didName="1分钟有功功率实时值">2</pntAddr>
@@ -2902,10 +2902,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="4">
             <localStation name="转发测风" role="2" equipmentID="8">
-                <netAddr port="2404" ip="192.168.0.145"/>
+                <netAddr port="2404" ip="100.110.120.150"/>
             </localStation>
             <remoteStation name="转发远动" role="1" bigEndian="0">
-                <netAddr port="2404" ip="192.168.0.154"/>
+                <netAddr port="2404" ip="100.110.120.1"/>
             </remoteStation>
             <stationSon>
                 <pntAddr remoteAddr="0" pntDataLng="16" encoding="0" localAddr="0" codCoefficient="1" type="3" name="70米风速5分钟平均值低" unitDesc="" offset="0" didName="5分钟70m一期测风塔风速平均值"/>
@@ -3084,10 +3084,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="0">
                 <localStation name="采集测风塔1" role="1" equipmentID="17">
-                    <netAddr port="0" ip="192.168.0.145"/>
+                    <netAddr port="0" ip="192.168.10.200"/>
                 </localStation>
                 <remoteStation name="测风塔1" role="2" bigEndian="0">
-                    <netAddr port="502" ip="192.168.0.221"/>
+                    <netAddr port="502" ip="192.168.10.100"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -4712,10 +4712,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="1">
                 <localStation name="采集测风塔2" role="1" equipmentID="18">
-                    <netAddr port="0" ip="192.168.0.145"/>
+                    <netAddr port="0" ip="192.168.20.200"/>
                 </localStation>
                 <remoteStation name="测风塔2" role="2" bigEndian="0">
-                    <netAddr port="502" ip="192.168.0.192"/>
+                    <netAddr port="502" ip="192.168.20.100"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -6338,10 +6338,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="2">
                 <localStation name="采集风机" role="1" equipmentID="2">
-                    <netAddr port="0" ip="192.168.0.145"/>
+                    <netAddr port="0" ip="10.100.100.101"/>
                 </localStation>
                 <remoteStation name="风机" role="2" bigEndian="0">
-                    <netAddr port="502" ip="192.168.0.99"/>
+                    <netAddr port="502" ip="10.100.100.100"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -16643,10 +16643,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="3">
                 <localStation name="采集整场" role="1" equipmentID="7">
-                    <netAddr port="0" ip="192.168.0.145"/>
+                    <netAddr port="0" ip="100.110.120.140"/>
                 </localStation>
                 <remoteStation name="远动" role="2" bigEndian="0">
-                    <netAddr port="2404" ip="192.168.0.119"/>
+                    <netAddr port="2404" ip="100.110.120.170"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -16755,10 +16755,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="4">
                 <localStation name="转发测风" role="2" equipmentID="8">
-                    <netAddr port="2404" ip="192.168.0.145"/>
+                    <netAddr port="2404" ip="100.110.120.150"/>
                 </localStation>
                 <remoteStation name="转发远动" role="1" bigEndian="0">
-                    <netAddr port="2404" ip="192.168.0.154"/>
+                    <netAddr port="2404" ip="100.110.120.1"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
