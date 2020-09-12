@@ -3066,10 +3066,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="4">
             <localStation name="scada采集风机1-75" role="1" equipmentID="21">
-                <netAddr ip="172.160.0.199" port="0"/>
+                <netAddr ip="172.160.0.151" port="0"/>
             </localStation>
             <remoteStation name="4场风机1-75" bigEndian="0" role="2">
-                <netAddr ip="172.160.0.10" port="502"/>
+                <netAddr ip="172.160.0.21" port="502"/>
             </remoteStation>
             <stationSon>
                 <pntAddr type="3" name="1分钟风机1风速" remoteAddr="0" codCoefficient="1" offset="0" pntDataLng="16" unitDesc="" localAddr="0" encoding="0" didName="1分钟风机1风速实时值">2</pntAddr>
@@ -7677,10 +7677,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="4">
                 <localStation name="scada采集风机1-75" role="1" equipmentID="21">
-                    <netAddr ip="172.160.0.199" port="0"/>
+                    <netAddr ip="172.160.0.151" port="0"/>
                 </localStation>
                 <remoteStation name="4场风机1-75" bigEndian="0" role="2">
-                    <netAddr ip="172.160.0.10" port="502"/>
+                    <netAddr ip="172.160.0.21" port="502"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="5000">
@@ -12430,7 +12430,7 @@
                 </pntAddrs>
                 <dataId serialNo="1004" didVal="FF41FF111A04004B40189C000000000100" didName="1分钟风机75风机状态"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机1累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="676" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机1累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="676" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机1累积发电量低" remoteAddr="676" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="676" startBit="0" encoding="0" didName="1分钟风机1累积发电量"/>
@@ -12438,7 +12438,7 @@
                 </pntAddrs>
                 <dataId serialNo="194" didVal="FF41FF111E080001403099000000000100" didName="1分钟风机1累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机1计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="677" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机1计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="677" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机1计算发电量低" remoteAddr="678" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="678" startBit="0" encoding="0" didName="1分钟风机1计算发电量"/>
@@ -12446,7 +12446,7 @@
                 </pntAddrs>
                 <dataId serialNo="195" didVal="FF41FF111F080001403099000000000100" didName="1分钟风机1计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机2累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="678" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机2累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="678" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机2累积发电量低" remoteAddr="682" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="682" startBit="0" encoding="0" didName="1分钟风机2累积发电量"/>
@@ -12454,7 +12454,7 @@
                 </pntAddrs>
                 <dataId serialNo="205" didVal="FF41FF111E080002403099000000000100" didName="1分钟风机2累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机2计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="679" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机2计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="679" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机2计算发电量低" remoteAddr="684" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="684" startBit="0" encoding="0" didName="1分钟风机2计算发电量"/>
@@ -12462,7 +12462,7 @@
                 </pntAddrs>
                 <dataId serialNo="206" didVal="FF41FF111F080002403099000000000100" didName="1分钟风机2计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机3累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="680" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机3累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="680" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机3累积发电量低" remoteAddr="688" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="688" startBit="0" encoding="0" didName="1分钟风机3累积发电量"/>
@@ -12470,7 +12470,7 @@
                 </pntAddrs>
                 <dataId serialNo="216" didVal="FF41FF111E080003403099000000000100" didName="1分钟风机3累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机3计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="681" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机3计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="681" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机3计算发电量低" remoteAddr="690" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="690" startBit="0" encoding="0" didName="1分钟风机3计算发电量"/>
@@ -12478,7 +12478,7 @@
                 </pntAddrs>
                 <dataId serialNo="217" didVal="FF41FF111F080003403099000000000100" didName="1分钟风机3计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机4累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="682" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机4累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="682" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机4累积发电量低" remoteAddr="694" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="694" startBit="0" encoding="0" didName="1分钟风机4累积发电量"/>
@@ -12486,7 +12486,7 @@
                 </pntAddrs>
                 <dataId serialNo="227" didVal="FF41FF111E080004403099000000000100" didName="1分钟风机4累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机4计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="683" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机4计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="683" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机4计算发电量低" remoteAddr="696" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="696" startBit="0" encoding="0" didName="1分钟风机4计算发电量"/>
@@ -12494,7 +12494,7 @@
                 </pntAddrs>
                 <dataId serialNo="228" didVal="FF41FF111F080004403099000000000100" didName="1分钟风机4计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机5累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="684" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机5累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="684" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机5累积发电量低" remoteAddr="700" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="700" startBit="0" encoding="0" didName="1分钟风机5累积发电量"/>
@@ -12502,7 +12502,7 @@
                 </pntAddrs>
                 <dataId serialNo="238" didVal="FF41FF111E080005403099000000000100" didName="1分钟风机5累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机5计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="685" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机5计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="685" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机5计算发电量低" remoteAddr="702" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="702" startBit="0" encoding="0" didName="1分钟风机5计算发电量"/>
@@ -12510,7 +12510,7 @@
                 </pntAddrs>
                 <dataId serialNo="239" didVal="FF41FF111F080005403099000000000100" didName="1分钟风机5计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机6累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="686" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机6累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="686" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机6累积发电量低" remoteAddr="706" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="706" startBit="0" encoding="0" didName="1分钟风机6累积发电量"/>
@@ -12518,7 +12518,7 @@
                 </pntAddrs>
                 <dataId serialNo="249" didVal="FF41FF111E080006403099000000000100" didName="1分钟风机6累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机6计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="687" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机6计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="687" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机6计算发电量低" remoteAddr="708" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="708" startBit="0" encoding="0" didName="1分钟风机6计算发电量"/>
@@ -12526,7 +12526,7 @@
                 </pntAddrs>
                 <dataId serialNo="250" didVal="FF41FF111F080006403099000000000100" didName="1分钟风机6计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机7累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="688" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机7累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="688" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机7累积发电量低" remoteAddr="712" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="712" startBit="0" encoding="0" didName="1分钟风机7累积发电量"/>
@@ -12534,7 +12534,7 @@
                 </pntAddrs>
                 <dataId serialNo="260" didVal="FF41FF111E080007403099000000000100" didName="1分钟风机7累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机7计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="689" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机7计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="689" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机7计算发电量低" remoteAddr="714" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="714" startBit="0" encoding="0" didName="1分钟风机7计算发电量"/>
@@ -12542,7 +12542,7 @@
                 </pntAddrs>
                 <dataId serialNo="261" didVal="FF41FF111F080007403099000000000100" didName="1分钟风机7计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机8累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="690" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机8累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="690" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机8累积发电量低" remoteAddr="718" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="718" startBit="0" encoding="0" didName="1分钟风机8累积发电量"/>
@@ -12550,7 +12550,7 @@
                 </pntAddrs>
                 <dataId serialNo="271" didVal="FF41FF111E080008403099000000000100" didName="1分钟风机8累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机8计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="691" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机8计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="691" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机8计算发电量低" remoteAddr="720" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="720" startBit="0" encoding="0" didName="1分钟风机8计算发电量"/>
@@ -12558,7 +12558,7 @@
                 </pntAddrs>
                 <dataId serialNo="272" didVal="FF41FF111F080008403099000000000100" didName="1分钟风机8计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机9累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="692" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机9累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="692" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机9累积发电量低" remoteAddr="724" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="724" startBit="0" encoding="0" didName="1分钟风机9累积发电量"/>
@@ -12566,7 +12566,7 @@
                 </pntAddrs>
                 <dataId serialNo="282" didVal="FF41FF111E080009403099000000000100" didName="1分钟风机9累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机9计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="693" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机9计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="693" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机9计算发电量低" remoteAddr="726" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="726" startBit="0" encoding="0" didName="1分钟风机9计算发电量"/>
@@ -12574,7 +12574,7 @@
                 </pntAddrs>
                 <dataId serialNo="283" didVal="FF41FF111F080009403099000000000100" didName="1分钟风机9计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机10累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="694" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机10累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="694" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机10累积发电量低" remoteAddr="730" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="730" startBit="0" encoding="0" didName="1分钟风机10累积发电量"/>
@@ -12582,7 +12582,7 @@
                 </pntAddrs>
                 <dataId serialNo="293" didVal="FF41FF111E08000A403099000000000100" didName="1分钟风机10累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机10计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="695" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机10计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="695" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机10计算发电量低" remoteAddr="732" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="732" startBit="0" encoding="0" didName="1分钟风机10计算发电量"/>
@@ -12590,7 +12590,7 @@
                 </pntAddrs>
                 <dataId serialNo="294" didVal="FF41FF111F08000A403099000000000100" didName="1分钟风机10计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机11累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="696" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机11累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="696" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机11累积发电量低" remoteAddr="736" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="736" startBit="0" encoding="0" didName="1分钟风机11累积发电量"/>
@@ -12598,7 +12598,7 @@
                 </pntAddrs>
                 <dataId serialNo="304" didVal="FF41FF111E08000B403099000000000100" didName="1分钟风机11累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机11计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="697" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机11计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="697" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机11计算发电量低" remoteAddr="738" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="738" startBit="0" encoding="0" didName="1分钟风机11计算发电量"/>
@@ -12606,7 +12606,7 @@
                 </pntAddrs>
                 <dataId serialNo="305" didVal="FF41FF111F08000B403099000000000100" didName="1分钟风机11计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机12累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="698" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机12累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="698" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机12累积发电量低" remoteAddr="742" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="742" startBit="0" encoding="0" didName="1分钟风机12累积发电量"/>
@@ -12614,7 +12614,7 @@
                 </pntAddrs>
                 <dataId serialNo="315" didVal="FF41FF111E08000C403099000000000100" didName="1分钟风机12累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机12计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="699" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机12计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="699" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机12计算发电量低" remoteAddr="744" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="744" startBit="0" encoding="0" didName="1分钟风机12计算发电量"/>
@@ -12622,7 +12622,7 @@
                 </pntAddrs>
                 <dataId serialNo="316" didVal="FF41FF111F08000C403099000000000100" didName="1分钟风机12计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机13累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="700" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机13累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="700" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机13累积发电量低" remoteAddr="748" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="748" startBit="0" encoding="0" didName="1分钟风机13累积发电量"/>
@@ -12630,7 +12630,7 @@
                 </pntAddrs>
                 <dataId serialNo="326" didVal="FF41FF111E08000D403099000000000100" didName="1分钟风机13累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机13计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="701" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机13计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="701" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机13计算发电量低" remoteAddr="750" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="750" startBit="0" encoding="0" didName="1分钟风机13计算发电量"/>
@@ -12638,7 +12638,7 @@
                 </pntAddrs>
                 <dataId serialNo="327" didVal="FF41FF111F08000D403099000000000100" didName="1分钟风机13计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机14累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="702" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机14累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="702" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机14累积发电量低" remoteAddr="754" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="754" startBit="0" encoding="0" didName="1分钟风机14累积发电量"/>
@@ -12646,7 +12646,7 @@
                 </pntAddrs>
                 <dataId serialNo="337" didVal="FF41FF111E08000E403099000000000100" didName="1分钟风机14累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机14计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="703" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机14计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="703" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机14计算发电量低" remoteAddr="756" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="756" startBit="0" encoding="0" didName="1分钟风机14计算发电量"/>
@@ -12654,7 +12654,7 @@
                 </pntAddrs>
                 <dataId serialNo="338" didVal="FF41FF111F08000E403099000000000100" didName="1分钟风机14计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机15累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="704" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机15累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="704" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机15累积发电量低" remoteAddr="760" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="760" startBit="0" encoding="0" didName="1分钟风机15累积发电量"/>
@@ -12662,7 +12662,7 @@
                 </pntAddrs>
                 <dataId serialNo="348" didVal="FF41FF111E08000F403099000000000100" didName="1分钟风机15累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机15计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="705" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机15计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="705" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机15计算发电量低" remoteAddr="762" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="762" startBit="0" encoding="0" didName="1分钟风机15计算发电量"/>
@@ -12670,7 +12670,7 @@
                 </pntAddrs>
                 <dataId serialNo="349" didVal="FF41FF111F08000F403099000000000100" didName="1分钟风机15计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机16累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="706" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机16累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="706" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机16累积发电量低" remoteAddr="766" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="766" startBit="0" encoding="0" didName="1分钟风机16累积发电量"/>
@@ -12678,7 +12678,7 @@
                 </pntAddrs>
                 <dataId serialNo="359" didVal="FF41FF111E080010403099000000000100" didName="1分钟风机16累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机16计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="707" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机16计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="707" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机16计算发电量低" remoteAddr="768" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="768" startBit="0" encoding="0" didName="1分钟风机16计算发电量"/>
@@ -12686,7 +12686,7 @@
                 </pntAddrs>
                 <dataId serialNo="360" didVal="FF41FF111F080010403099000000000100" didName="1分钟风机16计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机17累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="708" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机17累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="708" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机17累积发电量低" remoteAddr="772" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="772" startBit="0" encoding="0" didName="1分钟风机17累积发电量"/>
@@ -12694,7 +12694,7 @@
                 </pntAddrs>
                 <dataId serialNo="370" didVal="FF41FF111E080011403099000000000100" didName="1分钟风机17累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机17计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="709" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机17计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="709" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机17计算发电量低" remoteAddr="774" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="774" startBit="0" encoding="0" didName="1分钟风机17计算发电量"/>
@@ -12702,7 +12702,7 @@
                 </pntAddrs>
                 <dataId serialNo="371" didVal="FF41FF111F080011403099000000000100" didName="1分钟风机17计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机18累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="710" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机18累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="710" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机18累积发电量低" remoteAddr="778" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="778" startBit="0" encoding="0" didName="1分钟风机18累积发电量"/>
@@ -12710,7 +12710,7 @@
                 </pntAddrs>
                 <dataId serialNo="381" didVal="FF41FF111E080012403099000000000100" didName="1分钟风机18累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机18计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="711" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机18计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="711" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机18计算发电量低" remoteAddr="780" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="780" startBit="0" encoding="0" didName="1分钟风机18计算发电量"/>
@@ -12718,7 +12718,7 @@
                 </pntAddrs>
                 <dataId serialNo="382" didVal="FF41FF111F080012403099000000000100" didName="1分钟风机18计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机19累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="712" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机19累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="712" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机19累积发电量低" remoteAddr="784" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="784" startBit="0" encoding="0" didName="1分钟风机19累积发电量"/>
@@ -12726,7 +12726,7 @@
                 </pntAddrs>
                 <dataId serialNo="392" didVal="FF41FF111E080013403099000000000100" didName="1分钟风机19累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机19计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="713" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机19计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="713" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机19计算发电量低" remoteAddr="786" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="786" startBit="0" encoding="0" didName="1分钟风机19计算发电量"/>
@@ -12734,7 +12734,7 @@
                 </pntAddrs>
                 <dataId serialNo="393" didVal="FF41FF111F080013403099000000000100" didName="1分钟风机19计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机20累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="714" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机20累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="714" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机20累积发电量低" remoteAddr="790" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="790" startBit="0" encoding="0" didName="1分钟风机20累积发电量"/>
@@ -12742,7 +12742,7 @@
                 </pntAddrs>
                 <dataId serialNo="403" didVal="FF41FF111E080014403099000000000100" didName="1分钟风机20累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机20计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="715" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机20计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="715" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机20计算发电量低" remoteAddr="792" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="792" startBit="0" encoding="0" didName="1分钟风机20计算发电量"/>
@@ -12750,7 +12750,7 @@
                 </pntAddrs>
                 <dataId serialNo="404" didVal="FF41FF111F080014403099000000000100" didName="1分钟风机20计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机21累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="716" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机21累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="716" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机21累积发电量低" remoteAddr="796" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="796" startBit="0" encoding="0" didName="1分钟风机21累积发电量"/>
@@ -12758,7 +12758,7 @@
                 </pntAddrs>
                 <dataId serialNo="414" didVal="FF41FF111E080015403099000000000100" didName="1分钟风机21累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机21计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="717" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机21计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="717" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机21计算发电量低" remoteAddr="798" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="798" startBit="0" encoding="0" didName="1分钟风机21计算发电量"/>
@@ -12766,7 +12766,7 @@
                 </pntAddrs>
                 <dataId serialNo="415" didVal="FF41FF111F080015403099000000000100" didName="1分钟风机21计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机22累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="718" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机22累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="718" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机22累积发电量低" remoteAddr="802" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="802" startBit="0" encoding="0" didName="1分钟风机22累积发电量"/>
@@ -12774,7 +12774,7 @@
                 </pntAddrs>
                 <dataId serialNo="425" didVal="FF41FF111E080016403099000000000100" didName="1分钟风机22累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机22计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="719" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机22计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="719" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机22计算发电量低" remoteAddr="804" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="804" startBit="0" encoding="0" didName="1分钟风机22计算发电量"/>
@@ -12782,7 +12782,7 @@
                 </pntAddrs>
                 <dataId serialNo="426" didVal="FF41FF111F080016403099000000000100" didName="1分钟风机22计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机23累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="720" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机23累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="720" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机23累积发电量低" remoteAddr="808" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="808" startBit="0" encoding="0" didName="1分钟风机23累积发电量"/>
@@ -12790,7 +12790,7 @@
                 </pntAddrs>
                 <dataId serialNo="436" didVal="FF41FF111E080017403099000000000100" didName="1分钟风机23累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机23计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="721" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机23计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="721" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机23计算发电量低" remoteAddr="810" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="810" startBit="0" encoding="0" didName="1分钟风机23计算发电量"/>
@@ -12798,7 +12798,7 @@
                 </pntAddrs>
                 <dataId serialNo="437" didVal="FF41FF111F080017403099000000000100" didName="1分钟风机23计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机24累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="722" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机24累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="722" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机24累积发电量低" remoteAddr="814" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="814" startBit="0" encoding="0" didName="1分钟风机24累积发电量"/>
@@ -12806,7 +12806,7 @@
                 </pntAddrs>
                 <dataId serialNo="447" didVal="FF41FF111E080018403099000000000100" didName="1分钟风机24累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机24计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="723" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机24计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="723" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机24计算发电量低" remoteAddr="816" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="816" startBit="0" encoding="0" didName="1分钟风机24计算发电量"/>
@@ -12814,7 +12814,7 @@
                 </pntAddrs>
                 <dataId serialNo="448" didVal="FF41FF111F080018403099000000000100" didName="1分钟风机24计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机25累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="724" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机25累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="724" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机25累积发电量低" remoteAddr="820" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="820" startBit="0" encoding="0" didName="1分钟风机25累积发电量"/>
@@ -12822,7 +12822,7 @@
                 </pntAddrs>
                 <dataId serialNo="458" didVal="FF41FF111E080019403099000000000100" didName="1分钟风机25累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机25计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="725" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机25计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="725" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机25计算发电量低" remoteAddr="822" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="822" startBit="0" encoding="0" didName="1分钟风机25计算发电量"/>
@@ -12830,7 +12830,7 @@
                 </pntAddrs>
                 <dataId serialNo="459" didVal="FF41FF111F080019403099000000000100" didName="1分钟风机25计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机26累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="726" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机26累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="726" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机26累积发电量低" remoteAddr="826" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="826" startBit="0" encoding="0" didName="1分钟风机26累积发电量"/>
@@ -12838,7 +12838,7 @@
                 </pntAddrs>
                 <dataId serialNo="469" didVal="FF41FF111E08001A403099000000000100" didName="1分钟风机26累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机26计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="727" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机26计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="727" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机26计算发电量低" remoteAddr="828" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="828" startBit="0" encoding="0" didName="1分钟风机26计算发电量"/>
@@ -12846,7 +12846,7 @@
                 </pntAddrs>
                 <dataId serialNo="470" didVal="FF41FF111F08001A403099000000000100" didName="1分钟风机26计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机27累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="728" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机27累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="728" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机27累积发电量低" remoteAddr="832" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="832" startBit="0" encoding="0" didName="1分钟风机27累积发电量"/>
@@ -12854,7 +12854,7 @@
                 </pntAddrs>
                 <dataId serialNo="480" didVal="FF41FF111E08001B403099000000000100" didName="1分钟风机27累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机27计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="729" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机27计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="729" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机27计算发电量低" remoteAddr="834" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="834" startBit="0" encoding="0" didName="1分钟风机27计算发电量"/>
@@ -12862,7 +12862,7 @@
                 </pntAddrs>
                 <dataId serialNo="481" didVal="FF41FF111F08001B403099000000000100" didName="1分钟风机27计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机28累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="730" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机28累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="730" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机28累积发电量低" remoteAddr="838" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="838" startBit="0" encoding="0" didName="1分钟风机28累积发电量"/>
@@ -12870,7 +12870,7 @@
                 </pntAddrs>
                 <dataId serialNo="491" didVal="FF41FF111E08001C403099000000000100" didName="1分钟风机28累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机28计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="731" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机28计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="731" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机28计算发电量低" remoteAddr="840" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="840" startBit="0" encoding="0" didName="1分钟风机28计算发电量"/>
@@ -12878,7 +12878,7 @@
                 </pntAddrs>
                 <dataId serialNo="492" didVal="FF41FF111F08001C403099000000000100" didName="1分钟风机28计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机29累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="732" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机29累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="732" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机29累积发电量低" remoteAddr="844" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="844" startBit="0" encoding="0" didName="1分钟风机29累积发电量"/>
@@ -12886,7 +12886,7 @@
                 </pntAddrs>
                 <dataId serialNo="502" didVal="FF41FF111E08001D403099000000000100" didName="1分钟风机29累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机29计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="733" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机29计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="733" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机29计算发电量低" remoteAddr="846" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="846" startBit="0" encoding="0" didName="1分钟风机29计算发电量"/>
@@ -12894,7 +12894,7 @@
                 </pntAddrs>
                 <dataId serialNo="503" didVal="FF41FF111F08001D403099000000000100" didName="1分钟风机29计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机30累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="734" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机30累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="734" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机30累积发电量低" remoteAddr="850" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="850" startBit="0" encoding="0" didName="1分钟风机30累积发电量"/>
@@ -12902,7 +12902,7 @@
                 </pntAddrs>
                 <dataId serialNo="513" didVal="FF41FF111E08001E403099000000000100" didName="1分钟风机30累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机30计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="735" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机30计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="735" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机30计算发电量低" remoteAddr="852" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="852" startBit="0" encoding="0" didName="1分钟风机30计算发电量"/>
@@ -12910,7 +12910,7 @@
                 </pntAddrs>
                 <dataId serialNo="514" didVal="FF41FF111F08001E403099000000000100" didName="1分钟风机30计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机31累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="736" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机31累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="736" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机31累积发电量低" remoteAddr="856" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="856" startBit="0" encoding="0" didName="1分钟风机31累积发电量"/>
@@ -12918,7 +12918,7 @@
                 </pntAddrs>
                 <dataId serialNo="524" didVal="FF41FF111E08001F403099000000000100" didName="1分钟风机31累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机31计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="737" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机31计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="737" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机31计算发电量低" remoteAddr="858" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="858" startBit="0" encoding="0" didName="1分钟风机31计算发电量"/>
@@ -12926,7 +12926,7 @@
                 </pntAddrs>
                 <dataId serialNo="525" didVal="FF41FF111F08001F403099000000000100" didName="1分钟风机31计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机32累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="738" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机32累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="738" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机32累积发电量低" remoteAddr="862" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="862" startBit="0" encoding="0" didName="1分钟风机32累积发电量"/>
@@ -12934,7 +12934,7 @@
                 </pntAddrs>
                 <dataId serialNo="535" didVal="FF41FF111E080020403099000000000100" didName="1分钟风机32累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机32计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="739" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机32计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="739" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机32计算发电量低" remoteAddr="864" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="864" startBit="0" encoding="0" didName="1分钟风机32计算发电量"/>
@@ -12942,7 +12942,7 @@
                 </pntAddrs>
                 <dataId serialNo="536" didVal="FF41FF111F080020403099000000000100" didName="1分钟风机32计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机33累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="740" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机33累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="740" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机33累积发电量低" remoteAddr="868" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="868" startBit="0" encoding="0" didName="1分钟风机33累积发电量"/>
@@ -12950,7 +12950,7 @@
                 </pntAddrs>
                 <dataId serialNo="546" didVal="FF41FF111E080021403099000000000100" didName="1分钟风机33累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机33计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="741" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机33计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="741" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机33计算发电量低" remoteAddr="870" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="870" startBit="0" encoding="0" didName="1分钟风机33计算发电量"/>
@@ -12958,7 +12958,7 @@
                 </pntAddrs>
                 <dataId serialNo="547" didVal="FF41FF111F080021403099000000000100" didName="1分钟风机33计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机34累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="742" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机34累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="742" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机34累积发电量低" remoteAddr="874" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="874" startBit="0" encoding="0" didName="1分钟风机34累积发电量"/>
@@ -12966,7 +12966,7 @@
                 </pntAddrs>
                 <dataId serialNo="557" didVal="FF41FF111E080022403099000000000100" didName="1分钟风机34累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机34计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="743" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机34计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="743" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机34计算发电量低" remoteAddr="876" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="876" startBit="0" encoding="0" didName="1分钟风机34计算发电量"/>
@@ -12974,7 +12974,7 @@
                 </pntAddrs>
                 <dataId serialNo="558" didVal="FF41FF111F080022403099000000000100" didName="1分钟风机34计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机35累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="744" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机35累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="744" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机35累积发电量低" remoteAddr="880" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="880" startBit="0" encoding="0" didName="1分钟风机35累积发电量"/>
@@ -12982,7 +12982,7 @@
                 </pntAddrs>
                 <dataId serialNo="568" didVal="FF41FF111E080023403099000000000100" didName="1分钟风机35累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机35计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="745" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机35计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="745" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机35计算发电量低" remoteAddr="882" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="882" startBit="0" encoding="0" didName="1分钟风机35计算发电量"/>
@@ -12990,7 +12990,7 @@
                 </pntAddrs>
                 <dataId serialNo="569" didVal="FF41FF111F080023403099000000000100" didName="1分钟风机35计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机36累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="746" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机36累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="746" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机36累积发电量低" remoteAddr="886" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="886" startBit="0" encoding="0" didName="1分钟风机36累积发电量"/>
@@ -12998,7 +12998,7 @@
                 </pntAddrs>
                 <dataId serialNo="579" didVal="FF41FF111E080024403099000000000100" didName="1分钟风机36累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机36计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="747" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机36计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="747" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机36计算发电量低" remoteAddr="888" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="888" startBit="0" encoding="0" didName="1分钟风机36计算发电量"/>
@@ -13006,7 +13006,7 @@
                 </pntAddrs>
                 <dataId serialNo="580" didVal="FF41FF111F080024403099000000000100" didName="1分钟风机36计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机37累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="748" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机37累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="748" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机37累积发电量低" remoteAddr="892" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="892" startBit="0" encoding="0" didName="1分钟风机37累积发电量"/>
@@ -13014,7 +13014,7 @@
                 </pntAddrs>
                 <dataId serialNo="590" didVal="FF41FF111E080025403099000000000100" didName="1分钟风机37累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机37计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="749" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机37计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="749" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机37计算发电量低" remoteAddr="894" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="894" startBit="0" encoding="0" didName="1分钟风机37计算发电量"/>
@@ -13022,7 +13022,7 @@
                 </pntAddrs>
                 <dataId serialNo="591" didVal="FF41FF111F080025403099000000000100" didName="1分钟风机37计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机38累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="750" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机38累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="750" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机38累积发电量低" remoteAddr="898" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="898" startBit="0" encoding="0" didName="1分钟风机38累积发电量"/>
@@ -13030,7 +13030,7 @@
                 </pntAddrs>
                 <dataId serialNo="601" didVal="FF41FF111E080026403099000000000100" didName="1分钟风机38累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机38计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="751" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机38计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="751" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机38计算发电量低" remoteAddr="900" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="900" startBit="0" encoding="0" didName="1分钟风机38计算发电量"/>
@@ -13038,7 +13038,7 @@
                 </pntAddrs>
                 <dataId serialNo="602" didVal="FF41FF111F080026403099000000000100" didName="1分钟风机38计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机39累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="752" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机39累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="752" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机39累积发电量低" remoteAddr="904" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="904" startBit="0" encoding="0" didName="1分钟风机39累积发电量"/>
@@ -13046,7 +13046,7 @@
                 </pntAddrs>
                 <dataId serialNo="612" didVal="FF41FF111E080027403099000000000100" didName="1分钟风机39累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机39计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="753" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机39计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="753" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机39计算发电量低" remoteAddr="906" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="906" startBit="0" encoding="0" didName="1分钟风机39计算发电量"/>
@@ -13054,7 +13054,7 @@
                 </pntAddrs>
                 <dataId serialNo="613" didVal="FF41FF111F080027403099000000000100" didName="1分钟风机39计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机40累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="754" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机40累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="754" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机40累积发电量低" remoteAddr="910" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="910" startBit="0" encoding="0" didName="1分钟风机40累积发电量"/>
@@ -13062,7 +13062,7 @@
                 </pntAddrs>
                 <dataId serialNo="623" didVal="FF41FF111E080028403099000000000100" didName="1分钟风机40累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机40计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="755" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机40计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="755" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机40计算发电量低" remoteAddr="912" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="912" startBit="0" encoding="0" didName="1分钟风机40计算发电量"/>
@@ -13070,7 +13070,7 @@
                 </pntAddrs>
                 <dataId serialNo="624" didVal="FF41FF111F080028403099000000000100" didName="1分钟风机40计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机41累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="756" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机41累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="756" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机41累积发电量低" remoteAddr="916" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="916" startBit="0" encoding="0" didName="1分钟风机41累积发电量"/>
@@ -13078,7 +13078,7 @@
                 </pntAddrs>
                 <dataId serialNo="634" didVal="FF41FF111E080029403099000000000100" didName="1分钟风机41累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机41计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="757" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机41计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="757" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机41计算发电量低" remoteAddr="918" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="918" startBit="0" encoding="0" didName="1分钟风机41计算发电量"/>
@@ -13086,7 +13086,7 @@
                 </pntAddrs>
                 <dataId serialNo="635" didVal="FF41FF111F080029403099000000000100" didName="1分钟风机41计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机42累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="758" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机42累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="758" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机42累积发电量低" remoteAddr="922" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="922" startBit="0" encoding="0" didName="1分钟风机42累积发电量"/>
@@ -13094,7 +13094,7 @@
                 </pntAddrs>
                 <dataId serialNo="645" didVal="FF41FF111E08002A403099000000000100" didName="1分钟风机42累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机42计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="759" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机42计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="759" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机42计算发电量低" remoteAddr="924" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="924" startBit="0" encoding="0" didName="1分钟风机42计算发电量"/>
@@ -13102,7 +13102,7 @@
                 </pntAddrs>
                 <dataId serialNo="646" didVal="FF41FF111F08002A403099000000000100" didName="1分钟风机42计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机43累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="760" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机43累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="760" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机43累积发电量低" remoteAddr="928" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="928" startBit="0" encoding="0" didName="1分钟风机43累积发电量"/>
@@ -13110,7 +13110,7 @@
                 </pntAddrs>
                 <dataId serialNo="656" didVal="FF41FF111E08002B403099000000000100" didName="1分钟风机43累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机43计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="761" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机43计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="761" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机43计算发电量低" remoteAddr="930" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="930" startBit="0" encoding="0" didName="1分钟风机43计算发电量"/>
@@ -13118,7 +13118,7 @@
                 </pntAddrs>
                 <dataId serialNo="657" didVal="FF41FF111F08002B403099000000000100" didName="1分钟风机43计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机44累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="762" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机44累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="762" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机44累积发电量低" remoteAddr="934" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="934" startBit="0" encoding="0" didName="1分钟风机44累积发电量"/>
@@ -13126,7 +13126,7 @@
                 </pntAddrs>
                 <dataId serialNo="667" didVal="FF41FF111E08002C403099000000000100" didName="1分钟风机44累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机44计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="763" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机44计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="763" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机44计算发电量低" remoteAddr="936" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="936" startBit="0" encoding="0" didName="1分钟风机44计算发电量"/>
@@ -13134,7 +13134,7 @@
                 </pntAddrs>
                 <dataId serialNo="668" didVal="FF41FF111F08002C403099000000000100" didName="1分钟风机44计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机45累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="764" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机45累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="764" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机45累积发电量低" remoteAddr="940" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="940" startBit="0" encoding="0" didName="1分钟风机45累积发电量"/>
@@ -13142,7 +13142,7 @@
                 </pntAddrs>
                 <dataId serialNo="678" didVal="FF41FF111E08002D403099000000000100" didName="1分钟风机45累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机45计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="765" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机45计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="765" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机45计算发电量低" remoteAddr="942" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="942" startBit="0" encoding="0" didName="1分钟风机45计算发电量"/>
@@ -13150,7 +13150,7 @@
                 </pntAddrs>
                 <dataId serialNo="679" didVal="FF41FF111F08002D403099000000000100" didName="1分钟风机45计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机46累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="766" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机46累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="766" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机46累积发电量低" remoteAddr="946" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="946" startBit="0" encoding="0" didName="1分钟风机46累积发电量"/>
@@ -13158,7 +13158,7 @@
                 </pntAddrs>
                 <dataId serialNo="689" didVal="FF41FF111E08002E403099000000000100" didName="1分钟风机46累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机46计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="767" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机46计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="767" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机46计算发电量低" remoteAddr="948" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="948" startBit="0" encoding="0" didName="1分钟风机46计算发电量"/>
@@ -13166,7 +13166,7 @@
                 </pntAddrs>
                 <dataId serialNo="690" didVal="FF41FF111F08002E403099000000000100" didName="1分钟风机46计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机47累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="768" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机47累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="768" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机47累积发电量低" remoteAddr="952" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="952" startBit="0" encoding="0" didName="1分钟风机47累积发电量"/>
@@ -13174,7 +13174,7 @@
                 </pntAddrs>
                 <dataId serialNo="700" didVal="FF41FF111E08002F403099000000000100" didName="1分钟风机47累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机47计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="769" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机47计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="769" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机47计算发电量低" remoteAddr="954" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="954" startBit="0" encoding="0" didName="1分钟风机47计算发电量"/>
@@ -13182,7 +13182,7 @@
                 </pntAddrs>
                 <dataId serialNo="701" didVal="FF41FF111F08002F403099000000000100" didName="1分钟风机47计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机48累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="770" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机48累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="770" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机48累积发电量低" remoteAddr="958" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="958" startBit="0" encoding="0" didName="1分钟风机48累积发电量"/>
@@ -13190,7 +13190,7 @@
                 </pntAddrs>
                 <dataId serialNo="711" didVal="FF41FF111E080030403099000000000100" didName="1分钟风机48累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机48计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="771" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机48计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="771" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机48计算发电量低" remoteAddr="960" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="960" startBit="0" encoding="0" didName="1分钟风机48计算发电量"/>
@@ -13198,7 +13198,7 @@
                 </pntAddrs>
                 <dataId serialNo="712" didVal="FF41FF111F080030403099000000000100" didName="1分钟风机48计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机49累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="772" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机49累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="772" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机49累积发电量低" remoteAddr="964" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="964" startBit="0" encoding="0" didName="1分钟风机49累积发电量"/>
@@ -13206,7 +13206,7 @@
                 </pntAddrs>
                 <dataId serialNo="722" didVal="FF41FF111E080031403099000000000100" didName="1分钟风机49累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机49计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="773" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机49计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="773" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机49计算发电量低" remoteAddr="966" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="966" startBit="0" encoding="0" didName="1分钟风机49计算发电量"/>
@@ -13214,7 +13214,7 @@
                 </pntAddrs>
                 <dataId serialNo="723" didVal="FF41FF111F080031403099000000000100" didName="1分钟风机49计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机50累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="774" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机50累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="774" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机50累积发电量低" remoteAddr="970" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="970" startBit="0" encoding="0" didName="1分钟风机50累积发电量"/>
@@ -13222,7 +13222,7 @@
                 </pntAddrs>
                 <dataId serialNo="733" didVal="FF41FF111E080032403099000000000100" didName="1分钟风机50累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机50计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="775" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机50计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="775" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机50计算发电量低" remoteAddr="972" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="972" startBit="0" encoding="0" didName="1分钟风机50计算发电量"/>
@@ -13230,7 +13230,7 @@
                 </pntAddrs>
                 <dataId serialNo="734" didVal="FF41FF111F080032403099000000000100" didName="1分钟风机50计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机51累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="776" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机51累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="776" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机51累积发电量低" remoteAddr="976" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="976" startBit="0" encoding="0" didName="1分钟风机51累积发电量"/>
@@ -13238,7 +13238,7 @@
                 </pntAddrs>
                 <dataId serialNo="744" didVal="FF41FF111E080033403099000000000100" didName="1分钟风机51累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机51计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="777" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机51计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="777" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机51计算发电量低" remoteAddr="978" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="978" startBit="0" encoding="0" didName="1分钟风机51计算发电量"/>
@@ -13246,7 +13246,7 @@
                 </pntAddrs>
                 <dataId serialNo="745" didVal="FF41FF111F080033403099000000000100" didName="1分钟风机51计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机52累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="778" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机52累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="778" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机52累积发电量低" remoteAddr="982" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="982" startBit="0" encoding="0" didName="1分钟风机52累积发电量"/>
@@ -13254,7 +13254,7 @@
                 </pntAddrs>
                 <dataId serialNo="755" didVal="FF41FF111E080034403099000000000100" didName="1分钟风机52累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机52计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="779" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机52计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="779" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机52计算发电量低" remoteAddr="984" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="984" startBit="0" encoding="0" didName="1分钟风机52计算发电量"/>
@@ -13262,7 +13262,7 @@
                 </pntAddrs>
                 <dataId serialNo="756" didVal="FF41FF111F080034403099000000000100" didName="1分钟风机52计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机53累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="780" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机53累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="780" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机53累积发电量低" remoteAddr="988" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="988" startBit="0" encoding="0" didName="1分钟风机53累积发电量"/>
@@ -13270,7 +13270,7 @@
                 </pntAddrs>
                 <dataId serialNo="766" didVal="FF41FF111E080035403099000000000100" didName="1分钟风机53累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机53计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="781" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机53计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="781" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机53计算发电量低" remoteAddr="990" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="990" startBit="0" encoding="0" didName="1分钟风机53计算发电量"/>
@@ -13278,7 +13278,7 @@
                 </pntAddrs>
                 <dataId serialNo="767" didVal="FF41FF111F080035403099000000000100" didName="1分钟风机53计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机54累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="782" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机54累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="782" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机54累积发电量低" remoteAddr="994" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="994" startBit="0" encoding="0" didName="1分钟风机54累积发电量"/>
@@ -13286,7 +13286,7 @@
                 </pntAddrs>
                 <dataId serialNo="777" didVal="FF41FF111E080036403099000000000100" didName="1分钟风机54累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机54计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="783" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机54计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="783" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机54计算发电量低" remoteAddr="996" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="996" startBit="0" encoding="0" didName="1分钟风机54计算发电量"/>
@@ -13294,7 +13294,7 @@
                 </pntAddrs>
                 <dataId serialNo="778" didVal="FF41FF111F080036403099000000000100" didName="1分钟风机54计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机55累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="784" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机55累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="784" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机55累积发电量低" remoteAddr="1000" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1000" startBit="0" encoding="0" didName="1分钟风机55累积发电量"/>
@@ -13302,7 +13302,7 @@
                 </pntAddrs>
                 <dataId serialNo="788" didVal="FF41FF111E080037403099000000000100" didName="1分钟风机55累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机55计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="785" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机55计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="785" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机55计算发电量低" remoteAddr="1002" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1002" startBit="0" encoding="0" didName="1分钟风机55计算发电量"/>
@@ -13310,7 +13310,7 @@
                 </pntAddrs>
                 <dataId serialNo="789" didVal="FF41FF111F080037403099000000000100" didName="1分钟风机55计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机56累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="786" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机56累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="786" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机56累积发电量低" remoteAddr="1006" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1006" startBit="0" encoding="0" didName="1分钟风机56累积发电量"/>
@@ -13318,7 +13318,7 @@
                 </pntAddrs>
                 <dataId serialNo="799" didVal="FF41FF111E080038403099000000000100" didName="1分钟风机56累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机56计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="787" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机56计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="787" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机56计算发电量低" remoteAddr="1008" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1008" startBit="0" encoding="0" didName="1分钟风机56计算发电量"/>
@@ -13326,7 +13326,7 @@
                 </pntAddrs>
                 <dataId serialNo="800" didVal="FF41FF111F080038403099000000000100" didName="1分钟风机56计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机57累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="788" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机57累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="788" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机57累积发电量低" remoteAddr="1012" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1012" startBit="0" encoding="0" didName="1分钟风机57累积发电量"/>
@@ -13334,7 +13334,7 @@
                 </pntAddrs>
                 <dataId serialNo="810" didVal="FF41FF111E080039403099000000000100" didName="1分钟风机57累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机57计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="789" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机57计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="789" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机57计算发电量低" remoteAddr="1014" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1014" startBit="0" encoding="0" didName="1分钟风机57计算发电量"/>
@@ -13342,7 +13342,7 @@
                 </pntAddrs>
                 <dataId serialNo="811" didVal="FF41FF111F080039403099000000000100" didName="1分钟风机57计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机58累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="790" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机58累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="790" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机58累积发电量低" remoteAddr="1018" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1018" startBit="0" encoding="0" didName="1分钟风机58累积发电量"/>
@@ -13350,7 +13350,7 @@
                 </pntAddrs>
                 <dataId serialNo="821" didVal="FF41FF111E08003A403099000000000100" didName="1分钟风机58累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机58计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="791" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机58计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="791" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机58计算发电量低" remoteAddr="1020" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1020" startBit="0" encoding="0" didName="1分钟风机58计算发电量"/>
@@ -13358,7 +13358,7 @@
                 </pntAddrs>
                 <dataId serialNo="822" didVal="FF41FF111F08003A403099000000000100" didName="1分钟风机58计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机59累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="792" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机59累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="792" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机59累积发电量低" remoteAddr="1024" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1024" startBit="0" encoding="0" didName="1分钟风机59累积发电量"/>
@@ -13366,7 +13366,7 @@
                 </pntAddrs>
                 <dataId serialNo="832" didVal="FF41FF111E08003B403099000000000100" didName="1分钟风机59累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机59计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="793" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机59计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="793" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机59计算发电量低" remoteAddr="1026" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1026" startBit="0" encoding="0" didName="1分钟风机59计算发电量"/>
@@ -13374,7 +13374,7 @@
                 </pntAddrs>
                 <dataId serialNo="833" didVal="FF41FF111F08003B403099000000000100" didName="1分钟风机59计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机60累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="794" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机60累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="794" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机60累积发电量低" remoteAddr="1030" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1030" startBit="0" encoding="0" didName="1分钟风机60累积发电量"/>
@@ -13382,7 +13382,7 @@
                 </pntAddrs>
                 <dataId serialNo="843" didVal="FF41FF111E08003C403099000000000100" didName="1分钟风机60累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机60计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="795" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机60计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="795" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机60计算发电量低" remoteAddr="1032" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1032" startBit="0" encoding="0" didName="1分钟风机60计算发电量"/>
@@ -13390,7 +13390,7 @@
                 </pntAddrs>
                 <dataId serialNo="844" didVal="FF41FF111F08003C403099000000000100" didName="1分钟风机60计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机61累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="796" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机61累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="796" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机61累积发电量低" remoteAddr="1036" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1036" startBit="0" encoding="0" didName="1分钟风机61累积发电量"/>
@@ -13398,7 +13398,7 @@
                 </pntAddrs>
                 <dataId serialNo="854" didVal="FF41FF111E08003D403099000000000100" didName="1分钟风机61累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机61计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="797" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机61计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="797" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机61计算发电量低" remoteAddr="1038" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1038" startBit="0" encoding="0" didName="1分钟风机61计算发电量"/>
@@ -13406,7 +13406,7 @@
                 </pntAddrs>
                 <dataId serialNo="855" didVal="FF41FF111F08003D403099000000000100" didName="1分钟风机61计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机62累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="798" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机62累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="798" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机62累积发电量低" remoteAddr="1042" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1042" startBit="0" encoding="0" didName="1分钟风机62累积发电量"/>
@@ -13414,7 +13414,7 @@
                 </pntAddrs>
                 <dataId serialNo="865" didVal="FF41FF111E08003E403099000000000100" didName="1分钟风机62累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机62计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="799" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机62计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="799" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机62计算发电量低" remoteAddr="1044" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1044" startBit="0" encoding="0" didName="1分钟风机62计算发电量"/>
@@ -13422,7 +13422,7 @@
                 </pntAddrs>
                 <dataId serialNo="866" didVal="FF41FF111F08003E403099000000000100" didName="1分钟风机62计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机63累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="800" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机63累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="800" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机63累积发电量低" remoteAddr="1048" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1048" startBit="0" encoding="0" didName="1分钟风机63累积发电量"/>
@@ -13430,7 +13430,7 @@
                 </pntAddrs>
                 <dataId serialNo="876" didVal="FF41FF111E08003F403099000000000100" didName="1分钟风机63累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机63计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="801" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机63计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="801" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机63计算发电量低" remoteAddr="1050" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1050" startBit="0" encoding="0" didName="1分钟风机63计算发电量"/>
@@ -13438,7 +13438,7 @@
                 </pntAddrs>
                 <dataId serialNo="877" didVal="FF41FF111F08003F403099000000000100" didName="1分钟风机63计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机64累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="802" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机64累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="802" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机64累积发电量低" remoteAddr="1054" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1054" startBit="0" encoding="0" didName="1分钟风机64累积发电量"/>
@@ -13446,7 +13446,7 @@
                 </pntAddrs>
                 <dataId serialNo="887" didVal="FF41FF111E080040403099000000000100" didName="1分钟风机64累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机64计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="803" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机64计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="803" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机64计算发电量低" remoteAddr="1056" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1056" startBit="0" encoding="0" didName="1分钟风机64计算发电量"/>
@@ -13454,7 +13454,7 @@
                 </pntAddrs>
                 <dataId serialNo="888" didVal="FF41FF111F080040403099000000000100" didName="1分钟风机64计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机65累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="804" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机65累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="804" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机65累积发电量低" remoteAddr="1060" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1060" startBit="0" encoding="0" didName="1分钟风机65累积发电量"/>
@@ -13462,7 +13462,7 @@
                 </pntAddrs>
                 <dataId serialNo="898" didVal="FF41FF111E080041403099000000000100" didName="1分钟风机65累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机65计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="805" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机65计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="805" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机65计算发电量低" remoteAddr="1062" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1062" startBit="0" encoding="0" didName="1分钟风机65计算发电量"/>
@@ -13470,7 +13470,7 @@
                 </pntAddrs>
                 <dataId serialNo="899" didVal="FF41FF111F080041403099000000000100" didName="1分钟风机65计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机66累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="806" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机66累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="806" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机66累积发电量低" remoteAddr="1066" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1066" startBit="0" encoding="0" didName="1分钟风机66累积发电量"/>
@@ -13478,7 +13478,7 @@
                 </pntAddrs>
                 <dataId serialNo="909" didVal="FF41FF111E080042403099000000000100" didName="1分钟风机66累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机66计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="807" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机66计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="807" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机66计算发电量低" remoteAddr="1068" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1068" startBit="0" encoding="0" didName="1分钟风机66计算发电量"/>
@@ -13486,7 +13486,7 @@
                 </pntAddrs>
                 <dataId serialNo="910" didVal="FF41FF111F080042403099000000000100" didName="1分钟风机66计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机67累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="808" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机67累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="808" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机67累积发电量低" remoteAddr="1072" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1072" startBit="0" encoding="0" didName="1分钟风机67累积发电量"/>
@@ -13494,7 +13494,7 @@
                 </pntAddrs>
                 <dataId serialNo="920" didVal="FF41FF111E080043403099000000000100" didName="1分钟风机67累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机67计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="809" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机67计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="809" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机67计算发电量低" remoteAddr="1074" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1074" startBit="0" encoding="0" didName="1分钟风机67计算发电量"/>
@@ -13502,7 +13502,7 @@
                 </pntAddrs>
                 <dataId serialNo="921" didVal="FF41FF111F080043403099000000000100" didName="1分钟风机67计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机68累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="810" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机68累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="810" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机68累积发电量低" remoteAddr="1078" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1078" startBit="0" encoding="0" didName="1分钟风机68累积发电量"/>
@@ -13510,7 +13510,7 @@
                 </pntAddrs>
                 <dataId serialNo="931" didVal="FF41FF111E080044403099000000000100" didName="1分钟风机68累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机68计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="811" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机68计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="811" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机68计算发电量低" remoteAddr="1080" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1080" startBit="0" encoding="0" didName="1分钟风机68计算发电量"/>
@@ -13518,7 +13518,7 @@
                 </pntAddrs>
                 <dataId serialNo="932" didVal="FF41FF111F080044403099000000000100" didName="1分钟风机68计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机69累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="812" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机69累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="812" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机69累积发电量低" remoteAddr="1084" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1084" startBit="0" encoding="0" didName="1分钟风机69累积发电量"/>
@@ -13526,7 +13526,7 @@
                 </pntAddrs>
                 <dataId serialNo="942" didVal="FF41FF111E080045403099000000000100" didName="1分钟风机69累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机69计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="813" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机69计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="813" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机69计算发电量低" remoteAddr="1086" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1086" startBit="0" encoding="0" didName="1分钟风机69计算发电量"/>
@@ -13534,7 +13534,7 @@
                 </pntAddrs>
                 <dataId serialNo="943" didVal="FF41FF111F080045403099000000000100" didName="1分钟风机69计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机70累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="814" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机70累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="814" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机70累积发电量低" remoteAddr="1090" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1090" startBit="0" encoding="0" didName="1分钟风机70累积发电量"/>
@@ -13542,7 +13542,7 @@
                 </pntAddrs>
                 <dataId serialNo="953" didVal="FF41FF111E080046403099000000000100" didName="1分钟风机70累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机70计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="815" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机70计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="815" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机70计算发电量低" remoteAddr="1092" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1092" startBit="0" encoding="0" didName="1分钟风机70计算发电量"/>
@@ -13550,7 +13550,7 @@
                 </pntAddrs>
                 <dataId serialNo="954" didVal="FF41FF111F080046403099000000000100" didName="1分钟风机70计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机71累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="816" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机71累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="816" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机71累积发电量低" remoteAddr="1096" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1096" startBit="0" encoding="0" didName="1分钟风机71累积发电量"/>
@@ -13558,7 +13558,7 @@
                 </pntAddrs>
                 <dataId serialNo="964" didVal="FF41FF111E080047403099000000000100" didName="1分钟风机71累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机71计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="817" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机71计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="817" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机71计算发电量低" remoteAddr="1098" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1098" startBit="0" encoding="0" didName="1分钟风机71计算发电量"/>
@@ -13566,7 +13566,7 @@
                 </pntAddrs>
                 <dataId serialNo="965" didVal="FF41FF111F080047403099000000000100" didName="1分钟风机71计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机72累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="818" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机72累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="818" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机72累积发电量低" remoteAddr="1102" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1102" startBit="0" encoding="0" didName="1分钟风机72累积发电量"/>
@@ -13574,7 +13574,7 @@
                 </pntAddrs>
                 <dataId serialNo="975" didVal="FF41FF111E080048403099000000000100" didName="1分钟风机72累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机72计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="819" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机72计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="819" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机72计算发电量低" remoteAddr="1104" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1104" startBit="0" encoding="0" didName="1分钟风机72计算发电量"/>
@@ -13582,7 +13582,7 @@
                 </pntAddrs>
                 <dataId serialNo="976" didVal="FF41FF111F080048403099000000000100" didName="1分钟风机72计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机73累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="820" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机73累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="820" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机73累积发电量低" remoteAddr="1108" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1108" startBit="0" encoding="0" didName="1分钟风机73累积发电量"/>
@@ -13590,7 +13590,7 @@
                 </pntAddrs>
                 <dataId serialNo="986" didVal="FF41FF111E080049403099000000000100" didName="1分钟风机73累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机73计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="821" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机73计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="821" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机73计算发电量低" remoteAddr="1110" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1110" startBit="0" encoding="0" didName="1分钟风机73计算发电量"/>
@@ -13598,7 +13598,7 @@
                 </pntAddrs>
                 <dataId serialNo="987" didVal="FF41FF111F080049403099000000000100" didName="1分钟风机73计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机74累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="822" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机74累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="822" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机74累积发电量低" remoteAddr="1114" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1114" startBit="0" encoding="0" didName="1分钟风机74累积发电量"/>
@@ -13606,7 +13606,7 @@
                 </pntAddrs>
                 <dataId serialNo="997" didVal="FF41FF111E08004A403099000000000100" didName="1分钟风机74累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机74计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="823" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机74计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="823" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机74计算发电量低" remoteAddr="1116" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1116" startBit="0" encoding="0" didName="1分钟风机74计算发电量"/>
@@ -13614,7 +13614,7 @@
                 </pntAddrs>
                 <dataId serialNo="998" didVal="FF41FF111F08004A403099000000000100" didName="1分钟风机74计算发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机75累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="824" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机75累积发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="824" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机75累积发电量低" remoteAddr="1120" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1120" startBit="0" encoding="0" didName="1分钟风机75累积发电量"/>
@@ -13622,7 +13622,7 @@
                 </pntAddrs>
                 <dataId serialNo="1008" didVal="FF41FF111E08004B403099000000000100" didName="1分钟风机75累积发电量"/>
             </phyObjVal>
-            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机75计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="167" phyType="825" grpNo="0">
+            <phyObjVal scalFactor="1" dataSource="0" name="站1分钟风机75计算发电量" zoomMode="0" offsetCoe="0" hisMaxNum="0" grpAttr="3" algType="0" phyValLng="8" calcMethd="186" phyType="825" grpNo="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr type="3" bitLength="16" name="风机75计算发电量低" remoteAddr="1122" codCoefficient="1" offset="0" unitDesc="" pntDataLng="16" localAddr="1122" startBit="0" encoding="0" didName="1分钟风机75计算发电量"/>
