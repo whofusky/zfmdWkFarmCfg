@@ -4230,7 +4230,7 @@
                     <netAddr port="502" ip="192.168.1.200"/>
                 </remoteStation>
             </stationCfg>
-            <sessionCfgList waitTime="3000">
+            <sessionCfgList waitTime="5000">
                 <sessionCfg prio="5" ssnMode="0" check="0" snnMaxRetryNum="0" actFlag="0" ssnDscNo="3" waitTime="3000">
                     <sessionInst cmnAddr="1" number="120" collMethods="1" cycTm="" instNo="0" addrStart="22"/>
                     <sessionInst cmnAddr="1" number="30" collMethods="1" cycTm="" instNo="1" addrStart="142"/>
