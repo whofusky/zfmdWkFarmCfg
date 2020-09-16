@@ -3117,10 +3117,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="1">
             <localStation name="scada风机1-100" equipmentID="20" role="1">
-                <netAddr port="0" ip="172.160.0.199"/>
+                <netAddr port="0" ip="172.160.0.20"/>
             </localStation>
             <remoteStation name="风机1-100" bigEndian="0" role="2">
-                <netAddr port="502" ip="172.160.0.10"/>
+                <netAddr port="502" ip="172.160.0.21"/>
             </remoteStation>
             <stationSon>
                 <pntAddr name="1分钟风机1风速" codCoefficient="1" unitDesc="" remoteAddr="0" type="3" offset="0" localAddr="0" pntDataLng="16" encoding="0" didName="1分钟风机1风速实时值">2</pntAddr>
@@ -6555,10 +6555,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="1">
                 <localStation name="scada风机1-100" equipmentID="20" role="1">
-                    <netAddr port="0" ip="172.160.0.199"/>
+                    <netAddr port="0" ip="172.160.0.20"/>
                 </localStation>
                 <remoteStation name="风机1-100" bigEndian="0" role="2">
-                    <netAddr port="502" ip="172.160.0.10"/>
+                    <netAddr port="502" ip="172.160.0.21"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="5000">
