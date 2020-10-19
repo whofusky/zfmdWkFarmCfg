@@ -1,4 +1,6 @@
-102log\102log\102Slave\2020\202005\
+/zfmd/wpfs20/dph/log
+/zfmd/wpfs20/dph/102log
+/zfmd/wpfs20/dph/wjlog
 
 数据查询-》综合数据查询-》上传下载记录
 
