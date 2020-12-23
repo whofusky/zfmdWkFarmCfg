@@ -72,14 +72,14 @@
     </protocolSet>
     <sysCfg>
         <!--数据中心入库-->
-        <dataInIP lcalPort="5406" rmtIp="100.110.120.100" rmtPort="9009" lcalIp="100.110.120.105">
+        <dataInIP lcalPort="5406" rmtIp="100.110.120.101" rmtPort="9009" lcalIp="100.110.120.105">
             <lcalIpNote/>
             <lcalPortNote/>
             <rmtIpNote/>
             <rmtPortNote/>
         </dataInIP>
         <!--数据中心出库-->
-        <dataOutIP lcalPort="6407" rmtIp="100.110.120.100" rmtPort="9009" lcalIp="100.110.120.105">
+        <dataOutIP lcalPort="6407" rmtIp="100.110.120.101" rmtPort="9009" lcalIp="100.110.120.105">
             <lcalIpNote/>
             <lcalPortNote/>
             <rmtIpNote/>
