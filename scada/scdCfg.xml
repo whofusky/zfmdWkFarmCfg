@@ -2905,10 +2905,10 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="4">
             <localStation name="转发测风" role="2" equipmentID="8">
-                <netAddr port="2404" ip="120.130.140.150"/>
+                <netAddr port="502" ip="110.110.130.140"/>
             </localStation>
             <remoteStation name="转发远动" role="1" bigEndian="0">
-                <netAddr port="0" ip="120.130.140.1"/>
+                <netAddr port="0" ip="110.110.130.150"/>
             </remoteStation>
             <stationSon>
                 <pntAddr remoteAddr="0" pntDataLng="16" encoding="0" localAddr="0" codCoefficient="1" type="3" name="70米风速5分钟平均值低" unitDesc="" offset="0" didName="5分钟70m一期测风塔风速平均值"/>
@@ -3206,7 +3206,7 @@
                 </pntAddrs>
                 <dataId serialNo="13" didName="1分钟10m一期测风塔湿度实时值" didVal="FF410A0901080001503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="13" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="13" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="132" pntDataLng="16" encoding="0" localAddr="132" codCoefficient="1" type="3" name="10米压力实时值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力实时值" startBit="0"/>
@@ -3608,7 +3608,7 @@
                 </pntAddrs>
                 <dataId serialNo="15" didName="1分钟10m一期测风塔湿度最小值" didVal="FF410A0904080001503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="63" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="63" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="130" pntDataLng="16" encoding="0" localAddr="130" codCoefficient="1" type="3" name="10米压力1分钟平均值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力平均值" startBit="0"/>
@@ -3624,7 +3624,7 @@
                 </pntAddrs>
                 <dataId serialNo="20" didName="1分钟10m一期测风塔压力标准偏差" didVal="FF410A090C080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="65" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="65" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="136" pntDataLng="16" encoding="0" localAddr="136" codCoefficient="1" type="3" name="10米压力1分钟最大值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最大值" startBit="0"/>
@@ -3632,7 +3632,7 @@
                 </pntAddrs>
                 <dataId serialNo="18" didName="1分钟10m一期测风塔压力最大值" didVal="FF410A0903080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="66" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="66" dataSource="0" algType="0" name="站1分钟10m一期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="138" pntDataLng="16" encoding="0" localAddr="138" codCoefficient="1" type="3" name="10米压力1分钟最小值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最小值" startBit="0"/>
@@ -3770,7 +3770,7 @@
                 </pntAddrs>
                 <dataId serialNo="1687" didName="5分钟10m一期测风塔湿度实时值" didVal="FF450A0901080001503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" dataSource="0" grpNo="0" phyValLng="8" calcMethd="167" offsetCoe="0" name="站5分钟10m一期测风塔压力实时值" phyType="83" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0">
+            <phyObjVal zoomMode="0" dataSource="0" grpNo="0" phyValLng="8" calcMethd="167" offsetCoe="0" name="站5分钟10m一期测风塔压力实时值" phyType="83" hisMaxNum="0" algType="0" scalFactor="10" grpAttr="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr encoding="0" localAddr="132" offset="0" unitDesc="" type="3" name="10米压力5分钟实时值低" remoteAddr="132" didName="1分钟10m一期测风塔压力实时值" bitLength="16" pntDataLng="16" codCoefficient="1" startBit="0"/>
@@ -4172,7 +4172,7 @@
                 </pntAddrs>
                 <dataId serialNo="91" didName="5分钟10m一期测风塔湿度最小值" didVal="FF450A0904080001503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="133" dataSource="0" algType="0" name="站5分钟10m一期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="133" dataSource="0" algType="0" name="站5分钟10m一期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="130" pntDataLng="16" encoding="0" localAddr="130" codCoefficient="1" type="3" name="10米压力5分钟平均值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力平均值" startBit="0"/>
@@ -4188,7 +4188,7 @@
                 </pntAddrs>
                 <dataId serialNo="95" didName="5分钟10m一期测风塔压力标准偏差" didVal="FF450A090C080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="135" dataSource="0" algType="0" name="站5分钟10m一期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="135" dataSource="0" algType="0" name="站5分钟10m一期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="136" pntDataLng="16" encoding="0" localAddr="136" codCoefficient="1" type="3" name="10米压力5分钟最大值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最大值" startBit="0"/>
@@ -4196,7 +4196,7 @@
                 </pntAddrs>
                 <dataId serialNo="93" didName="5分钟10m一期测风塔压力最大值" didVal="FF450A0903080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="136" dataSource="0" algType="0" name="站5分钟10m一期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="136" dataSource="0" algType="0" name="站5分钟10m一期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="138" pntDataLng="16" encoding="0" localAddr="138" codCoefficient="1" type="3" name="10米压力5分钟最小值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最小值" startBit="0"/>
@@ -4622,7 +4622,7 @@
                 </pntAddrs>
                 <dataId serialNo="148" didName="15分钟10m一期测风塔湿度最小值" didVal="FF4F0A0904080001503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="169" grpAttr="0" phyType="189" dataSource="1" algType="0" name="站15分钟10m一期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="169" grpAttr="0" phyType="189" dataSource="1" algType="0" name="站15分钟10m一期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="130" pntDataLng="16" encoding="0" localAddr="130" codCoefficient="1" type="3" name="10米压力15分钟平均值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力平均值" startBit="0"/>
@@ -4638,7 +4638,7 @@
                 </pntAddrs>
                 <dataId serialNo="152" didName="15分钟10m一期测风塔压力标准偏差" didVal="FF4F0A090C080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="191" dataSource="0" algType="0" name="站15分钟10m一期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="191" dataSource="0" algType="0" name="站15分钟10m一期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="136" pntDataLng="16" encoding="0" localAddr="136" codCoefficient="1" type="3" name="10米压力15分钟最大值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最大值" startBit="0"/>
@@ -4646,7 +4646,7 @@
                 </pntAddrs>
                 <dataId serialNo="150" didName="15分钟10m一期测风塔压力最大值" didVal="FF4F0A0903080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="192" dataSource="0" algType="0" name="站15分钟10m一期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="192" dataSource="0" algType="0" name="站15分钟10m一期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="138" pntDataLng="16" encoding="0" localAddr="138" codCoefficient="1" type="3" name="10米压力15分钟最小值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最小值" startBit="0"/>
@@ -4833,7 +4833,7 @@
                 </pntAddrs>
                 <dataId serialNo="197" didName="1分钟10m二期测风塔湿度实时值" didVal="FF410A0901080002503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="13" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="13" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="132" pntDataLng="16" encoding="0" localAddr="132" codCoefficient="1" type="3" name="10米压力实时值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力实时值" startBit="0"/>
@@ -5235,7 +5235,7 @@
                 </pntAddrs>
                 <dataId serialNo="199" didName="1分钟10m二期测风塔湿度最小值" didVal="FF410A0904080002503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="63" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="63" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="130" pntDataLng="16" encoding="0" localAddr="130" codCoefficient="1" type="3" name="10米压力1分钟平均值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力平均值" startBit="0"/>
@@ -5251,7 +5251,7 @@
                 </pntAddrs>
                 <dataId serialNo="204" didName="1分钟10m二期测风塔压力标准偏差" didVal="FF410A090C080002503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="65" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="65" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="136" pntDataLng="16" encoding="0" localAddr="136" codCoefficient="1" type="3" name="10米压力1分钟最大值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最大值" startBit="0"/>
@@ -5259,7 +5259,7 @@
                 </pntAddrs>
                 <dataId serialNo="202" didName="1分钟10m二期测风塔压力最大值" didVal="FF410A0903080002503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="66" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="66" dataSource="0" algType="0" name="站1分钟10m二期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="138" pntDataLng="16" encoding="0" localAddr="138" codCoefficient="1" type="3" name="10米压力1分钟最小值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最小值" startBit="0"/>
@@ -5397,7 +5397,7 @@
                 </pntAddrs>
                 <dataId serialNo="1700" didName="5分钟10m二期测风塔湿度实时值" didVal="FF450A0901080002503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" dataSource="0" grpNo="0" phyValLng="8" calcMethd="167" offsetCoe="0" name="站5分钟10m二期测风塔压力实时值" phyType="83" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0">
+            <phyObjVal zoomMode="0" dataSource="0" grpNo="0" phyValLng="8" calcMethd="167" offsetCoe="0" name="站5分钟10m二期测风塔压力实时值" phyType="83" hisMaxNum="0" algType="0" scalFactor="10" grpAttr="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr encoding="0" localAddr="132" offset="0" unitDesc="" type="3" name="10米压力5分钟实时值低" remoteAddr="132" didName="1分钟10m一期测风塔压力实时值" bitLength="16" pntDataLng="16" codCoefficient="1" startBit="0"/>
@@ -5799,7 +5799,7 @@
                 </pntAddrs>
                 <dataId serialNo="275" didName="5分钟10m二期测风塔湿度最小值" didVal="FF450A0904080002503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="133" dataSource="0" algType="0" name="站5分钟10m二期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="133" dataSource="0" algType="0" name="站5分钟10m二期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="130" pntDataLng="16" encoding="0" localAddr="130" codCoefficient="1" type="3" name="10米压力5分钟平均值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力平均值" startBit="0"/>
@@ -5815,7 +5815,7 @@
                 </pntAddrs>
                 <dataId serialNo="279" didName="5分钟10m二期测风塔压力标准偏差" didVal="FF450A090C080002503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="135" dataSource="0" algType="0" name="站5分钟10m二期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="135" dataSource="0" algType="0" name="站5分钟10m二期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="136" pntDataLng="16" encoding="0" localAddr="136" codCoefficient="1" type="3" name="10米压力5分钟最大值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最大值" startBit="0"/>
@@ -5823,7 +5823,7 @@
                 </pntAddrs>
                 <dataId serialNo="277" didName="5分钟10m二期测风塔压力最大值" didVal="FF450A0903080002503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="136" dataSource="0" algType="0" name="站5分钟10m二期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="136" dataSource="0" algType="0" name="站5分钟10m二期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="138" pntDataLng="16" encoding="0" localAddr="138" codCoefficient="1" type="3" name="10米压力5分钟最小值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最小值" startBit="0"/>
@@ -6249,7 +6249,7 @@
                 </pntAddrs>
                 <dataId serialNo="332" didName="15分钟10m二期测风塔湿度最小值" didVal="FF4F0A0904080002503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="169" grpAttr="0" phyType="189" dataSource="1" algType="0" name="站15分钟10m二期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="169" grpAttr="0" phyType="189" dataSource="1" algType="0" name="站15分钟10m二期测风塔压力平均值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="130" pntDataLng="16" encoding="0" localAddr="130" codCoefficient="1" type="3" name="10米压力15分钟平均值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力平均值" startBit="0"/>
@@ -6265,7 +6265,7 @@
                 </pntAddrs>
                 <dataId serialNo="336" didName="15分钟10m二期测风塔压力标准偏差" didVal="FF4F0A090C080002503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="191" dataSource="0" algType="0" name="站15分钟10m二期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="191" dataSource="0" algType="0" name="站15分钟10m二期测风塔压力最大值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="136" pntDataLng="16" encoding="0" localAddr="136" codCoefficient="1" type="3" name="10米压力15分钟最大值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最大值" startBit="0"/>
@@ -6273,7 +6273,7 @@
                 </pntAddrs>
                 <dataId serialNo="334" didName="15分钟10m二期测风塔压力最大值" didVal="FF4F0A0903080002503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="167" grpAttr="0" phyType="192" dataSource="0" algType="0" name="站15分钟10m二期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="10" calcMethd="167" grpAttr="0" phyType="192" dataSource="0" algType="0" name="站15分钟10m二期测风塔压力最小值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="138" pntDataLng="16" encoding="0" localAddr="138" codCoefficient="1" type="3" name="10米压力15分钟最小值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力最小值" startBit="0"/>
@@ -16456,10 +16456,10 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="4">
                 <localStation name="转发测风" role="2" equipmentID="8">
-                    <netAddr port="2404" ip="120.130.140.150"/>
+                    <netAddr port="502" ip="110.110.130.140"/>
                 </localStation>
                 <remoteStation name="转发远动" role="1" bigEndian="0">
-                    <netAddr port="0" ip="120.130.140.1"/>
+                    <netAddr port="0" ip="110.110.130.150"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -16889,7 +16889,7 @@
                 </pntAddrs>
                 <dataId serialNo="84" didName="5分钟10m一期测风塔温度平均值" didVal="FF450A0902080001503083000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="162" grpAttr="0" phyType="50" dataSource="1" algType="0" name="站1分钟10m一期测风塔温度实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="100" calcMethd="162" grpAttr="0" phyType="50" dataSource="1" algType="0" name="站1分钟10m一期测风塔温度实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="112" pntDataLng="16" encoding="0" localAddr="112" codCoefficient="1" type="3" name="10米温度5分钟实时值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔温度实时值" startBit="0"/>
@@ -16929,7 +16929,7 @@
                 </pntAddrs>
                 <dataId serialNo="85" didName="5分钟10m一期测风塔湿度平均值" didVal="FF450A0902080001503084000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="162" grpAttr="0" phyType="55" dataSource="1" algType="0" name="站1分钟10m一期测风塔湿度实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="100" calcMethd="162" grpAttr="0" phyType="55" dataSource="1" algType="0" name="站1分钟10m一期测风塔湿度实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="122" pntDataLng="16" encoding="0" localAddr="122" codCoefficient="1" type="3" name="10米湿度5分钟实时值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔湿度实时值" startBit="0"/>
@@ -16969,7 +16969,7 @@
                 </pntAddrs>
                 <dataId serialNo="86" didName="5分钟10m一期测风塔压力平均值" didVal="FF450A0902080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal zoomMode="0" scalFactor="1" calcMethd="162" grpAttr="0" phyType="60" dataSource="1" algType="0" name="站1分钟10m一期测风塔压力实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal zoomMode="0" scalFactor="100" calcMethd="162" grpAttr="0" phyType="60" dataSource="1" algType="0" name="站1分钟10m一期测风塔压力实时值" grpNo="0" phyValLng="8" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="132" pntDataLng="16" encoding="0" localAddr="132" codCoefficient="1" type="3" name="10米压力5分钟实时值低" bitLength="16" unitDesc="" offset="0" didName="1分钟10m一期测风塔压力实时值" startBit="0"/>
