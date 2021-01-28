@@ -94,25 +94,28 @@ function F_recoverEc()
 }
 function F_chgSomeAddrByName()
 {
-    if [ $# -lt 3 ];then
-        echo -e "\n\tERROR:${FUNCNAME}:input parameters less than 3!\n"
+    if [ $# -lt 4 ];then
+        echo -e "\n\tERROR:${FUNCNAME}:input parameters less than 4!\n"
         return 1
     fi
 
     local addrLikeName="$1"
     local oldVal="$2"
     local newVal="$3"
+    local chnno="$4"
     
-    echo "${addrLikeName} addr modify [$i]: ${oldVal} --> ${newVal}"
-    sed -i "/^\s*<pntAddr\s\+.*name\s*=\s*\"[^\"]*${addrLikeName}[^\"]*\"/{s/\"${oldVal}\"/\"${newVal}\"/g}" ${edfile}
+    echo "${addrLikeName} modify addr[$i]: ${oldVal} --> ${newVal}"
+    #sed -i "/^\s*<pntAddr\s\+.*name\s*=\s*\"[^\"]*${addrLikeName}[^\"]*\"/{s/\"${oldVal}\"/\"${newVal}\"/g}" ${edfile}
+    sed -i "/^\s*<\s*stationCfg\s\+.*stationNum\s*=\s*\"${chnno}\"/,/^\s*<\s*\/stationCfg/{/^\s*<pntAddr\s\+.*name\s*=\s*\"[^\"]*${addrLikeName}[^\"]*\"/{s/\"${oldVal}\"/\"${newVal}\"/g}}" ${edfile}
+    sed -i "/^\s*<\s*channel\s\+.*chnNum\s*=\s*\"${chnno}\"/,/^\s*<\s*\/channel/{/^\s*<pntAddr\s\+.*name\s*=\s*\"[^\"]*${addrLikeName}[^\"]*\"/{s/\"${oldVal}\"/\"${newVal}\"/g}}" ${edfile}
 
     return 0
 }
 
 function F_exchangeSdWdAddr()
 {
-    if [ $# -lt 1 ];then
-        echo -e "\n\tERROR:${FUNCNAME}:input parameters less than 1!\n"
+    if [ $# -lt 2 ];then
+        echo -e "\n\tERROR:${FUNCNAME}:input parameters less than 2!\n"
         return 1
     fi
     local sd_to_wd_flag="$1"
@@ -121,8 +124,9 @@ function F_exchangeSdWdAddr()
     local oldVal
     local newVal
     local addrLikeName
+    local chnno="$2"
 
-    echo -e "\naddr num=[${tnum}]\n"
+    echo -e "\nchnno=[${chnno}] addr num=[${tnum}]\n"
 
     #替换 湿度 的值
     for((i=0;i<${tnum};i++))
@@ -136,7 +140,7 @@ function F_exchangeSdWdAddr()
             oldVal="${twdv[$i]}"
             newVal="${tsdv[$i]}"
         fi
-        F_chgSomeAddrByName "${addrLikeName}" "${oldVal}" "${newVal}"
+        F_chgSomeAddrByName "${addrLikeName}" "${oldVal}" "${newVal}" "${chnno}"
     done
 
     echo "--------------------------------------------------------------------------------"
@@ -153,7 +157,7 @@ function F_exchangeSdWdAddr()
             oldVal="${tsdv[$i]}"
             newVal="${twdv[$i]}"
         fi
-        F_chgSomeAddrByName "${addrLikeName}" "${oldVal}" "${newVal}"
+        F_chgSomeAddrByName "${addrLikeName}" "${oldVal}" "${newVal}" "${chnno}"
     done
 
     return 0
@@ -204,7 +208,7 @@ main()
 
     F_cover2utf8
 
-    F_exchangeSdWdAddr "${sd2wdflag}"   #将湿度与温度addr互换
+    F_exchangeSdWdAddr "${sd2wdflag}" "1"   #将湿度与温度addr互换
 
     F_recoverEc
 
