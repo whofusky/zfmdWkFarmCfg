@@ -22,7 +22,7 @@ chNo:3  stationNum:   prtlNo:104   putStagFlag:2                        转发�
         local:  role=2  equipmentID=6   ip=198.123.0.1      port=2404 
         remote: role=1  equipmentID=    ip=198.123.0.200    port=2404 
 
-----new: 增加了irnetd转发工具将198.123.0.200发往198.123.0.1:2404端口的内容转发到192.123.0.1:2405
+----new: 增加了rinetd转发工具将198.123.0.200发往198.123.0.1:2404端口的内容转发到192.123.0.1:2405
 chNo:3  stationNum:   prtlNo:104   putStagFlag:2                        转发通道
         local:  role=2  equipmentID=6   ip=198.123.0.1      port=2405 
         remote: role=1  equipmentID=    ip=198.123.0.1      port=2404 
