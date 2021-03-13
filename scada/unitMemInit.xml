@@ -6092,10 +6092,10 @@
 			</phyObjVal>
 			
 		<!--50米风速瞬时值-->	
-			<phyObjVal phyType="3" calcMethd="PHY_CALC_CCNT" phyValLng="8"> 
+			<phyObjVal phyType="3" calcMethd="PHY_CALC_CCNT" multFactor="1.07" phyValLng="8"> 
 				<pntAddrs numOfAdd="2">
-					<pntAddr>40069</pntAddr>
-					<pntAddr>40070</pntAddr>
+					<pntAddr>40091</pntAddr>
+					<pntAddr>40092</pntAddr>
 				</pntAddrs>
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_RTV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="1"/>
 			</phyObjVal>
@@ -6255,10 +6255,10 @@
             </phyObjVal>
 			
 		<!--1分钟50米风速平均值-->	
-			<phyObjVal phyType="21" calcMethd="PHY_CALC_CCNT_AND_SUM" phyValLng="8"> 
+			<phyObjVal phyType="21" calcMethd="PHY_CALC_CCNT_AND_SUM" multFactor="1.07" phyValLng="8"> 
 				<pntAddrs numOfAdd="2">
-					<pntAddr>40069</pntAddr>
-					<pntAddr>40070</pntAddr>
+					<pntAddr>40091</pntAddr>
+					<pntAddr>40092</pntAddr>
 				</pntAddrs>
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="1"/>
 			</phyObjVal>
@@ -6275,8 +6275,8 @@
 		<!--1分钟50米风速平均方差-->
 			<phyObjVal phyType="23" calcMethd="PHY_CALC_DEV" hisMaxNum="2" phyValLng="8"> 
                 <pntAddrs numOfAdd="2">
-					<pntAddr>40069</pntAddr>
-					<pntAddr>40070</pntAddr>
+					<pntAddr>40091</pntAddr>
+					<pntAddr>40092</pntAddr>
 				</pntAddrs>
                 <dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_SDV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="1"/>
             </phyObjVal>
@@ -6553,10 +6553,10 @@
 			</phyObjVal>
 			
 		<!--5分钟50米风速平均值-->	
-			<phyObjVal phyType="54" calcMethd="PHY_CALC_CCNT" phyValLng="8"> 
+			<phyObjVal phyType="54" calcMethd="PHY_CALC_CCNT" multFactor="1.07" phyValLng="8"> 
 				<pntAddrs numOfAdd="2">
-					<pntAddr>40067</pntAddr>
-					<pntAddr>40068</pntAddr>
+					<pntAddr>40089</pntAddr>
+					<pntAddr>40090</pntAddr>
 				</pntAddrs>
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="5"/>
 			</phyObjVal>
@@ -6564,8 +6564,8 @@
 		<!--5分钟50米风速平均方差-->
 			<phyObjVal phyType="55" calcMethd="PHY_CALC_CCNT" phyValLng="8"> 
                 <pntAddrs numOfAdd="2">
-					<pntAddr>40073</pntAddr>
-					<pntAddr>40074</pntAddr>
+					<pntAddr>40095</pntAddr>
+					<pntAddr>40096</pntAddr>
 				</pntAddrs>
                 <dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_SDV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="5"/>
             </phyObjVal>
@@ -6589,19 +6589,19 @@
             </phyObjVal>
 			
 		<!--5分钟50米风速最大值-->
-			<phyObjVal phyType="58" calcMethd="PHY_CALC_CCNT" phyValLng="8"> 
+			<phyObjVal phyType="58" calcMethd="PHY_CALC_CCNT" multFactor="1.07" phyValLng="8"> 
 				<pntAddrs numOfAdd="2">
-					<pntAddr>40075</pntAddr>
-					<pntAddr>40076</pntAddr>
+					<pntAddr>40097</pntAddr>
+					<pntAddr>40098</pntAddr>
 				</pntAddrs>
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_MAX" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="5">1</dataId>
 			</phyObjVal>
 			
 		<!--5分钟50米风速最小值-->
-			<phyObjVal phyType="59" calcMethd="PHY_CALC_CCNT" phyValLng="8"> 
+			<phyObjVal phyType="59" calcMethd="PHY_CALC_CCNT" multFactor="1.07" phyValLng="8"> 
 				<pntAddrs numOfAdd="2">
-					<pntAddr>40077</pntAddr>
-					<pntAddr>40078</pntAddr>
+					<pntAddr>40099</pntAddr>
+					<pntAddr>40100</pntAddr>
 				</pntAddrs>
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_MIN" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="5">1</dataId>
 			</phyObjVal>
@@ -6968,10 +6968,10 @@
             </phyObjVal>
 			
 		<!--15分钟50米风速平均值-->	
-			<phyObjVal phyType="100" calcMethd="PHY_CALC_CCNT_AND_SUM" phyValLng="8"> 
+			<phyObjVal phyType="100" calcMethd="PHY_CALC_CCNT_AND_SUM" multFactor="1.07" phyValLng="8"> 
 				<pntAddrs numOfAdd="2">
-					<pntAddr>40069</pntAddr>
-					<pntAddr>40070</pntAddr>
+					<pntAddr>40091</pntAddr>
+					<pntAddr>40092</pntAddr>
 				</pntAddrs>
 				<dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="15"/>
 			</phyObjVal>
@@ -6988,8 +6988,8 @@
 		<!--15分钟50米风速平均方差-->
 			<phyObjVal phyType="102" calcMethd="PHY_CALC_DEV" hisMaxNum="2" phyValLng="8"> 
                 <pntAddrs numOfAdd="2">
-					<pntAddr>40069</pntAddr>
-					<pntAddr>40070</pntAddr>
+					<pntAddr>40091</pntAddr>
+					<pntAddr>40092</pntAddr>
 				</pntAddrs>
                 <dataId funcType="1" dcatalog="DATACATALOG_WS" dkind="DATAKIND_SDV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AMT" ecsn="0" srctype="SOURCETYPE_AMT" srcsn="0" htype="HEIGHTTYPE_ES" hvalue="50" itype="INTERVALUNIT_MINUTE" ivalue="15"/>
             </phyObjVal>
