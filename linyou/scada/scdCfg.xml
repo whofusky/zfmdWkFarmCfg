@@ -920,7 +920,7 @@
         <zoomMode serialNo="0">a*x+b</zoomMode>
     </zoomModeList>
     <!--num:总的通道数量-->
-    <stations num="4">
+    <stations num="5">
         <stationCfg stationNum="0" bStationConfig="1">
             <localStation name="采集测风塔" equipmentID="17" role="1">
                 <netAddr port="0" ip="192.168.20.100"/>
@@ -1483,8 +1483,22 @@
                 <pntAddr name="理论功率" type="3" localAddr="16411" codCoefficient="1" didName="1分钟整场理论功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="16411" encoding="0" offset="0"/>
             </stationSon>
         </stationCfg>
+        <stationCfg stationNum="4" bStationConfig="1">
+            <localStation role="2" name="AGC转发" equipmentID="32">
+                <netAddr ip="198.123.3.210" port="502"/>
+            </localStation>
+            <remoteStation role="1" name="AGC" bigEndian="0">
+                <netAddr ip="198.125.3.200" port="0"/>
+            </remoteStation>
+            <stationSon>
+                <pntAddr name="1分钟整场理论功率平均值TPS低" didName="1分钟整场理论功率平均值TPS" unitDesc="1" pntDataLng="16" remoteAddr="0" localAddr="0" codCoefficient="1" type="3" encoding="0" offset="0">2</pntAddr>
+                <pntAddr name="1分钟整场理论功率平均值TPS高" didName="1分钟整场理论功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="1" localAddr="1" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                <pntAddr name="1分钟整场可用功率平均值TPS低" didName="1分钟整场可用功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="2" localAddr="2" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                <pntAddr name="1分钟整场可用功率平均值TPS高" didName="1分钟整场可用功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="3" localAddr="3" codCoefficient="1" type="3" encoding="0" offset="0"/>
+            </stationSon>
+        </stationCfg>
     </stations>
-    <channels num="4">
+    <channels num="5">
         <channel tmStmpLng="8" chnNum="0" pntObjLng="0" maxPhyType="0" cfgTime="">
             <prtl name="ModbusTcp" state="0" bufLng="255" transType="0" prtlNo="106">
                 <timerInfo>
@@ -8137,6 +8151,92 @@
                 <grpSpe grpNo="1" grpOpFlag="2" /> 
             </grpSpeOpList>
 
+            <putStagFlag>4</putStagFlag>
+            <phyQuaCfg>
+                <phyCat name="1"/>
+                <phyCat name="5"/>
+                <phyCat name="15"/>
+            </phyQuaCfg>
+        </channel>
+        <channel tmStmpLng="8" chnNum="4" maxPhyType="0" cfgTime="" pntObjLng="0">
+            <prtl name="ModbusTcp" state="0" prtlNo="106" transType="0" bufLng="255">
+                <timerInfo>
+                    <timer name="T0" timeoutValue="30"/>
+                </timerInfo>
+                <controlPara K="0" W="0"/>
+                <APDU_DSCR ASDU_TID="0" asduCmtbNum="11" InfoEleLng="1">
+                    <APCI value="7"/>
+                    <ASDU_TID value="0"/>
+                    <ASDU_LNG value="1"/>
+                    <ASDU_VSQ value="248"/>
+                    <ASDU_COT value="0"/>
+                    <ASDU_ADDR value="0"/>
+                    <BODY_TID value="0"/>
+                    <BODY_ADDR value="0"/>
+                    <BODY_SET value="0"/>
+                    <BODY_TSP value="0"/>
+                    <ASDU_TSP value="0"/>
+                </APDU_DSCR>
+            </prtl>
+            <stationCfg stationNum="4" bStationConfig="1">
+                <localStation role="2" equipmentID="32" name="AGC转发">
+                    <netAddr ip="198.123.3.210" port="502"/>
+                </localStation>
+                <remoteStation role="1" name="AGC" bigEndian="0">
+                    <netAddr ip="198.125.3.200" port="0"/>
+                </remoteStation>
+            </stationCfg>
+            <sessionCfgList waitTime="6000">
+                <sessionCfg ssnDscNo="1" waitTime="3000" snnMaxRetryNum="0" actFlag="1" ssnMode="0" prio="4" check="0">
+                    <sessionInst instNo="0" cycTm="" collMethods="1" addrStart="0" cmnAddr="1" number="0"/>
+                    <ptclStepList>
+                        <ptclStep stepNo="1" reqORres="0" storORload="0">
+                            <frame COT="" VSQ_SQ="" objstartAddr="0" tidORfuncode="1" objNum="0" serialNo="1" TID="" ptclHead="0"/>
+                        </ptclStep>
+                        <ptclStep stepNo="2" reqORres="1" storORload="1">
+                            <frame COT="" VSQ_SQ="" objstartAddr="0" tidORfuncode="1" objNum="0" serialNo="1" TID="" ptclHead="0"/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg prio="4" ssnMode="0" ssnDscNo="3" check="0" actFlag="1" waitTime="3000" snnMaxRetryNum="0">
+                    <sessionInst addrStart="0" cmnAddr="1" cycTm="" collMethods="1" number="0" instNo="0"/>
+                    <ptclStepList>
+                        <ptclStep storORload="0" reqORres="0" stepNo="1">
+                            <frame VSQ_SQ="" objNum="0" tidORfuncode="3" COT="" serialNo="1" objstartAddr="0" ptclHead="0" TID=""/>
+                        </ptclStep>
+                        <ptclStep storORload="1" reqORres="1" stepNo="2">
+                            <frame VSQ_SQ="" objNum="0" tidORfuncode="3" COT="" serialNo="1" objstartAddr="0" ptclHead="0" TID=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg ssnDscNo="4" waitTime="3000" snnMaxRetryNum="0" actFlag="1" ssnMode="0" prio="4" check="0">
+                    <sessionInst instNo="0" cycTm="" collMethods="1" addrStart="0" cmnAddr="1" number="0"/>
+                    <ptclStepList>
+                        <ptclStep stepNo="1" reqORres="0" storORload="0">
+                            <frame COT="" VSQ_SQ="" objstartAddr="0" tidORfuncode="4" objNum="0" serialNo="1" TID="" ptclHead="0"/>
+                        </ptclStep>
+                        <ptclStep stepNo="2" reqORres="1" storORload="1">
+                            <frame COT="" VSQ_SQ="" objstartAddr="0" tidORfuncode="4" objNum="0" serialNo="1" TID="" ptclHead="0"/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+            </sessionCfgList>
+            <phyObjVal phyValLng="8" name="站1分钟整场理论功率平均值TPS" hisMaxNum="0" grpNo="0" phyType="1" dataSource="0" offsetCoe="0" grpAttr="0" zoomMode="0" scalFactor="1" algType="0" calcMethd="162">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="1分钟整场理论功率平均值TPS低" didName="1分钟整场理论功率平均值TPS" unitDesc="1" pntDataLng="16" remoteAddr="0" localAddr="0" startBit="0" bitLength="16" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                    <pntAddr name="1分钟整场理论功率平均值TPS高" didName="1分钟整场理论功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="1" localAddr="1" startBit="0" bitLength="" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                </pntAddrs>
+                <dataId didVal="FF41FF390208008010309A000000000000" serialNo="781" didName="1分钟整场理论功率平均值TPS"/>
+            </phyObjVal>
+            <phyObjVal phyValLng="8" name="站1分钟整场可用功率平均值TPS" hisMaxNum="0" grpNo="0" phyType="2" dataSource="0" offsetCoe="0" grpAttr="0" zoomMode="0" scalFactor="1" algType="0" calcMethd="162">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="1分钟整场可用功率平均值TPS低" didName="1分钟整场可用功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="2" localAddr="2" startBit="0" bitLength="16" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                    <pntAddr name="1分钟整场可用功率平均值TPS高" didName="1分钟整场可用功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="3" localAddr="3" startBit="0" bitLength="" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                </pntAddrs>
+                <dataId didVal="FF41FF39020800801030AD000000000000" serialNo="782" didName="1分钟整场可用功率平均值TPS"/>
+            </phyObjVal>
             <putStagFlag>4</putStagFlag>
             <phyQuaCfg>
                 <phyCat name="1"/>
