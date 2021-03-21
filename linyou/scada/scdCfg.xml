@@ -1485,7 +1485,7 @@
         </stationCfg>
         <stationCfg stationNum="4" bStationConfig="1">
             <localStation role="2" name="AGC转发" equipmentID="32">
-                <netAddr ip="198.123.3.210" port="502"/>
+                <netAddr ip="198.125.3.100" port="502"/>
             </localStation>
             <remoteStation role="1" name="AGC" bigEndian="0">
                 <netAddr ip="198.125.3.200" port="0"/>
@@ -8180,7 +8180,7 @@
             </prtl>
             <stationCfg stationNum="4" bStationConfig="1">
                 <localStation role="2" equipmentID="32" name="AGC转发">
-                    <netAddr ip="198.123.3.210" port="502"/>
+                    <netAddr ip="198.125.3.100" port="502"/>
                 </localStation>
                 <remoteStation role="1" name="AGC" bigEndian="0">
                     <netAddr ip="198.125.3.200" port="0"/>
