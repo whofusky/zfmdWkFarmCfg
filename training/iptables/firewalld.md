@@ -407,6 +407,14 @@ firewall-cmd [--permanent] [--zone=zone] --remove-icmp-block=icmptype
 firewall-cmd [--permanent] [--zone=zone] --query-icmp-block=icmptype
 ```
 
+eg:
+
+```
+firewall-cmd --permanent --zone=public --add-icmp-block=echo-reply
+firewall-cmd --permanent --zone=public --add-icmp-block=echo-request
+```
+
+
 >[返回目录](#目录)
 
 
@@ -451,6 +459,12 @@ firewall-cmd --reload
 firewall-cmd --zone=public --list-rich-rules
 
 firewall-cmd --permanent --add-rich-rule="rule family="ipv4" source address="192.168.0.200" port protocol="tcp" port="80" accept"
+firewall-cmd --add-rich-rule="rule family="ipv4" source address="192.168.0.233 destination address="192.168.0.147" port port="80" protocol="tcp" accep"
+firewall-cmd --add-rich-rule="rule family="ipv4" source address="192.168.0.233 destination address="192.168.0.147" port port="80" protocol="tcp" log prefix="fusktest" level="warning" limit value="2/s" accep"
+firewall-cmd --add-rich-rule="rule family="ipv4" source address="192.168.0.233 destination address="192.168.0.147" source-port port="80" protocol="tcp" log prefix="fusktest" level="warning" limit value="2/s" accep"
+
+#注意: source-port 与 port 不能同时设置
+
 
 #如设置未生效，可尝试直接编辑规则文件，删掉原来的设置规则，重新载入一下防火墙即可
 #vi /etc/firewalld/zones/public.xml
