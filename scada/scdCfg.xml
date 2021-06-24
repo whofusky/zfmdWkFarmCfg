@@ -2226,7 +2226,8 @@
         <dataId serialNo="2133" didVal="FF4FFF110208004B403081000000000100" didName="15分钟风机75风速平均值"/>
         <dataId serialNo="2134" didVal="FF4FFF110208004B403082000000000100" didName="15分钟风机75风向平均值"/>
         <dataId serialNo="2135" didVal="FF41FF390208008010309A000000000000" didName="1分钟整场理论功率平均值TPS"/>
-        <dataId serialNo="2136" didVal="FF41FF39020800801030AD000000000000" didName="1分钟整场可用功率平均值TPS"/>
+        <dataId serialNo="2136" didVal="FF41FF39020800801030AD000000000000" didName="1分钟整场可用功率0.956平均值TPS"/>
+        <dataId serialNo="2137" didVal="FF41FF39020800801030AD000000000000" didName="1分钟整场可用功率平均值TPS"/>
     </didInfo>
     <!--全局算法配置-->
     <algorithmCfg>
@@ -6338,22 +6339,23 @@
                     <pntAddr remoteAddr="172" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="172" offset="0" name="理论功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="173" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="173" offset="0" name="理论功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场理论功率平均值TPS" serialNo="2135" didVal="FF41FF390208008010309A000000000000"/>
+                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
 
             <!-- 宁夏用可用功率*0.956 替代样板机法 -->
-            <phyObjVal grpAttr="3" scalFactor="0.956" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.956" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="2" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场可用功率0.956平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
 
             <grpSpeOpList> <!--对某个组的物理量特殊操作时需要配置此项 -->
                 <!--grpOpFlag配置的值含义与putStagFlag一样,默认没有在此配置的组号对就的grpOpFlag的值就是putStagFlag的值 -->
                 <grpSpe grpNo="1" grpOpFlag="2" /> 
+                <grpSpe grpNo="2" grpOpFlag="2" /> 
             </grpSpeOpList>
 
             <putStagFlag>4</putStagFlag>
@@ -6992,15 +6994,15 @@
                     <pntAddr remoteAddr="172" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="172" offset="0" name="理论功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="173" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="173" offset="0" name="理论功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场理论功率平均值TPS" serialNo="2135" didVal="FF41FF390208008010309A000000000000"/>
+                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
-            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.956" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场可用功率0.956平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
             <putStagFlag>4</putStagFlag>
             <phyQuaCfg>
@@ -7638,15 +7640,15 @@
                     <pntAddr remoteAddr="172" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="172" offset="0" name="理论功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="173" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="173" offset="0" name="理论功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场理论功率平均值TPS" serialNo="2135" didVal="FF41FF390208008010309A000000000000"/>
+                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
-            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.956" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场可用功率0.956平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
             <putStagFlag>4</putStagFlag>
             <phyQuaCfg>
