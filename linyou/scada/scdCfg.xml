@@ -1431,6 +1431,10 @@
                 <pntAddr name="1分钟风机19环境温度实时值高" type="3" localAddr="339" codCoefficient="1" didName="1分钟风机19环境温度实时值" unitDesc="" pntDataLng="16" remoteAddr="339" encoding="0" offset="0"/>
                 <pntAddr name="风机19风机状态低" type="3" localAddr="340" codCoefficient="1" didName="1分钟风机19风机状态" unitDesc="" pntDataLng="16" remoteAddr="340" encoding="0" offset="0"/>
                 <pntAddr name="风机19风机状态高" type="3" localAddr="341" codCoefficient="1" didName="1分钟风机19风机状态" unitDesc="" pntDataLng="16" remoteAddr="341" encoding="0" offset="0"/>
+                <pntAddr name="整场理论功率TPS低" didName="整场理论功率TPS" unitDesc="" pntDataLng="16" remoteAddr="342" localAddr="342" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                <pntAddr name="整场理论功率TPS高" didName="整场理论功率TPS" unitDesc="" pntDataLng="16" remoteAddr="343" localAddr="343" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                <pntAddr name="整场可用功率TPS低" didName="整场可用功率TPS" unitDesc="" pntDataLng="16" remoteAddr="344" localAddr="344" codCoefficient="1" type="3" encoding="0" offset="0"/>
+                <pntAddr name="整场可用功率TPS高" didName="整场可用功率TPS" unitDesc="" pntDataLng="16" remoteAddr="345" localAddr="345" codCoefficient="1" type="3" encoding="0" offset="0"/>
             </stationSon>
         </stationCfg>
         <stationCfg stationNum="2" bStationConfig="1">
@@ -1479,8 +1483,8 @@
                 <pntAddr name="5分钟瞬时湿度" type="3" localAddr="16408" codCoefficient="1" didName="5分钟10m测风塔1湿度实时值" unitDesc="" pntDataLng="16" remoteAddr="16408" encoding="0" offset="0"/>
                 <pntAddr name="5分钟平均气压" type="3" localAddr="16409" codCoefficient="1" didName="5分钟10m测风塔1气压平均值" unitDesc="" pntDataLng="16" remoteAddr="16409" encoding="0" offset="0"/>
                 <pntAddr name="5分钟瞬时气压" type="3" localAddr="16410" codCoefficient="1" didName="5分钟10m测风塔1气压实时值" unitDesc="" pntDataLng="16" remoteAddr="16410" encoding="0" offset="0"/>
-                <pntAddr name="可用功率" type="3" localAddr="16412" codCoefficient="1" didName="1分钟整场可用功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="16412" encoding="0" offset="0"/>
-                <pntAddr name="理论功率" type="3" localAddr="16411" codCoefficient="1" didName="1分钟整场理论功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="16411" encoding="0" offset="0"/>
+                <pntAddr name="可用功率" type="3" localAddr="16411" codCoefficient="1" didName="1分钟整场可用功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="16411" encoding="0" offset="0"/>
+                <pntAddr name="理论功率" type="3" localAddr="16412" codCoefficient="1" didName="1分钟整场理论功率平均值TPS" unitDesc="" pntDataLng="16" remoteAddr="16412" encoding="0" offset="0"/>
             </stationSon>
         </stationCfg>
         <stationCfg stationNum="4" bStationConfig="1">
@@ -3148,7 +3152,7 @@
                 <sessionCfg check="0" ssnMode="0" actFlag="0" ssnDscNo="3" snnMaxRetryNum="0" prio="5" waitTime="5000">
                     <sessionInst addrStart="0" cycTm="" collMethods="1" number="120" instNo="0" cmnAddr="1"/>
                     <sessionInst addrStart="120" cycTm="" collMethods="1" number="120" instNo="1" cmnAddr="1"/>
-                    <sessionInst addrStart="240" cycTm="" collMethods="1" number="102" instNo="2" cmnAddr="1"/>
+                    <sessionInst addrStart="240" cycTm="" collMethods="1" number="106" instNo="2" cmnAddr="1"/>
                     <ptclStepList>
                         <ptclStep reqORres="0" storORload="0" stepNo="1">
                             <frame serialNo="1" objNum="0" objstartAddr="0" COT="" VSQ_SQ="" TID="" tidORfuncode="3" ptclHead="0"/>
@@ -7719,6 +7723,29 @@
                 </pntAddrs>
                 <dataId serialNo="754" didName="15分钟风机19环境温度平均值" didVal="FF4FFF1102080013403083000000000100"/>
             </phyObjVal>
+            <phyObjVal hisMaxNum="0" name="站整场理论功率TPS实时值" grpAttr="0" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="571" calcMethd="181" scalFactor="0.001" grpNo="1" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="整场理论功率TPS低" type="3" localAddr="342" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟整场理论功率平均值TPS" pntDataLng="16" remoteAddr="342" encoding="0" offset="0" startBit="0"/>
+                    <pntAddr name="整场理论功率TPS高" type="3" localAddr="343" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟整场理论功率平均值TPS" pntDataLng="16" remoteAddr="343" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="781" didName="1分钟整场理论功率平均值TPS" didVal="FF41FF390208008010309A000000000000"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" name="站整场可用功率TPS实时值" grpAttr="0" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="572" calcMethd="181" scalFactor="0.001" grpNo="1" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="整场可用功率TPS低" type="3" localAddr="344" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟整场可用功率平均值TPS" pntDataLng="16" remoteAddr="344" encoding="0" offset="0" startBit="0"/>
+                    <pntAddr name="整场可用功率TPS高" type="3" localAddr="345" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟整场可用功率平均值TPS" pntDataLng="16" remoteAddr="345" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="782" didName="1分钟整场可用功率平均值TPS" didVal="FF41FF39020800801030AD000000000000"/>
+            </phyObjVal>
+
+            <grpSpeOpList> <!--对某个组的物理量特殊操作时需要配置此项 -->
+                <!--grpOpFlag配置的值含义与putStagFlag一样,默认没有在此配置的组号对就的grpOpFlag的值就是putStagFlag的值 -->
+                <!--此处配置为4是为了不让此组数据入库，但还需要存入内存供其他通道转发-->
+                <grpSpe grpNo="1" grpOpFlag="4" /> 
+            </grpSpeOpList>
+
             <putStagFlag>1</putStagFlag>
             <phyQuaCfg>
                 <phyCat name="1"/>
@@ -8131,25 +8158,20 @@
                 </pntAddrs>
                 <dataId serialNo="795" didName="5分钟10m测风塔1气压实时值" didVal="FF450A0901080001503086000000000100"/>
             </phyObjVal>
-            <phyObjVal grpAttr="0" scalFactor="1" calcMethd="161" hisMaxNum="0" offsetCoe="0" name="站1分钟整场理论功率平均值" grpNo="1" phyValLng="8" phyType="27" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="0" scalFactor="1" calcMethd="161" hisMaxNum="0" offsetCoe="0" name="站1分钟整场理论功率平均值" grpNo="0" phyValLng="8" phyType="27" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="1">
-                    <pntAddr remoteAddr="16412" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="16412" offset="0" name="可用功率" unitDesc="" encoding="0"/>
+                    <pntAddr remoteAddr="16412" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="16412" offset="0" name="理论功率" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="781" didVal="FF41FF390208008010309A000000000000"/>
+                <dataId didName="1分钟整场理论功率平均值TPS" serialNo="781" didVal="FF41FF390208008010309A000000000000"/>
             </phyObjVal>
-            <phyObjVal grpAttr="0" scalFactor="1" calcMethd="161" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率平均值TPS" grpNo="1" phyValLng="8" phyType="28" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="0" scalFactor="1" calcMethd="161" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率平均值TPS" grpNo="0" phyValLng="8" phyType="28" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="1">
-                    <pntAddr remoteAddr="16411" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="16411" offset="0" name="理论功率" unitDesc="" encoding="0"/>
+                    <pntAddr remoteAddr="16411" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="16411" offset="0" name="可用功率" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场理论功率平均值TPS" serialNo="782" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="782" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
-
-            <grpSpeOpList> <!--对某个组的物理量特殊操作时需要配置此项 -->
-                <!--grpOpFlag配置的值含义与putStagFlag一样,默认没有在此配置的组号对就的grpOpFlag的值就是putStagFlag的值 -->
-                <grpSpe grpNo="1" grpOpFlag="2" /> 
-            </grpSpeOpList>
 
             <putStagFlag>4</putStagFlag>
             <phyQuaCfg>
