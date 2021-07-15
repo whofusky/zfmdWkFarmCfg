@@ -2443,11 +2443,11 @@
             </sessionCfgList>
 
             <!--1分钟实时值 -->
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="1" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="1" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="26" bitLength="16" didName="1分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="26" offset="0" name="1分钟95风速实时值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="27" bitLength="" didName="1分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="27" offset="0" name="1分钟95风速实时值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="48" bitLength="16" didName="1分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="48" offset="0" name="1分钟95风速实时值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="49" bitLength="" didName="1分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="49" offset="0" name="1分钟95风速实时值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF415F0901080101503081" didName="1分钟95m测风塔风速实时值" serialNo="45"/>
             </phyObjVal>
@@ -2475,11 +2475,11 @@
                 </pntAddrs>
                 <dataId didVal="FF411E0901080101503081" didName="1分钟30m测风塔风速实时值" serialNo="21"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="5" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="5" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="114" bitLength="16" didName="1分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="114" offset="0" name="1分钟10风速实时值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="115" bitLength="" didName="1分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="115" offset="0" name="1分钟10风速实时值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="92" bitLength="16" didName="1分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="92" offset="0" name="1分钟10风速实时值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="93" bitLength="" didName="1分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="93" offset="0" name="1分钟10风速实时值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF410A0901080101503081" didName="1分钟10m测风塔风速实时值" serialNo="13"/>
             </phyObjVal>
@@ -2557,35 +2557,35 @@
             </phyObjVal>
 
             <!--1分钟统计值 -->
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="15" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="15" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="1" encoding="0" codCoefficient="1" localAddr="22" bitLength="16" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="22" offset="0" name="1分钟95风速平均值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="23" bitLength="" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="23" offset="0" name="1分钟95风速平均值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="1" encoding="0" codCoefficient="1" localAddr="44" bitLength="16" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="44" offset="0" name="1分钟95风速平均值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="45" bitLength="" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="45" offset="0" name="1分钟95风速平均值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF415F0902080101503081" didName="1分钟95m测风塔风速平均值" serialNo="69"/>
             </phyObjVal>
             <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="16" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速标准偏差" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="28" bitLength="16" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="28" offset="0" name="1分钟95风速标准偏差低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="29" bitLength="" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="29" offset="0" name="1分钟95风速标准偏差高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="50" bitLength="16" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="50" offset="0" name="1分钟95风速标准偏差低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="51" bitLength="" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="51" offset="0" name="1分钟95风速标准偏差高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF415F090C080101503081" didName="1分钟95m测风塔风速标准偏差" serialNo="48"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="17" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="17" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="30" bitLength="16" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="30" offset="0" name="1分钟95米风速最大值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="31" bitLength="" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="31" offset="0" name="1分钟95米风速最大值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="52" bitLength="16" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="52" offset="0" name="1分钟95米风速最大值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="53" bitLength="" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="53" offset="0" name="1分钟95米风速最大值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF415F0903080101503081" didName="1分钟95m测风塔风速最大值" serialNo="46"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="18" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="18" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟95m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="32" bitLength="16" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="32" offset="0" name="1分钟95米风速最小值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="33" bitLength="" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="33" offset="0" name="1分钟95米风速最小值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="54" bitLength="16" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="54" offset="0" name="1分钟95米风速最小值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="55" bitLength="" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="55" offset="0" name="1分钟95米风速最小值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF415F0904080101503081" didName="1分钟95m测风塔风速最小值" serialNo="47"/>
             </phyObjVal>
@@ -2813,35 +2813,35 @@
                 </pntAddrs>
                 <dataId didVal="FF411E0904080101503082" didName="1分钟30m测风塔风向最小值" serialNo="27"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="47" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="47" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="110" bitLength="16" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="110" offset="0" name="1分钟10风速平均值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="111" bitLength="" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="111" offset="0" name="1分钟10风速平均值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="88" bitLength="16" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="88" offset="0" name="1分钟10风速平均值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="89" bitLength="" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="89" offset="0" name="1分钟10风速平均值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF410A0902080101503081" didName="1分钟10m测风塔风速平均值" serialNo="58"/>
             </phyObjVal>
             <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="48" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速标准偏差" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="116" bitLength="16" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="116" offset="0" name="1分钟10风速标准偏差低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="117" bitLength="" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="117" offset="0" name="1分钟10风速标准偏差高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="94" bitLength="16" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="94" offset="0" name="1分钟10风速标准偏差低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="95" bitLength="" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="95" offset="0" name="1分钟10风速标准偏差高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF410A090C080101503081" didName="1分钟10m测风塔风速标准偏差" serialNo="16"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="49" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="49" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="118" bitLength="16" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="118" offset="0" name="1分钟10米风速最大值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="119" bitLength="" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="119" offset="0" name="1分钟10米风速最大值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="96" bitLength="16" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="96" offset="0" name="1分钟10米风速最大值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="97" bitLength="" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="97" offset="0" name="1分钟10米风速最大值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF410A0903080101503081" didName="1分钟10m测风塔风速最大值" serialNo="14"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="50" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="50" grpAttr="3" dataSource="0" calcMethd="167" name="站1分钟10m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="120" bitLength="16" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="120" offset="0" name="1分钟10米风速最小值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="121" bitLength="" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="121" offset="0" name="1分钟10米风速最小值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="98" bitLength="16" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="98" offset="0" name="1分钟10米风速最小值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="99" bitLength="" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="99" offset="0" name="1分钟10米风速最小值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF410A0904080101503081" didName="1分钟10m测风塔风速最小值" serialNo="15"/>
             </phyObjVal>
@@ -3007,11 +3007,11 @@
             </phyObjVal>
 
             <!--5分钟实时值 -->
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="71" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="71" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="24" bitLength="16" didName="5分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="24" offset="0" name="5分钟95风速实时值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="25" bitLength="" didName="5分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="25" offset="0" name="5分钟95风速实时值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="46" bitLength="16" didName="5分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="46" offset="0" name="5分钟95风速实时值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="47" bitLength="" didName="5分钟95m测风塔风速实时值" pntDataLng="16" remoteAddr="47" offset="0" name="5分钟95风速实时值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF455F0901080101503081" didName="5分钟95m测风塔风速实时值" serialNo="1147"/>
             </phyObjVal>
@@ -3071,11 +3071,11 @@
                 </pntAddrs>
                 <dataId didVal="FF451E0901080101503082" didName="5分钟30m测风塔风向实时值" serialNo="1142"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="79" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="79" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速实时值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="112" bitLength="16" didName="5分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="112" offset="0" name="5分钟10风速实时值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="113" bitLength="" didName="5分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="113" offset="0" name="5分钟10风速实时值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="90" bitLength="16" didName="5分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="90" offset="0" name="5分钟10风速实时值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="91" bitLength="" didName="5分钟10m测风塔风速实时值" pntDataLng="16" remoteAddr="91" offset="0" name="5分钟10风速实时值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF450A0901080101503081" didName="5分钟10m测风塔风速实时值" serialNo="1139"/>
             </phyObjVal>
@@ -3121,35 +3121,35 @@
             </phyObjVal>
 
             <!--5分钟统计值 -->
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="85" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="85" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="1" encoding="0" codCoefficient="1" localAddr="22" bitLength="16" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="22" offset="0" name="5分钟95风速平均值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="23" bitLength="" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="23" offset="0" name="5分钟95风速平均值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="1" encoding="0" codCoefficient="1" localAddr="44" bitLength="16" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="44" offset="0" name="5分钟95风速平均值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="45" bitLength="" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="45" offset="0" name="5分钟95风速平均值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF455F0902080101503081" didName="5分钟95m测风塔风速平均值" serialNo="120"/>
             </phyObjVal>
             <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="86" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速标准偏差" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="28" bitLength="16" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="28" offset="0" name="5分钟95风速标准偏差低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="29" bitLength="" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="29" offset="0" name="5分钟95风速标准偏差高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="50" bitLength="16" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="50" offset="0" name="5分钟95风速标准偏差低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="51" bitLength="" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="51" offset="0" name="5分钟95风速标准偏差高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF455F090C080101503081" didName="5分钟95m测风塔风速标准偏差" serialNo="124"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="87" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="87" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="30" bitLength="16" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="30" offset="0" name="5分钟95米风速最大值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="31" bitLength="" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="31" offset="0" name="5分钟95米风速最大值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="52" bitLength="16" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="52" offset="0" name="5分钟95米风速最大值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="53" bitLength="" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="53" offset="0" name="5分钟95米风速最大值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF455F0903080101503081" didName="5分钟95m测风塔风速最大值" serialNo="122"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="88" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="88" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟95m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="32" bitLength="16" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="32" offset="0" name="5分钟95米风速最小值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="33" bitLength="" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="33" offset="0" name="5分钟95米风速最小值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="54" bitLength="16" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="54" offset="0" name="5分钟95米风速最小值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="55" bitLength="" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="55" offset="0" name="5分钟95米风速最小值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF455F0904080101503081" didName="5分钟95m测风塔风速最小值" serialNo="123"/>
             </phyObjVal>
@@ -3377,35 +3377,35 @@
                 </pntAddrs>
                 <dataId didVal="FF451E0904080101503082" didName="5分钟30m测风塔风向最小值" serialNo="102"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="117" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="117" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="110" bitLength="16" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="110" offset="0" name="5分钟10风速平均值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="111" bitLength="" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="111" offset="0" name="5分钟10风速平均值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="88" bitLength="16" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="88" offset="0" name="5分钟10风速平均值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="89" bitLength="" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="89" offset="0" name="5分钟10风速平均值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF450A0902080101503081" didName="5分钟10m测风塔风速平均值" serialNo="76"/>
             </phyObjVal>
             <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="118" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速标准偏差" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="116" bitLength="16" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="116" offset="0" name="5分钟10风速标准偏差低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="117" bitLength="" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="117" offset="0" name="5分钟10风速标准偏差高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="94" bitLength="16" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="94" offset="0" name="5分钟10风速标准偏差低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="95" bitLength="" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="95" offset="0" name="5分钟10风速标准偏差高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF450A090C080101503081" didName="5分钟10m测风塔风速标准偏差" serialNo="80"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="119" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="119" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="118" bitLength="16" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="118" offset="0" name="5分钟10米风速最大值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="119" bitLength="" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="119" offset="0" name="5分钟10米风速最大值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="96" bitLength="16" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="96" offset="0" name="5分钟10米风速最大值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="97" bitLength="" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="97" offset="0" name="5分钟10米风速最大值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF450A0903080101503081" didName="5分钟10m测风塔风速最大值" serialNo="78"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="120" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="120" grpAttr="3" dataSource="0" calcMethd="167" name="站5分钟10m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="120" bitLength="16" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="120" offset="0" name="5分钟10米风速最小值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="121" bitLength="" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="121" offset="0" name="5分钟10米风速最小值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="98" bitLength="16" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="98" offset="0" name="5分钟10米风速最小值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="99" bitLength="" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="99" offset="0" name="5分钟10米风速最小值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF450A0904080101503081" didName="5分钟10m测风塔风速最小值" serialNo="79"/>
             </phyObjVal>
@@ -3571,35 +3571,35 @@
             </phyObjVal>
 
             <!--15分钟统计值 -->
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="141" grpAttr="3" dataSource="1" calcMethd="169" name="站15分钟95m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="141" grpAttr="3" dataSource="1" calcMethd="169" name="站15分钟95m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="1" encoding="0" codCoefficient="1" localAddr="22" bitLength="16" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="22" offset="0" name="15分钟95风速平均值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="23" bitLength="" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="23" offset="0" name="15分钟95风速平均值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="1" encoding="0" codCoefficient="1" localAddr="44" bitLength="16" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="44" offset="0" name="15分钟95风速平均值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="45" bitLength="" didName="5分钟95m测风塔风速平均值" pntDataLng="16" remoteAddr="45" offset="0" name="15分钟95风速平均值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F5F0902080101503081" didName="15分钟95m测风塔风速平均值" serialNo="177"/>
             </phyObjVal>
             <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="142" grpAttr="3" dataSource="1" calcMethd="169" name="站15分钟95m测风塔风速标准偏差" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="28" bitLength="16" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="28" offset="0" name="15分钟95风速标准偏差低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="29" bitLength="" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="29" offset="0" name="15分钟95风速标准偏差高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="50" bitLength="16" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="50" offset="0" name="15分钟95风速标准偏差低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="51" bitLength="" didName="5分钟95m测风塔风速标准偏差" pntDataLng="16" remoteAddr="51" offset="0" name="15分钟95风速标准偏差高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F5F090C080101503081" didName="15分钟95m测风塔风速标准偏差" serialNo="181"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="143" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟95m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="143" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟95m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="30" bitLength="16" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="30" offset="0" name="15分钟95米风速最大值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="31" bitLength="" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="31" offset="0" name="15分钟95米风速最大值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="52" bitLength="16" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="52" offset="0" name="15分钟95米风速最大值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="53" bitLength="" didName="5分钟95m测风塔风速最大值" pntDataLng="16" remoteAddr="53" offset="0" name="15分钟95米风速最大值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F5F0903080101503081" didName="15分钟95m测风塔风速最大值" serialNo="179"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="144" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟95m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="1.0332" grpNo="0" zoomMode="0" phyType="144" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟95m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="32" bitLength="16" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="32" offset="0" name="15分钟95米风速最小值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="33" bitLength="" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="33" offset="0" name="15分钟95米风速最小值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="54" bitLength="16" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="54" offset="0" name="15分钟95米风速最小值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="55" bitLength="" didName="5分钟95m测风塔风速最小值" pntDataLng="16" remoteAddr="55" offset="0" name="15分钟95米风速最小值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F5F0904080101503081" didName="15分钟95m测风塔风速最小值" serialNo="180"/>
             </phyObjVal>
@@ -3827,35 +3827,35 @@
                 </pntAddrs>
                 <dataId didVal="FF4F1E0904080101503082" didName="15分钟30m测风塔风向最小值" serialNo="159"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="173" grpAttr="3" dataSource="1" calcMethd="169" name="站15分钟10m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="173" grpAttr="3" dataSource="1" calcMethd="169" name="站15分钟10m测风塔风速平均值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="110" bitLength="16" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="110" offset="0" name="15分钟10风速平均值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="111" bitLength="" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="111" offset="0" name="15分钟10风速平均值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="88" bitLength="16" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="88" offset="0" name="15分钟10风速平均值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="89" bitLength="" didName="5分钟10m测风塔风速平均值" pntDataLng="16" remoteAddr="89" offset="0" name="15分钟10风速平均值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F0A0902080101503081" didName="15分钟10m测风塔风速平均值" serialNo="133"/>
             </phyObjVal>
             <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="174" grpAttr="3" dataSource="1" calcMethd="169" name="站15分钟10m测风塔风速标准偏差" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="116" bitLength="16" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="116" offset="0" name="15分钟10风速标准偏差低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="117" bitLength="" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="117" offset="0" name="15分钟10风速标准偏差高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="94" bitLength="16" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="94" offset="0" name="15分钟10风速标准偏差低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="95" bitLength="" didName="5分钟10m测风塔风速标准偏差" pntDataLng="16" remoteAddr="95" offset="0" name="15分钟10风速标准偏差高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F0A090C080101503081" didName="15分钟10m测风塔风速标准偏差" serialNo="137"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="175" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟10m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="175" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟10m测风塔风速最大值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="118" bitLength="16" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="118" offset="0" name="15分钟10米风速最大值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="119" bitLength="" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="119" offset="0" name="15分钟10米风速最大值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="96" bitLength="16" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="96" offset="0" name="15分钟10米风速最大值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="97" bitLength="" didName="5分钟10m测风塔风速最大值" pntDataLng="16" remoteAddr="97" offset="0" name="15分钟10米风速最大值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F0A0903080101503081" didName="15分钟10m测风塔风速最大值" serialNo="135"/>
             </phyObjVal>
-            <phyObjVal phyValLng="8" algType="0" scalFactor="1" grpNo="0" zoomMode="0" phyType="176" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟10m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
+            <phyObjVal phyValLng="8" algType="0" scalFactor="0.8" grpNo="0" zoomMode="0" phyType="176" grpAttr="3" dataSource="0" calcMethd="167" name="站15分钟10m测风塔风速最小值" offsetCoe="0" hisMaxNum="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="120" bitLength="16" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="120" offset="0" name="15分钟10米风速最小值低" startBit="0" type="3"/>
-                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="121" bitLength="" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="121" offset="0" name="15分钟10米风速最小值高" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="98" bitLength="16" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="98" offset="0" name="15分钟10米风速最小值低" startBit="0" type="3"/>
+                    <pntAddr unitDesc="" encoding="0" codCoefficient="1" localAddr="99" bitLength="" didName="5分钟10m测风塔风速最小值" pntDataLng="16" remoteAddr="99" offset="0" name="15分钟10米风速最小值高" startBit="0" type="3"/>
                 </pntAddrs>
                 <dataId didVal="FF4F0A0904080101503081" didName="15分钟10m测风塔风速最小值" serialNo="136"/>
             </phyObjVal>
