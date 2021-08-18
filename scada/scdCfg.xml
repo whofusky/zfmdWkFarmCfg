@@ -2228,6 +2228,14 @@
         <dataId serialNo="2135" didVal="FF41FF390208008010309A000000000000" didName="1分钟整场理论功率平均值TPS"/>
         <dataId serialNo="2136" didVal="FF41FF39020800801030AD000000000000" didName="1分钟整场可用功率0.956平均值TPS"/>
         <dataId serialNo="2137" didVal="FF41FF39020800801030AD000000000000" didName="1分钟整场可用功率平均值TPS"/>
+        <dataId serialNo="2138" didVal="FF41FF1901080080103096000000000100" didName="1分钟整场有功功率实时值IAS" />
+        <dataId serialNo="2139" didVal="FF41FF1901080080103097000000000100" didName="1分钟整场无功功率实时值IAS" />
+        <dataId serialNo="2140" didVal="FF41FF1902080080103096000000000100" didName="1分钟整场有功功率1分钟平均值IAS" />
+        <dataId serialNo="2141" didVal="FF41FF1902080080103097000000000100" didName="1分钟整场无功功率平均值IAS"/>
+        <dataId serialNo="2142" didVal="FF45FF1902080080103096000000000100" didName="5分钟整场有功功率平均值IAS" />
+        <dataId serialNo="2143" didVal="FF45FF1902080080103097000000000100" didName="5分钟整场无功功率平均值IAS" />
+        <dataId serialNo="2144" didVal="FF4FFF1902080080103096000000000100" didName="15分钟整场有功功率平均值IAS" />
+        <dataId serialNo="2145" didVal="FF4FFF1902080080103097000000000100" didName="15分钟整场无功功率平均值IAS" />
     </didInfo>
     <!--全局算法配置-->
     <algorithmCfg>
@@ -2264,13 +2272,13 @@
         <zoomMode serialNo="0">a*x+b</zoomMode>
     </zoomModeList>
     <!--num:总的通道数量-->
-    <stations num="5">
+    <stations num="7">
         <stationCfg bStationConfig="1" stationNum="0">
             <localStation name="scada测风数据采集" role="1" equipmentID="18">
                 <netAddr port="0" ip="192.168.1.20"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风塔采集" role="2">
-                <netAddr port="502" ip="192.168.1.200"/>
+                <netAddr port="5021" ip="192.168.1.20"/>
             </remoteStation>
             <stationSon>
                 <pntAddr codCoefficient="1" localAddr="0" remoteAddr="0" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
@@ -2470,7 +2478,7 @@
                 <netAddr port="2404" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动235" role="1">
-                <netAddr port="502" ip="100.100.100.99"/>
+                <netAddr port="0" ip="100.100.100.99"/>
             </remoteStation>
             <stationSon>
                 <pntAddr codCoefficient="1" localAddr="0" remoteAddr="0" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
@@ -2670,7 +2678,7 @@
                 <netAddr port="2404" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动235" role="1">
-                <netAddr port="502" ip="100.100.100.235"/>
+                <netAddr port="0" ip="100.100.100.235"/>
             </remoteStation>
             <stationSon>
                 <pntAddr codCoefficient="1" localAddr="0" remoteAddr="0" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
@@ -2870,7 +2878,7 @@
                 <netAddr port="2404" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动235" role="1">
-                <netAddr port="502" ip="100.100.100.236"/>
+                <netAddr port="0" ip="100.100.100.236"/>
             </remoteStation>
             <stationSon>
                 <pntAddr codCoefficient="1" localAddr="0" remoteAddr="0" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
@@ -3070,7 +3078,7 @@
                 <netAddr ip="172.160.0.151" port="0"/>
             </localStation>
             <remoteStation name="4场风机1-75" bigEndian="0" role="2">
-                <netAddr ip="172.160.0.21" port="502"/>
+                <netAddr ip="172.160.0.151" port="5022"/>
             </remoteStation>
             <stationSon>
                 <pntAddr type="3" name="1分钟风机1风速" remoteAddr="0" codCoefficient="1" offset="0" pntDataLng="16" unitDesc="" localAddr="0" encoding="0" didName="1分钟风机1风速实时值">2</pntAddr>
@@ -4201,8 +4209,226 @@
                 <pntAddr type="3" name="风机75年发电量高" remoteAddr="1125" codCoefficient="1" offset="0" pntDataLng="16" unitDesc="" localAddr="1125" encoding="0" didName="1分钟风机75年发电量"/>
             </stationSon>
         </stationCfg>
+               
+        <stationCfg stationNum="5" bStationConfig="1">
+            <localStation name="采集远动" equipmentID="7" role="1">
+                <netAddr port="0" ip="100.100.100.141"/>
+            </localStation>
+            <remoteStation name="远动整场" bigEndian="0" role="2">
+                <netAddr port="2405" ip="100.100.100.100"/>
+            </remoteStation>
+            <stationSon>
+                <pntAddr name="实时有功功率" type="3" localAddr="16385" codCoefficient="1" didName="1分钟有功功率实时值" unitDesc="1" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0">2</pntAddr>
+                <pntAddr name="实时无功功率" type="3" localAddr="16386" codCoefficient="1" didName="1分钟无功功率实时值" unitDesc="" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0"/>
+            </stationSon>
+        </stationCfg>
+        
+         <stationCfg bStationConfig="1" stationNum="6">
+            <localStation name="scada测风数据转发das" role="2" equipmentID="19">
+                <netAddr port="2404" ip="100.100.100.141"/>
+            </localStation>
+            <remoteStation bigEndian="0" name="测风数据转发远动das" role="1">
+                <netAddr port="0" ip="100.100.100.141"/>
+            </remoteStation>
+            <stationSon>
+                <pntAddr codCoefficient="1" localAddr="0" remoteAddr="0" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="1" remoteAddr="1" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="2" remoteAddr="2" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="3" remoteAddr="3" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="4" remoteAddr="4" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="5" remoteAddr="5" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="6" remoteAddr="6" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="7" remoteAddr="7" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="8" remoteAddr="8" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="9" remoteAddr="9" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="10" remoteAddr="10" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="11" remoteAddr="11" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="12" remoteAddr="12" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="13" remoteAddr="13" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="14" remoteAddr="14" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="15" remoteAddr="15" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="16" remoteAddr="16" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="17" remoteAddr="17" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="18" remoteAddr="18" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="19" remoteAddr="19" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="20" remoteAddr="20" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="21" remoteAddr="21" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="22" remoteAddr="22" type="3" name="1分钟高度80米水平风速平均值低" offset="0" pntDataLng="16" unitDesc="1" encoding="0">2</pntAddr>
+                <pntAddr codCoefficient="1" localAddr="23" remoteAddr="23" type="3" name="1分钟高度80米水平风速平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="24" remoteAddr="24" type="3" name="1分钟高度80米水平风速实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="25" remoteAddr="25" type="3" name="1分钟高度80米水平风速实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="28" remoteAddr="28" type="3" name="1分钟高度80米水平风速标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="29" remoteAddr="29" type="3" name="1分钟高度80米水平风速标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="30" remoteAddr="30" type="3" name="1分钟高度80米水平风速最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="31" remoteAddr="31" type="3" name="1分钟高度80米水平风速最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="32" remoteAddr="32" type="3" name="1分钟高度80米水平风速最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="33" remoteAddr="33" type="3" name="1分钟高度80米水平风速最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="34" remoteAddr="34" type="3" name="1分钟高度80米水平风向平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="35" remoteAddr="35" type="3" name="1分钟高度80米水平风向平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="36" remoteAddr="36" type="3" name="1分钟高度80米水平风向实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="37" remoteAddr="37" type="3" name="1分钟高度80米水平风向实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="38" remoteAddr="38" type="3" name="1分钟高度80米水平风向标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="39" remoteAddr="39" type="3" name="1分钟高度80米水平风向标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="40" remoteAddr="40" type="3" name="1分钟高度80米水平风向最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="41" remoteAddr="41" type="3" name="1分钟高度80米水平风向最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="42" remoteAddr="42" type="3" name="1分钟高度80米水平风向最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="43" remoteAddr="43" type="3" name="1分钟高度80米水平风向最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="44" remoteAddr="44" type="3" name="1分钟高度70米水平风速平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="45" remoteAddr="45" type="3" name="1分钟高度70米水平风速平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="46" remoteAddr="46" type="3" name="1分钟高度70米水平风速实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="47" remoteAddr="47" type="3" name="1分钟高度70米水平风速实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="50" remoteAddr="50" type="3" name="1分钟高度70米水平风速标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="51" remoteAddr="51" type="3" name="1分钟高度70米水平风速标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="52" remoteAddr="52" type="3" name="1分钟高度70米水平风速最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="53" remoteAddr="53" type="3" name="1分钟高度70米水平风速最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="54" remoteAddr="54" type="3" name="1分钟高度70米水平风速最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="55" remoteAddr="55" type="3" name="1分钟高度70米水平风速最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="56" remoteAddr="56" type="3" name="1分钟高度70米水平风向平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="57" remoteAddr="57" type="3" name="1分钟高度70米水平风向平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="58" remoteAddr="58" type="3" name="1分钟高度70米水平风向实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="59" remoteAddr="59" type="3" name="1分钟高度70米水平风向实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="60" remoteAddr="60" type="3" name="1分钟高度70米水平风向标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="61" remoteAddr="61" type="3" name="1分钟高度70米水平风向标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="62" remoteAddr="62" type="3" name="1分钟高度70米水平风向最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="63" remoteAddr="63" type="3" name="1分钟高度70米水平风向最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="64" remoteAddr="64" type="3" name="1分钟高度70米水平风向最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="65" remoteAddr="65" type="3" name="1分钟高度70米水平风向最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="66" remoteAddr="66" type="3" name="1分钟高度30米水平风速平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="67" remoteAddr="67" type="3" name="1分钟高度30米水平风速平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="68" remoteAddr="68" type="3" name="1分钟高度30米水平风速实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="69" remoteAddr="69" type="3" name="1分钟高度30米水平风速实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="72" remoteAddr="72" type="3" name="1分钟高度30米水平风速标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="73" remoteAddr="73" type="3" name="1分钟高度30米水平风速标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="74" remoteAddr="74" type="3" name="1分钟高度30米水平风速最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="75" remoteAddr="75" type="3" name="1分钟高度30米水平风速最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="76" remoteAddr="76" type="3" name="1分钟高度30米水平风速最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="77" remoteAddr="77" type="3" name="1分钟高度30米水平风速最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="78" remoteAddr="78" type="3" name="1分钟高度30米水平风向平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="79" remoteAddr="79" type="3" name="1分钟高度30米水平风向平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="80" remoteAddr="80" type="3" name="1分钟高度30米水平风向实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="81" remoteAddr="81" type="3" name="1分钟高度30米水平风向实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="82" remoteAddr="82" type="3" name="1分钟高度30米水平风向标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="83" remoteAddr="83" type="3" name="1分钟高度30米水平风向标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="84" remoteAddr="84" type="3" name="1分钟高度30米水平风向最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="85" remoteAddr="85" type="3" name="1分钟高度30米水平风向最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="86" remoteAddr="86" type="3" name="1分钟高度30米水平风向最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="87" remoteAddr="87" type="3" name="1分钟高度30米水平风向最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="88" remoteAddr="88" type="3" name="1分钟高度10米水平风速平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="89" remoteAddr="89" type="3" name="1分钟高度10米水平风速平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="90" remoteAddr="90" type="3" name="1分钟高度10米水平风速实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="91" remoteAddr="91" type="3" name="1分钟高度10米水平风速实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="94" remoteAddr="94" type="3" name="1分钟高度10米水平风速标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="95" remoteAddr="95" type="3" name="1分钟高度10米水平风速标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="96" remoteAddr="96" type="3" name="1分钟高度10米水平风速最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="97" remoteAddr="97" type="3" name="1分钟高度10米水平风速最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="98" remoteAddr="98" type="3" name="1分钟高度10米水平风速最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="99" remoteAddr="99" type="3" name="1分钟高度10米水平风速最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="100" remoteAddr="100" type="3" name="1分钟高度10米水平风向平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="101" remoteAddr="101" type="3" name="1分钟高度10米水平风向平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="102" remoteAddr="102" type="3" name="1分钟高度10米水平风向实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="103" remoteAddr="103" type="3" name="1分钟高度10米水平风向实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="104" remoteAddr="104" type="3" name="1分钟高度10米水平风向标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="105" remoteAddr="105" type="3" name="1分钟高度10米水平风向标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="106" remoteAddr="106" type="3" name="1分钟高度10米水平风向最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="107" remoteAddr="107" type="3" name="1分钟高度10米水平风向最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="108" remoteAddr="108" type="3" name="1分钟高度10米水平风向最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="109" remoteAddr="109" type="3" name="1分钟高度10米水平风向最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="110" remoteAddr="110" type="3" name="1分钟高度10米温度平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="111" remoteAddr="111" type="3" name="1分钟高度10米温度平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="112" remoteAddr="112" type="3" name="1分钟高度10米温度实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="113" remoteAddr="113" type="3" name="1分钟高度10米温度实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="114" remoteAddr="114" type="3" name="1分钟高度10米温度标准差值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="115" remoteAddr="115" type="3" name="1分钟高度10米温度标准差值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="116" remoteAddr="116" type="3" name="1分钟高度10米温度最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="117" remoteAddr="117" type="3" name="1分钟高度10米温度最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="118" remoteAddr="118" type="3" name="1分钟高度10米温度最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="119" remoteAddr="119" type="3" name="1分钟高度10米温度最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="120" remoteAddr="120" type="3" name="1分钟高度10米湿度平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="121" remoteAddr="121" type="3" name="1分钟高度10米湿度平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="122" remoteAddr="122" type="3" name="1分钟高度10米湿度实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="123" remoteAddr="123" type="3" name="1分钟高度10米湿度实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="124" remoteAddr="124" type="3" name="1分钟高度10米湿度标准差值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="125" remoteAddr="125" type="3" name="1分钟高度10米湿度标准差值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="126" remoteAddr="126" type="3" name="1分钟高度10米湿度最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="127" remoteAddr="127" type="3" name="1分钟高度10米湿度最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="128" remoteAddr="128" type="3" name="1分钟高度10米湿度最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="129" remoteAddr="129" type="3" name="1分钟高度10米湿度最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="130" remoteAddr="130" type="3" name="1分钟高度10米压力平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="131" remoteAddr="131" type="3" name="1分钟高度10米压力平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="132" remoteAddr="132" type="3" name="1分钟高度10米压力实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="133" remoteAddr="133" type="3" name="1分钟高度10米压力实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="134" remoteAddr="134" type="3" name="1分钟高度10米压力标准差值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="135" remoteAddr="135" type="3" name="1分钟高度10米压力标准差值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="136" remoteAddr="136" type="3" name="1分钟高度10米压力最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="137" remoteAddr="137" type="3" name="1分钟高度10米压力最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="138" remoteAddr="138" type="3" name="1分钟高度10米压力最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="139" remoteAddr="139" type="3" name="1分钟高度10米压力最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="140" remoteAddr="140" type="3" name="1分钟高度10米电池电压平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="141" remoteAddr="141" type="3" name="1分钟高度10米电池电压平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="142" remoteAddr="142" type="3" name="1分钟高度10米电池电压实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="143" remoteAddr="143" type="3" name="1分钟高度10米电池电压实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="144" remoteAddr="144" type="3" name="1分钟高度10米电池电压标准差值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="145" remoteAddr="145" type="3" name="1分钟高度10米电池电压标准差值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="146" remoteAddr="146" type="3" name="1分钟高度10米电池电压最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="147" remoteAddr="147" type="3" name="1分钟高度10米电池电压最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="148" remoteAddr="148" type="3" name="1分钟高度10米电池电压最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="149" remoteAddr="149" type="3" name="1分钟高度10米电池电压最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="150" remoteAddr="150" type="3" name="1分钟高度50米水平风速平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="151" remoteAddr="151" type="3" name="1分钟高度50米水平风速平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="152" remoteAddr="152" type="3" name="1分钟高度50米水平风速实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="153" remoteAddr="153" type="3" name="1分钟高度50米水平风速实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="156" remoteAddr="156" type="3" name="1分钟高度50米水平风速标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="157" remoteAddr="157" type="3" name="1分钟高度50米水平风速标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="158" remoteAddr="158" type="3" name="1分钟高度50米水平风速最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="159" remoteAddr="159" type="3" name="1分钟高度50米水平风速最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="160" remoteAddr="160" type="3" name="1分钟高度50米水平风速最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="161" remoteAddr="161" type="3" name="1分钟高度50米水平风速最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="162" remoteAddr="162" type="3" name="1分钟高度50米水平风向平均值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="163" remoteAddr="163" type="3" name="1分钟高度50米水平风向平均值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="164" remoteAddr="164" type="3" name="1分钟高度50米水平风向实时值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="165" remoteAddr="165" type="3" name="1分钟高度50米水平风向实时值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="166" remoteAddr="166" type="3" name="1分钟高度50米水平风向标准差低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="167" remoteAddr="167" type="3" name="1分钟高度50米水平风向标准差高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="168" remoteAddr="168" type="3" name="1分钟高度50米水平风向最大值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="169" remoteAddr="169" type="3" name="1分钟高度50米水平风向最大值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="170" remoteAddr="170" type="3" name="1分钟高度50米水平风向最小值低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="171" remoteAddr="171" type="3" name="1分钟高度50米水平风向最小值高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr remoteAddr="172" codCoefficient="1" type="3" pntDataLng="16" localAddr="172" offset="0" name="理论功率低" unitDesc="" encoding="0"/>
+                <pntAddr remoteAddr="173" codCoefficient="1" type="3" pntDataLng="16" localAddr="173" offset="0" name="理论功率高" unitDesc="" encoding="0"/>
+                <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
+                <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="176" remoteAddr="176" type="3" name="空点5" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="177" remoteAddr="177" type="3" name="空点6" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="26" remoteAddr="26" type="3" name="空点7" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="27" remoteAddr="27" type="3" name="空点8" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="48" remoteAddr="48" type="3" name="空点9" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="49" remoteAddr="49" type="3" name="空点10" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="70" remoteAddr="70" type="3" name="空点11" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="71" remoteAddr="71" type="3" name="空点12" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="92" remoteAddr="92" type="3" name="空点13" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="93" remoteAddr="93" type="3" name="空点14" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="154" remoteAddr="154" type="3" name="空点15" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="155" remoteAddr="155" type="3" name="空点16" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="178" remoteAddr="178" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="179" remoteAddr="179" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="180" remoteAddr="180" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="181" remoteAddr="181" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="182" remoteAddr="182" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="183" remoteAddr="183" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="184" remoteAddr="184" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="185" remoteAddr="185" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="186" remoteAddr="186" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="187" remoteAddr="187" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="188" remoteAddr="188" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="189" remoteAddr="189" type="3" name="空点占位" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="190" remoteAddr="190" type="3" name="整场有功功率IAS低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="191" remoteAddr="191" type="3" name="整场有功功率IAS高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="192" remoteAddr="192" type="3" name="整场无功功率IAS低" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+                <pntAddr codCoefficient="1" localAddr="193" remoteAddr="193" type="3" name="整场无功功率IAS高" offset="0" pntDataLng="16" unitDesc="" encoding="0"/>
+            </stationSon>
+        </stationCfg>
     </stations>
-    <channels num="5">
+    <channels num="7">
         <channel pntObjLng="0" cfgTime="" tmStmpLng="8" maxPhyType="0" chnNum="0">
             <prtl state="0" name="ModbusTcp" transType="0" bufLng="256" prtlNo="106">
                 <timerInfo>
@@ -4228,7 +4454,7 @@
                     <netAddr port="0" ip="192.168.1.20"/>
                 </localStation>
                 <remoteStation role="2" name="测风塔采集" equipmentID="">
-                    <netAddr port="502" ip="192.168.1.200"/>
+                    <netAddr port="5021" ip="192.168.1.20"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="5000">
@@ -5733,7 +5959,7 @@
                     <netAddr port="2404" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动235" equipmentID="">
-                    <netAddr port="502" ip="100.100.100.99"/>
+                    <netAddr port="0" ip="100.100.100.99"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -6390,7 +6616,7 @@
                     <netAddr port="2404" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动235" equipmentID="">
-                    <netAddr port="502" ip="100.100.100.235"/>
+                    <netAddr port="0" ip="100.100.100.235"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -7036,7 +7262,7 @@
                     <netAddr port="2404" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动235" equipmentID="">
-                    <netAddr port="502" ip="100.100.100.236"/>
+                    <netAddr port="0" ip="100.100.100.236"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="3000">
@@ -7682,7 +7908,7 @@
                     <netAddr ip="172.160.0.151" port="0"/>
                 </localStation>
                 <remoteStation name="4场风机1-75" bigEndian="0" role="2">
-                    <netAddr ip="172.160.0.21" port="502"/>
+                    <netAddr ip="172.160.0.151" port="5022"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="5000">
@@ -21514,5 +21740,811 @@
                 <phyCat name="15"/>
             </phyQuaCfg>
         </channel>
+          
+        <channel tmStmpLng="8" chnNum="5" pntObjLng="0" maxPhyType="0" cfgTime="">
+            <prtl name="IEC104" state="0" bufLng="255" transType="0" prtlNo="104">
+                <timerInfo>
+                    <timer name="T3" timeoutValue="20"/>
+                    <timer name="T2" timeoutValue="10"/>
+                    <timer name="T1" timeoutValue="15"/>
+                    <timer name="T0" timeoutValue="30"/>
+                </timerInfo>
+                <controlPara K="12" W="8"/>
+                <APDU_DSCR InfoEleLng="5" asduCmtbNum="11" ASDU_TID="0">
+                    <APCI value="6"/>
+                    <ASDU_TID value="1"/>
+                    <ASDU_LNG value="0"/>
+                    <ASDU_VSQ value="1"/>
+                    <ASDU_COT value="2"/>
+                    <ASDU_ADDR value="2"/>
+                    <BODY_TID value="0"/>
+                    <BODY_ADDR value="3"/>
+                    <BODY_SET value="48"/>
+                    <BODY_TSP value="0"/>
+                    <ASDU_TSP value="0"/>
+                </APDU_DSCR>
+            </prtl>
+            <stationCfg stationNum="5" bStationConfig="1">
+                <localStation name="采集远动" equipmentID="7" role="1">
+                    <netAddr port="0" ip="100.100.100.141"/>
+                </localStation>
+                <remoteStation name="远动整场" bigEndian="0" role="2">
+                    <netAddr port="2405" ip="100.100.100.100"/>
+                </remoteStation>
+            </stationCfg>
+            <sessionCfgList waitTime="6000">
+                <sessionCfg check="0" ssnMode="0" actFlag="0" ssnDscNo="6" snnMaxRetryNum="0" prio="4" waitTime="3000">
+                    <sessionInst addrStart="16385" cycTm="" collMethods="1" number="2" instNo="0" cmnAddr="1"/>
+                    <ptclStepList>
+                        <ptclStep reqORres="0" storORload="0" stepNo="1">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="6" VSQ_SQ="0" TID="100" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                        <ptclStep reqORres="1" storORload="0" stepNo="2">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="7" VSQ_SQ="0" TID="100" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                        <ptclStep reqORres="1" storORload="2" stepNo="3">
+                            <frame serialNo="1" objNum="2" objstartAddr="16385" COT="20" VSQ_SQ="1" TID="13" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                        <ptclStep reqORres="1" storORload="0" stepNo="4">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="10" VSQ_SQ="0" TID="100" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg check="0" ssnMode="0" actFlag="1" ssnDscNo="4" snnMaxRetryNum="0" prio="4" waitTime="5000">
+                    <sessionInst addrStart="16385" cycTm="" collMethods="1" number="2" instNo="0" cmnAddr="1"/>
+                    <ptclStepList>
+                        <ptclStep reqORres="0" storORload="2" stepNo="1">
+                            <frame serialNo="1" objNum="2" objstartAddr="16385" COT="3" VSQ_SQ="0" TID="13" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg check="0" ssnMode="0" actFlag="0" ssnDscNo="15" snnMaxRetryNum="0" prio="4" waitTime="5000">
+                    <sessionInst addrStart="0" cycTm="" collMethods="0" number="0" instNo="0" cmnAddr="1"/>
+                    <ptclStepList>
+                        <ptclStep reqORres="0" storORload="0" stepNo="1">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                        <ptclStep reqORres="1" storORload="0" stepNo="2">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg check="0" ssnMode="0" actFlag="1" ssnDscNo="17" snnMaxRetryNum="0" prio="4" waitTime="5000">
+                    <sessionInst addrStart="0" cycTm="" collMethods="1" number="0" instNo="0" cmnAddr="1"/>
+                    <ptclStepList>
+                        <ptclStep reqORres="0" storORload="0" stepNo="1">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                        <ptclStep reqORres="1" storORload="0" stepNo="2">
+                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+            </sessionCfgList>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场有功功率实时值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="0" phyType="1" calcMethd="161" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="实时有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2138" didName="1分钟整场有功功率实时值IAS" didVal="FF41FF1901080080103096000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场无功功率实时值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="0" phyType="2" calcMethd="161" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="实时无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2139" didName="1分钟整场无功功率实时值IAS" didVal="FF41FF1901080080103097000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场有功功率1分钟平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="3" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="1分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2140" didName="1分钟整场有功功率1分钟平均值IAS" didVal="FF41FF1902080080103096000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场无功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="4" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="1分钟无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2141" didName="1分钟整场无功功率平均值IAS" didVal="FF41FF1902080080103097000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站5分钟整场有功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="5" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="5分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2142" didName="5分钟整场有功功率平均值IAS" didVal="FF45FF1902080080103096000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站5分钟整场无功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="6" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="5分钟无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2143" didName="5分钟整场无功功率平均值IAS" didVal="FF45FF1902080080103097000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站15分钟整场有功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="7" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="15分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2144" didName="15分钟整场有功功率平均值IAS" didVal="FF4FFF1902080080103096000000000100"/>
+            </phyObjVal>
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站15分钟整场无功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="8" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="1">
+                    <pntAddr name="15分钟无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                </pntAddrs>
+                <dataId serialNo="2145" didName="15分钟整场无功功率平均值IAS" didVal="FF4FFF1902080080103097000000000100"/>
+            </phyObjVal>
+            <putStagFlag>1</putStagFlag>
+            <phyQuaCfg>
+                <phyCat name="1"/>
+                <phyCat name="5"/>
+                <phyCat name="15"/>
+            </phyQuaCfg>
+        </channel>
+        <channel pntObjLng="0" cfgTime="" tmStmpLng="8" maxPhyType="0" chnNum="6">
+            <prtl state="0" name="ModbusTcp" transType="0" bufLng="256" prtlNo="106">
+                <timerInfo>
+                    <timer name="T0" timeoutValue="30"/>
+                </timerInfo>
+                <controlPara K="0" W="0"/>
+                <APDU_DSCR asduCmtbNum="11" InfoEleLng="1" ASDU_TID="0">
+                    <APCI value="7"/>
+                    <ASDU_TID value="0"/>
+                    <ASDU_LNG value="1"/>
+                    <ASDU_VSQ value="248"/>
+                    <ASDU_COT value="0"/>
+                    <ASDU_ADDR value="0"/>
+                    <BODY_TID value="0"/>
+                    <BODY_ADDR value="0"/>
+                    <BODY_SET value="0"/>
+                    <BODY_TSP value="0"/>
+                    <ASDU_TSP value="0"/>
+                </APDU_DSCR>
+            </prtl>
+            <stationCfg bStationConfig="1" stationNum="6">
+                <localStation role="2" name="scada测风数据转发das" equipmentID="19">
+                    <netAddr port="2404" ip="100.100.100.141"/>
+                </localStation>
+                <remoteStation role="1" name="测风数据转发远动das" equipmentID="">
+                    <netAddr port="0" ip="100.100.100.141"/>
+                </remoteStation>
+            </stationCfg>
+            <sessionCfgList waitTime="3000">
+                <sessionCfg prio="5" ssnMode="0" check="0" snnMaxRetryNum="0" actFlag="1" ssnDscNo="3" waitTime="3000">
+                    <sessionInst cmnAddr="1" number="0" collMethods="1" cycTm="" instNo="0" addrStart="0"/>
+                    <ptclStepList>
+                        <ptclStep storORload="0" reqORres="0" stepNo="1">
+                            <frame ptclHead="0" serialNo="1" COT="" TID="" tidORfuncode="3" objNum="0" objstartAddr="0" VSQ_SQ=""/>
+                        </ptclStep>
+                        <ptclStep storORload="1" reqORres="1" stepNo="2">
+                            <frame ptclHead="0" serialNo="1" COT="" TID="" tidORfuncode="3" objNum="0" objstartAddr="0" VSQ_SQ=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg prio="5" ssnMode="0" check="0" snnMaxRetryNum="0" actFlag="1" ssnDscNo="1" waitTime="3000">
+                    <sessionInst cmnAddr="1" number="0" collMethods="1" cycTm="" instNo="0" addrStart="0"/>
+                    <ptclStepList>
+                        <ptclStep storORload="0" reqORres="0" stepNo="1">
+                            <frame ptclHead="0" serialNo="1" COT="" TID="" tidORfuncode="1" objNum="0" objstartAddr="0" VSQ_SQ=""/>
+                        </ptclStep>
+                        <ptclStep storORload="1" reqORres="1" stepNo="2">
+                            <frame ptclHead="0" serialNo="1" COT="" TID="" tidORfuncode="1" objNum="0" objstartAddr="0" VSQ_SQ=""/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+                <sessionCfg ssnDscNo="4" waitTime="3000" snnMaxRetryNum="0" actFlag="1" ssnMode="0" prio="4" check="0">
+                    <sessionInst instNo="0" cycTm="" collMethods="1" addrStart="0" cmnAddr="1" number="0"/>
+                    <ptclStepList>
+                        <ptclStep stepNo="1" reqORres="0" storORload="0">
+                            <frame COT="" VSQ_SQ="" objstartAddr="0" tidORfuncode="4" objNum="0" serialNo="1" TID="" ptclHead="0"/>
+                        </ptclStep>
+                        <ptclStep stepNo="2" reqORres="1" storORload="1">
+                            <frame COT="" VSQ_SQ="" objstartAddr="0" tidORfuncode="4" objNum="0" serialNo="1" TID="" ptclHead="0"/>
+                        </ptclStep>
+                    </ptclStepList>
+                </sessionCfg>
+            </sessionCfgList>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="1" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风速平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="22" remoteAddr="22" type="3" name="1分钟高度80米水平风速平均值低" offset="0" startBit="0" unitDesc="1" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="23" remoteAddr="23" name="1分钟高度80米水平风速平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="69" didName="1分钟80m测风塔1风速平均值" didVal="FF41500902080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="2" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风速实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="24" remoteAddr="24" type="3" name="1分钟高度80米水平风速实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="25" remoteAddr="25" name="1分钟高度80米水平风速实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="45" didName="1分钟80m测风塔1风速实时值" didVal="FF41500901080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="3" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风速标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="28" remoteAddr="28" type="3" name="1分钟高度80米水平风速标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="29" remoteAddr="29" name="1分钟高度80米水平风速标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="48" didName="1分钟80m测风塔1风速标准差值" didVal="FF4150090C080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="4" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风速最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="30" remoteAddr="30" type="3" name="1分钟高度80米水平风速最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="31" remoteAddr="31" name="1分钟高度80米水平风速最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="46" didName="1分钟80m测风塔1风速最大值" didVal="FF41500903080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="5" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风速最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="32" remoteAddr="32" type="3" name="1分钟高度80米水平风速最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="33" remoteAddr="33" name="1分钟高度80米水平风速最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="47" didName="1分钟80m测风塔1风速最小值" didVal="FF41500904080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="6" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风向平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="34" remoteAddr="34" type="3" name="1分钟高度80米水平风向平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="35" remoteAddr="35" name="1分钟高度80米水平风向平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="70" didName="1分钟80m测风塔1风向平均值" didVal="FF41500902080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="7" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风向实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="36" remoteAddr="36" type="3" name="1分钟高度80米水平风向实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="37" remoteAddr="37" name="1分钟高度80米水平风向实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="49" didName="1分钟80m测风塔1风向实时值" didVal="FF41500901080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="8" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风向标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="38" remoteAddr="38" type="3" name="1分钟高度80米水平风向标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="39" remoteAddr="39" name="1分钟高度80米水平风向标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="52" didName="1分钟80m测风塔1风向标准差值" didVal="FF4150090C080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="9" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风向最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="40" remoteAddr="40" type="3" name="1分钟高度80米水平风向最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="41" remoteAddr="41" name="1分钟高度80米水平风向最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="50" didName="1分钟80m测风塔1风向最大值" didVal="FF41500903080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="10" phyValLng="8" offsetCoe="0" name="站一分钟高度80米水平风向最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="42" remoteAddr="42" type="3" name="1分钟高度80米水平风向最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="43" remoteAddr="43" name="1分钟高度80米水平风向最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="51" didName="1分钟80m测风塔1风向最小值" didVal="FF41500904080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="11" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风速平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="44" remoteAddr="44" type="3" name="1分钟高度70米水平风速平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="45" remoteAddr="45" name="1分钟高度70米水平风速平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="67" didName="1分钟70m测风塔1风速平均值" didVal="FF41460902080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="12" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风速实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="46" remoteAddr="46" type="3" name="1分钟高度70米水平风速实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="47" remoteAddr="47" name="1分钟高度70米水平风速实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="37" didName="1分钟70m测风塔1风速实时值" didVal="FF41460901080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="13" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风速标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="50" remoteAddr="50" type="3" name="1分钟高度70米水平风速标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="51" remoteAddr="51" name="1分钟高度70米水平风速标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="40" didName="1分钟70m测风塔1风速标准差值" didVal="FF4146090C080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="14" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风速最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="52" remoteAddr="52" type="3" name="1分钟高度70米水平风速最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="53" remoteAddr="53" name="1分钟高度70米水平风速最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="38" didName="1分钟70m测风塔1风速最大值" didVal="FF41460903080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="15" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风速最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="54" remoteAddr="54" type="3" name="1分钟高度70米水平风速最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="55" remoteAddr="55" name="1分钟高度70米水平风速最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="39" didName="1分钟70m测风塔1风速最小值" didVal="FF41460904080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="16" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风向平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="56" remoteAddr="56" type="3" name="1分钟高度70米水平风向平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="57" remoteAddr="57" name="1分钟高度70米水平风向平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="68" didName="1分钟70m测风塔1风向平均值" didVal="FF41460902080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="17" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风向实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="58" remoteAddr="58" type="3" name="1分钟高度70米水平风向实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="59" remoteAddr="59" name="1分钟高度70米水平风向实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="41" didName="1分钟70m测风塔1风向实时值" didVal="FF41460901080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="18" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风向标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="60" remoteAddr="60" type="3" name="1分钟高度70米水平风向标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="61" remoteAddr="61" name="1分钟高度70米水平风向标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="44" didName="1分钟70m测风塔1风向标准差值" didVal="FF4146090C080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="19" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风向最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="62" remoteAddr="62" type="3" name="1分钟高度70米水平风向最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="63" remoteAddr="63" name="1分钟高度70米水平风向最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="42" didName="1分钟70m测风塔1风向最大值" didVal="FF41460903080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="20" phyValLng="8" offsetCoe="0" name="站一分钟高度70米水平风向最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="64" remoteAddr="64" type="3" name="1分钟高度70米水平风向最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="65" remoteAddr="65" name="1分钟高度70米水平风向最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="43" didName="1分钟70m测风塔1风向最小值" didVal="FF41460904080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="21" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风速平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="66" remoteAddr="66" type="3" name="1分钟高度30米水平风速平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="67" remoteAddr="67" name="1分钟高度30米水平风速平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="63" didName="1分钟30m测风塔1风速平均值" didVal="FF411E0902080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="22" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风速实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="68" remoteAddr="68" type="3" name="1分钟高度30米水平风速实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="69" remoteAddr="69" name="1分钟高度30米水平风速实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="21" didName="1分钟30m测风塔1风速实时值" didVal="FF411E0901080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="23" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风速标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="72" remoteAddr="72" type="3" name="1分钟高度30米水平风速标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="73" remoteAddr="73" name="1分钟高度30米水平风速标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="24" didName="1分钟30m测风塔1风速标准差值" didVal="FF411E090C080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="24" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风速最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="74" remoteAddr="74" type="3" name="1分钟高度30米水平风速最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="75" remoteAddr="75" name="1分钟高度30米水平风速最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="22" didName="1分钟30m测风塔1风速最大值" didVal="FF411E0903080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="25" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风速最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="76" remoteAddr="76" type="3" name="1分钟高度30米水平风速最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="77" remoteAddr="77" name="1分钟高度30米水平风速最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="23" didName="1分钟30m测风塔1风速最小值" didVal="FF411E0904080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="26" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风向平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="78" remoteAddr="78" type="3" name="1分钟高度30米水平风向平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="79" remoteAddr="79" name="1分钟高度30米水平风向平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="64" didName="1分钟30m测风塔1风向平均值" didVal="FF411E0902080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="27" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风向实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="80" remoteAddr="80" type="3" name="1分钟高度30米水平风向实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="81" remoteAddr="81" name="1分钟高度30米水平风向实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="25" didName="1分钟30m测风塔1风向实时值" didVal="FF411E0901080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="28" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风向标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="82" remoteAddr="82" type="3" name="1分钟高度30米水平风向标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="83" remoteAddr="83" name="1分钟高度30米水平风向标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="28" didName="1分钟30m测风塔1风向标准差值" didVal="FF411E090C080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="29" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风向最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="84" remoteAddr="84" type="3" name="1分钟高度30米水平风向最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="85" remoteAddr="85" name="1分钟高度30米水平风向最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="26" didName="1分钟30m测风塔1风向最大值" didVal="FF411E0903080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="30" phyValLng="8" offsetCoe="0" name="站一分钟高度30米水平风向最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="86" remoteAddr="86" type="3" name="1分钟高度30米水平风向最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="87" remoteAddr="87" name="1分钟高度30米水平风向最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="27" didName="1分钟30m测风塔1风向最小值" didVal="FF411E0904080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="31" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风速平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="88" remoteAddr="88" type="3" name="1分钟高度10米水平风速平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="89" remoteAddr="89" name="1分钟高度10米水平风速平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="58" didName="1分钟10m测风塔1风速平均值" didVal="FF410A0902080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="32" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风速实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="90" remoteAddr="90" type="3" name="1分钟高度10米水平风速实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="91" remoteAddr="91" name="1分钟高度10米水平风速实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="13" didName="1分钟10m测风塔1风速实时值" didVal="FF410A0901080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="33" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风速标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="94" remoteAddr="94" type="3" name="1分钟高度10米水平风速标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="95" remoteAddr="95" name="1分钟高度10米水平风速标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="16" didName="1分钟10m测风塔1风速标准差值" didVal="FF410A090C080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="34" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风速最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="96" remoteAddr="96" type="3" name="1分钟高度10米水平风速最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="97" remoteAddr="97" name="1分钟高度10米水平风速最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="14" didName="1分钟10m测风塔1风速最大值" didVal="FF410A0903080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="35" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风速最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="98" remoteAddr="98" type="3" name="1分钟高度10米水平风速最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="99" remoteAddr="99" name="1分钟高度10米水平风速最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="15" didName="1分钟10m测风塔1风速最小值" didVal="FF410A0904080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="36" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风向平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="100" remoteAddr="100" type="3" name="1分钟高度10米水平风向平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="101" remoteAddr="101" name="1分钟高度10米水平风向平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="59" didName="1分钟10m测风塔1风向平均值" didVal="FF410A0902080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="37" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风向实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="102" remoteAddr="102" type="3" name="1分钟高度10米水平风向实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="103" remoteAddr="103" name="1分钟高度10米水平风向实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="17" didName="1分钟10m测风塔1风向实时值" didVal="FF410A0901080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="38" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风向标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="104" remoteAddr="104" type="3" name="1分钟高度10米水平风向标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="105" remoteAddr="105" name="1分钟高度10米水平风向标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="20" didName="1分钟10m测风塔1风向标准差值" didVal="FF410A090C080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="39" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风向最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="106" remoteAddr="106" type="3" name="1分钟高度10米水平风向最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="107" remoteAddr="107" name="1分钟高度10米水平风向最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="18" didName="1分钟10m测风塔1风向最大值" didVal="FF410A0903080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="40" phyValLng="8" offsetCoe="0" name="站一分钟高度10米水平风向最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="108" remoteAddr="108" type="3" name="1分钟高度10米水平风向最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="109" remoteAddr="109" name="1分钟高度10米水平风向最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="19" didName="1分钟10m测风塔1风向最小值" didVal="FF410A0904080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="41" phyValLng="8" offsetCoe="0" name="站一分钟高度10米温度平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="110" remoteAddr="110" type="3" name="1分钟高度10米温度平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="111" remoteAddr="111" name="1分钟高度10米温度平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="60" didName="1分钟10m测风塔1温度平均值" didVal="FF410A0902080001503083000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="42" phyValLng="8" offsetCoe="0" name="站一分钟高度10米温度实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="112" remoteAddr="112" type="3" name="1分钟高度10米温度实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="113" remoteAddr="113" name="1分钟高度10米温度实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="1" didName="1分钟10m测风塔1温度实时值" didVal="FF410A0901080001503083000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="43" phyValLng="8" offsetCoe="0" name="站一分钟高度10米温度标准差值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="114" remoteAddr="114" type="3" name="1分钟高度10米温度标准差值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="115" remoteAddr="115" name="1分钟高度10米温度标准差值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="4" didName="1分钟10m测风塔1温度标准差值" didVal="FF410A090C080001503083000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="44" phyValLng="8" offsetCoe="0" name="站一分钟高度10米温度最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="116" remoteAddr="116" type="3" name="1分钟高度10米温度最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="117" remoteAddr="117" name="1分钟高度10米温度最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="2" didName="1分钟10m测风塔1温度最大值" didVal="FF410A0903080001503083000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="45" phyValLng="8" offsetCoe="0" name="站一分钟高度10米温度最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="118" remoteAddr="118" type="3" name="1分钟高度10米温度最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="119" remoteAddr="119" name="1分钟高度10米温度最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="3" didName="1分钟10m测风塔1温度最小值" didVal="FF410A0904080001503083000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="46" phyValLng="8" offsetCoe="0" name="站一分钟高度10米湿度平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="120" remoteAddr="120" type="3" name="1分钟高度10米湿度平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="121" remoteAddr="121" name="1分钟高度10米湿度平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="61" didName="1分钟10m测风塔1湿度平均值" didVal="FF410A0902080001503084000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="47" phyValLng="8" offsetCoe="0" name="站一分钟高度10米湿度实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="122" remoteAddr="122" type="3" name="1分钟高度10米湿度实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="123" remoteAddr="123" name="1分钟高度10米湿度实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="5" didName="1分钟10m测风塔1湿度实时值" didVal="FF410A0901080001503084000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="48" phyValLng="8" offsetCoe="0" name="站一分钟高度10米湿度标准差值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="124" remoteAddr="124" type="3" name="1分钟高度10米湿度标准差值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="125" remoteAddr="125" name="1分钟高度10米湿度标准差值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="8" didName="1分钟10m测风塔1湿度标准差值" didVal="FF410A090C080001503084000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="49" phyValLng="8" offsetCoe="0" name="站一分钟高度10米湿度最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="126" remoteAddr="126" type="3" name="1分钟高度10米湿度最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="127" remoteAddr="127" name="1分钟高度10米湿度最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="6" didName="1分钟10m测风塔1湿度最大值" didVal="FF410A0903080001503084000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="50" phyValLng="8" offsetCoe="0" name="站一分钟高度10米湿度最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="128" remoteAddr="128" type="3" name="1分钟高度10米湿度最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="129" remoteAddr="129" name="1分钟高度10米湿度最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="7" didName="1分钟10m测风塔1湿度最小值" didVal="FF410A0904080001503084000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="51" phyValLng="8" offsetCoe="0" name="站一分钟高度10米压力平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="130" remoteAddr="130" type="3" name="1分钟高度10米压力平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="131" remoteAddr="131" name="1分钟高度10米压力平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="62" didName="1分钟10m测风塔1压力平均值" didVal="FF410A0902080001503086000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="52" phyValLng="8" offsetCoe="0" name="站一分钟高度10米压力实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="132" remoteAddr="132" type="3" name="1分钟高度10米压力实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="133" remoteAddr="133" name="1分钟高度10米压力实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="9" didName="1分钟10m测风塔1压力实时值" didVal="FF410A0901080001503086000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="53" phyValLng="8" offsetCoe="0" name="站一分钟高度10米压力标准差值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="134" remoteAddr="134" type="3" name="1分钟高度10米压力标准差值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="135" remoteAddr="135" name="1分钟高度10米压力标准差值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="12" didName="1分钟10m测风塔1压力标准差值" didVal="FF410A090C080001503086000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="54" phyValLng="8" offsetCoe="0" name="站一分钟高度10米压力最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="136" remoteAddr="136" type="3" name="1分钟高度10米压力最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="137" remoteAddr="137" name="1分钟高度10米压力最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="10" didName="1分钟10m测风塔1压力最大值" didVal="FF410A0903080001503086000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="55" phyValLng="8" offsetCoe="0" name="站一分钟高度10米压力最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="138" remoteAddr="138" type="3" name="1分钟高度10米压力最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="139" remoteAddr="139" name="1分钟高度10米压力最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="11" didName="1分钟10m测风塔1压力最小值" didVal="FF410A0904080001503086000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="56" phyValLng="8" offsetCoe="0" name="站一分钟高度10米电池电压平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="140" remoteAddr="140" type="3" name="1分钟高度10米电池电压平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="141" remoteAddr="141" name="1分钟高度10米电池电压平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="53" didName="1分钟测风塔1电池电压平均值" didVal="FF41FF0902080001503087000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="57" phyValLng="8" offsetCoe="0" name="站一分钟高度10米电池电压实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="142" remoteAddr="142" type="3" name="1分钟高度10米电池电压实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="143" remoteAddr="143" name="1分钟高度10米电池电压实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="54" didName="1分钟测风塔1电池电压实时值" didVal="FF41FF0901080001503087000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="58" phyValLng="8" offsetCoe="0" name="站一分钟高度10米电池电压标准差值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="144" remoteAddr="144" type="3" name="1分钟高度10米电池电压标准差值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="145" remoteAddr="145" name="1分钟高度10米电池电压标准差值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="55" didName="1分钟测风塔1电池电压标准差值" didVal="FF41FF090C080001503087000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="59" phyValLng="8" offsetCoe="0" name="站一分钟高度10米电池电压最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="146" remoteAddr="146" type="3" name="1分钟高度10米电池电压最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="147" remoteAddr="147" name="1分钟高度10米电池电压最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="56" didName="1分钟测风塔1电池电压最大值" didVal="FF41FF0903080001503087000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="60" phyValLng="8" offsetCoe="0" name="站一分钟高度10米电池电压最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="148" remoteAddr="148" type="3" name="1分钟高度10米电池电压最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="149" remoteAddr="149" name="1分钟高度10米电池电压最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="57" didName="1分钟测风塔1电池电压最小值" didVal="FF41FF0904080001503087000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="61" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风速平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="150" remoteAddr="150" type="3" name="1分钟高度50米水平风速平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="151" remoteAddr="151" name="1分钟高度50米水平风速平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="65" didName="1分钟50m测风塔1风速平均值" didVal="FF41320902080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="62" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风速实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="152" remoteAddr="152" type="3" name="1分钟高度50米水平风速实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="153" remoteAddr="153" name="1分钟高度50米水平风速实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="29" didName="1分钟50m测风塔1风速实时值" didVal="FF41320901080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="63" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风速标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="156" remoteAddr="156" type="3" name="1分钟高度50米水平风速标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="157" remoteAddr="157" name="1分钟高度50米水平风速标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="32" didName="1分钟50m测风塔1风速标准差值" didVal="FF4132090C080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="64" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风速最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="158" remoteAddr="158" type="3" name="1分钟高度50米水平风速最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="159" remoteAddr="159" name="1分钟高度50米水平风速最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="30" didName="1分钟50m测风塔1风速最大值" didVal="FF41320903080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="65" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风速最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="160" remoteAddr="160" type="3" name="1分钟高度50米水平风速最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="161" remoteAddr="161" name="1分钟高度50米水平风速最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="31" didName="1分钟50m测风塔1风速最小值" didVal="FF41320904080001503081000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="66" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风向平均值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="162" remoteAddr="162" type="3" name="1分钟高度50米水平风向平均值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="163" remoteAddr="163" name="1分钟高度50米水平风向平均值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="66" didName="1分钟50m测风塔1风向平均值" didVal="FF41320902080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="67" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风向实时值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="164" remoteAddr="164" type="3" name="1分钟高度50米水平风向实时值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="165" remoteAddr="165" name="1分钟高度50米水平风向实时值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="33" didName="1分钟50m测风塔1风向实时值" didVal="FF41320901080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="68" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风向标准差" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="166" remoteAddr="166" type="3" name="1分钟高度50米水平风向标准差低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="167" remoteAddr="167" name="1分钟高度50米水平风向标准差高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="36" didName="1分钟50m测风塔1风向标准差值" didVal="FF4132090C080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="69" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风向最大值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="168" remoteAddr="168" type="3" name="1分钟高度50米水平风向最大值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="169" remoteAddr="169" name="1分钟高度50米水平风向最大值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="34" didName="1分钟50m测风塔1风向最大值" didVal="FF41320903080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal dataSource="0" scalFactor="1" phyType="70" phyValLng="8" offsetCoe="0" name="站一分钟高度50米水平风向最小值" hisMaxNum="0" zoomMode="0" calcMethd="162" algType="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr codCoefficient="1" localAddr="170" remoteAddr="170" type="3" name="1分钟高度50米水平风向最小值低" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="16" encoding="0"/>
+                    <pntAddr type="3" codCoefficient="1" localAddr="171" remoteAddr="171" name="1分钟高度50米水平风向最小值高" offset="0" startBit="0" unitDesc="" pntDataLng="16" bitLength="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="35" didName="1分钟50m测风塔1风向最小值" didVal="FF41320904080001503082000000000100"/>
+            </phyObjVal>
+            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="站1分钟整场理论功率平均值" grpNo="1" phyValLng="8" phyType="71" dataSource="0" algType="0" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr remoteAddr="172" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="172" offset="0" name="理论功率低" unitDesc="" encoding="0"/>
+                    <pntAddr remoteAddr="173" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="173" offset="0" name="理论功率高" unitDesc="" encoding="0"/>
+                </pntAddrs>
+                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
+            </phyObjVal>
+            <phyObjVal grpAttr="3" scalFactor="0.956" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
+                    <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
+                </pntAddrs>
+                <dataId didName="1分钟整场可用功率0.956平均值TPS" serialNo="2136" didVal="FF41FF39020800801030AD000000000000"/>
+            </phyObjVal>
+            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场有功功率实时值IAS" grpNo="2" phyValLng="8" phyType="73" dataSource="0" algType="0" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr remoteAddr="190" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="190" offset="0" name="整场有功功率实时值IAS低" unitDesc="" encoding="0"/>
+                    <pntAddr remoteAddr="191" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="191" offset="0" name="整场有功功率实时值IAS高" unitDesc="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="2138" didName="1分钟整场有功功率实时值IAS" didVal="FF41FF1901080080103096000000000100"/>
+            </phyObjVal>
+            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场无功功率实时值IAS" grpNo="2" phyValLng="8" phyType="74" dataSource="0" algType="0" zoomMode="0">
+                <algorithmGoal/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr remoteAddr="192" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="192" offset="0" name="整场无功率实时值IAS低" unitDesc="" encoding="0"/>
+                    <pntAddr remoteAddr="193" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="193" offset="0" name="整场无功率实时值IAS高" unitDesc="" encoding="0"/>
+                </pntAddrs>
+                <dataId serialNo="2139" didName="1分钟整场无功功率实时值IAS" didVal="FF41FF1901080080103097000000000100"/>
+            </phyObjVal>
+            <putStagFlag>4</putStagFlag>
+            <phyQuaCfg>
+                <phyCat name="1"/>
+                <phyCat name="5"/>
+                <phyCat name="15"/>
+            </phyQuaCfg>
+        </channel>        
     </channels>
 </root>
