@@ -2320,7 +2320,7 @@
                 </pntAddrs>
                 <dataId didVal="FF410A090C080001503081000000000100" serialNo="16" didName="1分钟10m测风塔1风速标准差值"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="2" dataSource="1" grpNo="0" phyValLng="8" phyType="64" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟70m测风塔1风向平均值">
+            <phyObjVal hisMaxNum="0" dataSource="1" grpNo="0" phyValLng="8" phyType="64" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟70m测风塔1风向平均值">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr bitLength="16" pntDataLng="16" encoding="0" offset="0" remoteAddr="42" localAddr="42" startBit="0" type="3" name="1分钟70m风向平均值低" unitDesc="" didName="1分钟风机3发电机转速实时值" codCoefficient="1"/>
@@ -2336,7 +2336,7 @@
                 </pntAddrs>
                 <dataId didVal="FF4146090C080001503082000000000100" serialNo="44" didName="1分钟70m测风塔1风向标准差值"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="2" dataSource="1" grpNo="0" phyValLng="8" phyType="66" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟50m测风塔1风向平均值">
+            <phyObjVal hisMaxNum="0" dataSource="1" grpNo="0" phyValLng="8" phyType="66" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟50m测风塔1风向平均值">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr bitLength="16" pntDataLng="16" encoding="0" offset="0" remoteAddr="52" localAddr="52" startBit="0" type="3" name="1分钟50m风向平均值低" unitDesc="" didName="1分钟风机3计算发电量" codCoefficient="1"/>
@@ -2352,7 +2352,7 @@
                 </pntAddrs>
                 <dataId didVal="FF4132090C080001503082000000000100" serialNo="36" didName="1分钟50m测风塔1风向标准差值"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="2" dataSource="1" grpNo="0" phyValLng="8" phyType="68" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟30m测风塔1风向平均值">
+            <phyObjVal hisMaxNum="0" dataSource="1" grpNo="0" phyValLng="8" phyType="68" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟30m测风塔1风向平均值">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr bitLength="16" pntDataLng="16" encoding="0" offset="0" remoteAddr="62" localAddr="62" startBit="0" type="3" name="1分钟30m风向平均值低" unitDesc="" didName="1分钟风机4有功功率实时值" codCoefficient="1"/>
@@ -2368,7 +2368,7 @@
                 </pntAddrs>
                 <dataId didVal="FF411E090C080001503082000000000100" serialNo="28" didName="1分钟30m测风塔1风向标准差值"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="2" dataSource="1" grpNo="0" phyValLng="8" phyType="70" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟10m测风塔1风向平均值">
+            <phyObjVal hisMaxNum="0" dataSource="1" grpNo="0" phyValLng="8" phyType="70" zoomMode="0" calcMethd="167" scalFactor="1" algType="0" grpAttr="0" offsetCoe="0" name="站1分钟10m测风塔1风向平均值">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr bitLength="16" pntDataLng="16" encoding="0" offset="0" remoteAddr="72" localAddr="72" startBit="0" type="3" name="1分钟10m风向平均值低" unitDesc="" didName="1分钟风机5风机状态int" codCoefficient="1"/>
