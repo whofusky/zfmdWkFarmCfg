@@ -85,7 +85,7 @@
             <rmtIpNote/>
             <rmtPortNote/>
         </dataOutIP>
-        <stationNum value="3">备注</stationNum>
+        <stationNum value="2">备注</stationNum>
     </sysCfg>
     <!--全局did信息-->
     <didInfo>
@@ -1868,7 +1868,7 @@
         <zoomMode serialNo="0">a*x+b</zoomMode>
     </zoomModeList>
     <!--num:总的通道数量-->
-    <stations num="3">
+    <stations num="2">
         <stationCfg bStationConfig="1" stationNum="0">
             <localStation role="1" name="测风塔采集" equipmentID="17">
                 <netAddr ip="192.168.10.100" port="0"/>
@@ -3373,22 +3373,14 @@
                 <pntAddr name="风机66一分钟变桨桨距角实时值高" offset="0" encoding="0" localAddr="1317" didName="1分钟风机66桨距角实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1317"/>
                 <pntAddr name="风机66一分钟环境温度实时值低低" offset="0" encoding="0" localAddr="1318" didName="1分钟风机66环境温度实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1318"/>
                 <pntAddr name="风机66一分钟环境温度实时值低高" offset="0" encoding="0" localAddr="1319" didName="1分钟风机66环境温度实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1319"/>
-            </stationSon>
-        </stationCfg>
-        <stationCfg stationNum="2" bStationConfig="1">
-            <localStation name="采集远动" equipmentID="7" role="1">
-                <netAddr port="0" ip="193.100.100.8"/>
-            </localStation>
-            <remoteStation name="远动整场" bigEndian="0" role="2">
-                <netAddr port="2404" ip="193.100.100.9"/>
-            </remoteStation>
-            <stationSon>
-                <pntAddr name="实时有功功率" type="3" localAddr="16385" codCoefficient="1" didName="1分钟有功功率实时值" unitDesc="1" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0">2</pntAddr>
-                <pntAddr name="实时无功功率" type="3" localAddr="16386" codCoefficient="1" didName="1分钟无功功率实时值" unitDesc="" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0"/>
+                <pntAddr name="实时有功功率低" offset="0" encoding="0" localAddr="1320" didName="1分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1320"/>
+                <pntAddr name="实时有功功率高" offset="0" encoding="0" localAddr="1321" didName="1分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1321"/>
+                <pntAddr name="实时无功功率低" offset="0" encoding="0" localAddr="1322" didName="1分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1322"/>
+                <pntAddr name="实时无功功率高" offset="0" encoding="0" localAddr="1323" didName="1分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1323"/>
             </stationSon>
         </stationCfg>
     </stations>
-    <channels num="3">
+    <channels num="2">
         <channel pntObjLng="0" tmStmpLng="8" cfgTime="" maxPhyType="0" chnNum="0">
             <prtl bufLng="255" prtlNo="106" name="ModbusTcp" state="0" transType="0">
                 <timerInfo>
@@ -4823,6 +4815,7 @@
                     <sessionInst cmnAddr="1" collMethods="1" addrStart="960" cycTm="" number="120" instNo="8"/>
                     <sessionInst cmnAddr="1" collMethods="1" addrStart="1080" cycTm="" number="120" instNo="9"/>
                     <sessionInst cmnAddr="1" collMethods="1" addrStart="1200" cycTm="" number="120" instNo="10"/>
+                    <sessionInst cmnAddr="1" collMethods="1" addrStart="1320" cycTm="" number="4" instNo="11"/>
                     <ptclStepList>
                         <ptclStep stepNo="1" storORload="0" reqORres="0">
                             <frame COT="" objstartAddr="0" VSQ_SQ="" TID="" ptclHead="0" objNum="0" tidORfuncode="3" serialNo="1"/>
@@ -16450,146 +16443,67 @@
                 </pntAddrs>
                 <dataId didName="15分钟风机66风向平均值" serialNo="1702" didVal="FF4FFF1102080042403082000000000100"/>
             </phyObjVal>
-            <putStagFlag>1</putStagFlag>
-            <phyQuaCfg>
-                <phyCat name="1"/>
-                <phyCat name="5"/>
-                <phyCat name="15"/>
-            </phyQuaCfg>
-        </channel>
-        <channel tmStmpLng="8" chnNum="2" pntObjLng="0" maxPhyType="0" cfgTime="">
-            <prtl name="IEC104" state="0" bufLng="255" transType="0" prtlNo="104">
-                <timerInfo>
-                    <timer name="T3" timeoutValue="20"/>
-                    <timer name="T2" timeoutValue="10"/>
-                    <timer name="T1" timeoutValue="15"/>
-                    <timer name="T0" timeoutValue="30"/>
-                </timerInfo>
-                <controlPara K="12" W="8"/>
-                <APDU_DSCR InfoEleLng="5" asduCmtbNum="11" ASDU_TID="0">
-                    <APCI value="6"/>
-                    <ASDU_TID value="1"/>
-                    <ASDU_LNG value="0"/>
-                    <ASDU_VSQ value="1"/>
-                    <ASDU_COT value="2"/>
-                    <ASDU_ADDR value="2"/>
-                    <BODY_TID value="0"/>
-                    <BODY_ADDR value="3"/>
-                    <BODY_SET value="48"/>
-                    <BODY_TSP value="0"/>
-                    <ASDU_TSP value="0"/>
-                </APDU_DSCR>
-            </prtl>
-            <stationCfg stationNum="2" bStationConfig="1">
-                <localStation name="采集远动" equipmentID="7" role="1">
-                    <netAddr port="0" ip="193.100.100.8"/>
-                </localStation>
-                <remoteStation name="远动整场" bigEndian="0" role="2">
-                    <netAddr port="2404" ip="193.100.100.9"/>
-                </remoteStation>
-            </stationCfg>
-            <sessionCfgList waitTime="6000">
-                <sessionCfg check="0" ssnMode="0" actFlag="0" ssnDscNo="6" snnMaxRetryNum="0" prio="4" waitTime="3000">
-                    <sessionInst addrStart="16385" cycTm="" collMethods="1" number="2" instNo="0" cmnAddr="1"/>
-                    <ptclStepList>
-                        <ptclStep reqORres="0" storORload="0" stepNo="1">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="6" VSQ_SQ="0" TID="100" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                        <ptclStep reqORres="1" storORload="0" stepNo="2">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="7" VSQ_SQ="0" TID="100" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                        <ptclStep reqORres="1" storORload="2" stepNo="3">
-                            <frame serialNo="1" objNum="2" objstartAddr="16385" COT="20" VSQ_SQ="1" TID="13" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                        <ptclStep reqORres="1" storORload="0" stepNo="4">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="10" VSQ_SQ="0" TID="100" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                    </ptclStepList>
-                </sessionCfg>
-                <sessionCfg check="0" ssnMode="0" actFlag="1" ssnDscNo="4" snnMaxRetryNum="0" prio="4" waitTime="5000">
-                    <sessionInst addrStart="16385" cycTm="" collMethods="1" number="2" instNo="0" cmnAddr="1"/>
-                    <ptclStepList>
-                        <ptclStep reqORres="0" storORload="2" stepNo="1">
-                            <frame serialNo="1" objNum="2" objstartAddr="16385" COT="3" VSQ_SQ="0" TID="13" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                    </ptclStepList>
-                </sessionCfg>
-                <sessionCfg check="0" ssnMode="0" actFlag="0" ssnDscNo="15" snnMaxRetryNum="0" prio="4" waitTime="5000">
-                    <sessionInst addrStart="0" cycTm="" collMethods="0" number="0" instNo="0" cmnAddr="1"/>
-                    <ptclStepList>
-                        <ptclStep reqORres="0" storORload="0" stepNo="1">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                        <ptclStep reqORres="1" storORload="0" stepNo="2">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                    </ptclStepList>
-                </sessionCfg>
-                <sessionCfg check="0" ssnMode="0" actFlag="1" ssnDscNo="17" snnMaxRetryNum="0" prio="4" waitTime="5000">
-                    <sessionInst addrStart="0" cycTm="" collMethods="1" number="0" instNo="0" cmnAddr="1"/>
-                    <ptclStepList>
-                        <ptclStep reqORres="0" storORload="0" stepNo="1">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                        <ptclStep reqORres="1" storORload="0" stepNo="2">
-                            <frame serialNo="1" objNum="1" objstartAddr="0" COT="0" VSQ_SQ="0" TID="0" tidORfuncode="" ptclHead=""/>
-                        </ptclStep>
-                    </ptclStepList>
-                </sessionCfg>
-            </sessionCfgList>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场有功功率实时值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="0" phyType="1" calcMethd="161" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站整场有功功率实时值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1453" grpNo="1" calcMethd="181" dataSource="0">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="实时有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时有功功率低" offset="0" encoding="0" localAddr="1320" didName="1分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1320" bitLength="16"/>
+                    <pntAddr name="实时有功功率高" offset="0" encoding="0" localAddr="1321" didName="1分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1321" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1703" didName="1分钟整场有功功率实时值IAS" didVal="FF41FF1901080080103096000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场无功功率实时值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="0" phyType="2" calcMethd="161" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站整场无功功率实时值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1454" grpNo="1" calcMethd="181" dataSource="0">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="实时无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时无功功率低" offset="0" encoding="0" localAddr="1322" didName="1分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1322" bitLength="16"/>
+                    <pntAddr name="实时无功功率高" offset="0" encoding="0" localAddr="1323" didName="1分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1323" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1704" didName="1分钟整场无功功率实时值IAS" didVal="FF41FF1901080080103097000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场有功功率1分钟平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="3" calcMethd="163" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站1分钟整场有功功率平均值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1455" grpNo="1" calcMethd="180" dataSource="1">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="1分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时有功功率低" offset="0" encoding="0" localAddr="1320" didName="1分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1320" bitLength="16"/>
+                    <pntAddr name="实时有功功率高" offset="0" encoding="0" localAddr="1321" didName="1分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1321" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1705" didName="1分钟整场有功功率1分钟平均值IAS" didVal="FF41FF1902080080103096000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场无功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="4" calcMethd="163" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站1分钟整场无功功率平均值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1456" grpNo="1" calcMethd="180" dataSource="1">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="1分钟无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时无功功率低" offset="0" encoding="0" localAddr="1322" didName="1分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1322" bitLength="16"/>
+                    <pntAddr name="实时无功功率高" offset="0" encoding="0" localAddr="1323" didName="1分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1323" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1706" didName="1分钟整场无功功率平均值IAS" didVal="FF41FF1902080080103097000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站5分钟整场有功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="5" calcMethd="163" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站5分钟整场有功功率平均值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1457" grpNo="1" calcMethd="180" dataSource="1">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="5分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时有功功率低" offset="0" encoding="0" localAddr="1320" didName="5分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1320" bitLength="16"/>
+                    <pntAddr name="实时有功功率高" offset="0" encoding="0" localAddr="1321" didName="5分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1321" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1707" didName="5分钟整场有功功率平均值IAS" didVal="FF45FF1902080080103096000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站5分钟整场无功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="6" calcMethd="163" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站5分钟整场无功功率平均值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1458" grpNo="1" calcMethd="180" dataSource="1">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="5分钟无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时无功功率低" offset="0" encoding="0" localAddr="1322" didName="5分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1322" bitLength="16"/>
+                    <pntAddr name="实时无功功率高" offset="0" encoding="0" localAddr="1323" didName="5分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1323" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1708" didName="5分钟整场无功功率平均值IAS" didVal="FF45FF1902080080103097000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站15分钟整场有功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="7" calcMethd="163" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站15分钟整场有功功率平均值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1459" grpNo="1" calcMethd="180" dataSource="1">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="15分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时有功功率低" offset="0" encoding="0" localAddr="1320" didName="15分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1320" bitLength="16"/>
+                    <pntAddr name="实时有功功率高" offset="0" encoding="0" localAddr="1321" didName="15分钟有功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1321" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1709" didName="15分钟整场有功功率平均值IAS" didVal="FF4FFF1902080080103096000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站15分钟整场无功功率平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="8" calcMethd="163" grpNo="0" scalFactor="1000" zoomMode="0">
+            <phyObjVal zoomMode="0" offsetCoe="0" name="站15分钟整场无功功率平均值" hisMaxNum="0" algType="0" scalFactor="1" grpAttr="0" phyValLng="8" phyType="1460" grpNo="1" calcMethd="180" dataSource="1">
                 <algorithmGoal/>
-                <pntAddrs numOfAdd="1">
-                    <pntAddr name="15分钟无功功率" type="3" localAddr="16386" bitLength="16" codCoefficient="1" unitDesc="" didName="1分钟无功功率实时值" pntDataLng="32" remoteAddr="16386" encoding="0" offset="0" startBit="0"/>
+                <pntAddrs numOfAdd="2">
+                    <pntAddr name="实时无功功率低" offset="0" encoding="0" localAddr="1322" didName="15分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1322" bitLength="16"/>
+                    <pntAddr name="实时无功功率高" offset="0" encoding="0" localAddr="1323" didName="15分钟无功功率实时值" type="3" pntDataLng="16" codCoefficient="1" unitDesc="" remoteAddr="1323" bitLength="16"/>
                 </pntAddrs>
                 <dataId serialNo="1710" didName="15分钟整场无功功率平均值IAS" didVal="FF4FFF1902080080103097000000000100"/>
             </phyObjVal>
