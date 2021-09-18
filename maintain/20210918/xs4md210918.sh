@@ -17,6 +17,8 @@ tPid=$$
 srEdFName="scdCfg_utf8_${tPid}.xml"
 #srEdFName=scdCfg_1.xml
 
+tBackFile="${srcInFName}.back.$(date +%Y%m%d)_$$"
+
 resultFile="scdCfg_$(date +%Y%m%d)rst.xml"
 
 tGbkFlag=0
@@ -55,6 +57,12 @@ function F_check()
     if [ ! -e "${srcInFName}" ];then
         echo -e "\n\tERROR: file [ ${srcInFName} ] not exist!\n"
         exit 1
+    fi
+
+    needEdFlag=$(sed -n "/^\s*<\s*channels\b/,/^\s*<\s*\/\s*channels\s*>/ {/serialNo\s*=\s*\"2136\"/p}" "${srcInFName}" 2>/dev/null|wc -l)
+    if [ ${needEdFlag} -lt 1 ];then
+        echo -e "\n\t\e[1;31m 文件[${srcInFName}]不需要修改或已经修改过了!\e[0m\n"
+        exit 0
     fi
 
     tChrSet=$(file --mime-encoding "${srcInFName}"|awk '{print $2}')
@@ -128,9 +136,21 @@ function F_edit()
     if [[ ${retstat} -eq 0 && -e "${srEdFName}" ]];then
         echo -e "\n\trm -rf \"${srEdFName}\""
         rm -rf "${srEdFName}"
+
+        if [ -e "${tBackFile}" ];then
+            echo -e "\n\trm -rf \"${tBackFile}\""
+            rm -rf "${tBackFile}"
+        fi
+
+        echo -e "\n\t\e[1;31mbackup\e[0m file:${srcInFName} --> file:${tBackFile}\n"
+        cp -a "${srcInFName}" "${tBackFile}"
+
+        cp -a "${resultFile}" "${srcInFName}"
+        [ $? -eq 0 ] && rm -rf "${resultFile}"
+
+        echo -e "\n\t\e[1;31mEdit the ${srcInFName} file successfully\e[0m \n"
     fi
 
-    echo -e "\n\t The result file is: [ \e[1;31m${resultFile}\e[0m ]\n"
 
     return 0
 }
