@@ -21835,7 +21835,7 @@
                 </pntAddrs>
                 <dataId serialNo="2139" didName="1分钟整场无功功率实时值IAS" didVal="FF41FF1901080080103097000000000100"/>
             </phyObjVal>
-            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场有功功率1分钟平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="3" calcMethd="163" grpNo="0" scalFactor="10" zoomMode="0">
+            <phyObjVal hisMaxNum="0" grpAttr="0" name="站1分钟整场有功功率1分钟平均值IAS" phyValLng="8" offsetCoe="0" algType="0" dataSource="1" phyType="3" calcMethd="161" grpNo="0" scalFactor="10" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="1">
                     <pntAddr name="1分钟有功功率" type="3" localAddr="16385" bitLength="16" codCoefficient="1" unitDesc="1" didName="1分钟有功功率实时值" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0" startBit="0"/>
