@@ -5313,7 +5313,7 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="5">
             <localStation equipmentID="8" role="2" name="转发远动">
-                <netAddr port="502" ip="100.110.120.120"/>
+                <netAddr port="502" ip="192.168.3.2"/>
             </localStation>
             <remoteStation bigEndian="0" role="1" name="远动测风">
                 <netAddr port="0" ip="192.168.3.196"/>
@@ -30764,7 +30764,7 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="5">
                 <localStation equipmentID="8" role="2" name="转发远动">
-                    <netAddr port="502" ip="100.110.120.120"/>
+                    <netAddr port="502" ip="192.168.3.2"/>
                 </localStation>
                 <remoteStation bigEndian="0" role="1" name="远动测风">
                     <netAddr port="0" ip="192.168.3.196"/>
