@@ -2475,7 +2475,7 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="1">
             <localStation name="scada测风数据转发235" role="2" equipmentID="20">
-                <netAddr port="2404" ip="100.100.100.141"/>
+                <netAddr port="5023" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动235" role="1">
                 <netAddr port="0" ip="100.100.100.99"/>
@@ -2675,7 +2675,7 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="2">
             <localStation name="scada测风数据转发235" role="2" equipmentID="22">
-                <netAddr port="2404" ip="100.100.100.141"/>
+                <netAddr port="5023" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动235" role="1">
                 <netAddr port="0" ip="100.100.100.235"/>
@@ -2875,7 +2875,7 @@
         </stationCfg>
         <stationCfg bStationConfig="1" stationNum="3">
             <localStation name="scada测风数据转发235" role="2" equipmentID="19">
-                <netAddr port="2404" ip="100.100.100.141"/>
+                <netAddr port="5023" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动235" role="1">
                 <netAddr port="0" ip="100.100.100.236"/>
@@ -4215,7 +4215,7 @@
                 <netAddr port="0" ip="100.100.100.141"/>
             </localStation>
             <remoteStation name="远动整场" bigEndian="0" role="2">
-                <netAddr port="2405" ip="100.100.100.100"/>
+                <netAddr port="3404" ip="100.100.100.141"/>
             </remoteStation>
             <stationSon>
                 <pntAddr name="实时有功功率" type="3" localAddr="16385" codCoefficient="1" didName="1分钟有功功率实时值" unitDesc="1" pntDataLng="32" remoteAddr="16385" encoding="0" offset="0">2</pntAddr>
@@ -4225,7 +4225,7 @@
         
          <stationCfg bStationConfig="1" stationNum="6">
             <localStation name="scada测风数据转发das" role="2" equipmentID="19">
-                <netAddr port="2404" ip="100.100.100.141"/>
+                <netAddr port="5023" ip="100.100.100.141"/>
             </localStation>
             <remoteStation bigEndian="0" name="测风数据转发远动das" role="1">
                 <netAddr port="0" ip="100.100.100.141"/>
@@ -5956,7 +5956,7 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="1">
                 <localStation role="2" name="scada测风数据转发235" equipmentID="20">
-                    <netAddr port="2404" ip="100.100.100.141"/>
+                    <netAddr port="5023" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动235" equipmentID="">
                     <netAddr port="0" ip="100.100.100.99"/>
@@ -6569,19 +6569,18 @@
             </phyObjVal>
 
             <!-- 宁夏用可用功率*0.956 替代样板机法 -->
-            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="2" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.001005" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="2" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场有功功率实时值IAS" serialNo="2138" didVal="FF41FF1901080080103096000000000100"/>
             </phyObjVal>
 
             <grpSpeOpList> <!--对某个组的物理量特殊操作时需要配置此项 -->
                 <!--grpOpFlag配置的值含义与putStagFlag一样,默认没有在此配置的组号对就的grpOpFlag的值就是putStagFlag的值 -->
                 <grpSpe grpNo="1" grpOpFlag="2" /> 
-                <grpSpe grpNo="2" grpOpFlag="2" /> 
             </grpSpeOpList>
 
             <putStagFlag>4</putStagFlag>
@@ -6613,7 +6612,7 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="2">
                 <localStation role="2" name="scada测风数据转发235" equipmentID="22">
-                    <netAddr port="2404" ip="100.100.100.141"/>
+                    <netAddr port="5023" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动235" equipmentID="">
                     <netAddr port="0" ip="100.100.100.235"/>
@@ -7222,13 +7221,13 @@
                 </pntAddrs>
                 <dataId didName="1分钟整场理论功率平均值TPS" serialNo="2135" didVal="FF41FF390208008010309A000000000000"/>
             </phyObjVal>
-            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.001005" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场有功功率实时值IAS" serialNo="2138" didVal="FF41FF1901080080103096000000000100"/>
             </phyObjVal>
             <putStagFlag>4</putStagFlag>
             <phyQuaCfg>
@@ -7259,7 +7258,7 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="3">
                 <localStation role="2" name="scada测风数据转发235" equipmentID="19">
-                    <netAddr port="2404" ip="100.100.100.141"/>
+                    <netAddr port="5023" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动235" equipmentID="">
                     <netAddr port="0" ip="100.100.100.236"/>
@@ -7868,13 +7867,13 @@
                 </pntAddrs>
                 <dataId didName="1分钟整场理论功率平均值TPS" serialNo="2135" didVal="FF41FF390208008010309A000000000000"/>
             </phyObjVal>
-            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.001005" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
+                <dataId didName="1分钟整场有功功率实时值IAS" serialNo="2138" didVal="FF41FF1901080080103096000000000100"/>
             </phyObjVal>
             <putStagFlag>4</putStagFlag>
             <phyQuaCfg>
@@ -21769,7 +21768,7 @@
                     <netAddr port="0" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation name="远动整场" bigEndian="0" role="2">
-                    <netAddr port="2405" ip="100.100.100.100"/>
+                    <netAddr port="3404" ip="100.100.100.141"/>
                 </remoteStation>
             </stationCfg>
             <sessionCfgList waitTime="6000">
@@ -21906,7 +21905,7 @@
             </prtl>
             <stationCfg bStationConfig="1" stationNum="6">
                 <localStation role="2" name="scada测风数据转发das" equipmentID="19">
-                    <netAddr port="2404" ip="100.100.100.141"/>
+                    <netAddr port="5023" ip="100.100.100.141"/>
                 </localStation>
                 <remoteStation role="1" name="测风数据转发远动das" equipmentID="">
                     <netAddr port="0" ip="100.100.100.141"/>
@@ -22523,7 +22522,7 @@
                 </pntAddrs>
                 <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
-            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场有功功率实时值IAS" grpNo="2" phyValLng="8" phyType="73" dataSource="0" algType="0" zoomMode="0">
+            <phyObjVal grpAttr="3" scalFactor="0.001005" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场有功功率实时值IAS" grpNo="2" phyValLng="8" phyType="73" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="190" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="190" offset="0" name="整场有功功率实时值IAS低" unitDesc="" encoding="0"/>

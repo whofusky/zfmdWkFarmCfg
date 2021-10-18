@@ -18,7 +18,7 @@ OutrmtPort=9009
 OutrmtIp="100.110.120.20"  
 
 
-#modbus-tcp采集测风塔数据(从das处采集)
+#modbus-tcp采集测风塔数据
 doChnNo[0]=0                      
 index=${doChnNo[0]}               
 lclStnIP[${index}]="192.168.1.20"
@@ -28,37 +28,37 @@ rmtStnIP[${index}]="192.168.1.20"
 rmtStnPort[${index}]=5021          
 
 
-#modbus-tcp转发测风塔数据及tps理论功率和可用功率(此转发暂时未用，改为从das转发)
+#modbus-tcp转发测风塔数据及tps理论功率和可用功率
 doChnNo[1]=1                      
 index=${doChnNo[1]}               
 lclStnIP[${index}]="100.100.100.141"
-lclStnPort[${index}]=5023            
+lclStnPort[${index}]=2404            
 lclEquipID[${index}]=20           
 rmtStnIP[${index}]="100.100.100.99"
 rmtStnPort[${index}]=0          
 
 
-#modbus-tcp转发测风塔数据及tps理论功率和可用功率(此转发暂时未用，改为从das转发)
+#modbus-tcp转发测风塔数据及tps理论功率和可用功率
 doChnNo[2]=2                      
 index=${doChnNo[2]}               
 lclStnIP[${index}]="100.100.100.141"
-lclStnPort[${index}]=5023            
+lclStnPort[${index}]=2404            
 lclEquipID[${index}]=22           
 rmtStnIP[${index}]="100.100.100.235"
 rmtStnPort[${index}]=0          
 
 
-#modbus-tcp转发测风塔数据及tps理论功率和可用功率(此转发暂时未用，改为从das转发)
+#modbus-tcp转发测风塔数据及tps理论功率和可用功率
 doChnNo[3]=3                      
 index=${doChnNo[3]}               
 lclStnIP[${index}]="100.100.100.141"
-lclStnPort[${index}]=5023            
+lclStnPort[${index}]=2404            
 lclEquipID[${index}]=19           
 rmtStnIP[${index}]="100.100.100.236"
 rmtStnPort[${index}]=0          
 
 
-#modbus-tcp 采集风机数据（1-75台风机)(从das处采集)
+#modbus-tcp 采集风机数据（1-75台风机)
 doChnNo[4]=4                      
 index=${doChnNo[4]}               
 lclStnIP[${index}]="172.160.0.151"  #scada端的ip地址需要最后的确认
@@ -67,21 +67,21 @@ lclEquipID[${index}]=21
 rmtStnIP[${index}]="172.160.0.151"
 rmtStnPort[${index}]=5022          
 
-#104采集整场数据(从das处采集)
+#104采集整场数据
 doChnNo[5]=5                      
 index=${doChnNo[5]}               
 lclStnIP[${index}]="100.100.100.141"
 lclStnPort[${index}]=0            
 lclEquipID[${index}]=7           
-rmtStnIP[${index}]="100.100.100.141"
-rmtStnPort[${index}]=3404          
+rmtStnIP[${index}]="100.100.100.100"
+rmtStnPort[${index}]=2405          
 
 
-#转发测风数据和整场数据给das(das主要是取得scada的理论功率值,其他值das自己采集就有)
+#转发测风数据和整场数据给das
 doChnNo[6]=6                      
 index=${doChnNo[6]}               
 lclStnIP[${index}]="100.100.100.141"
-lclStnPort[${index}]=5023            
+lclStnPort[${index}]=2404            
 lclEquipID[${index}]=19           
 rmtStnIP[${index}]="100.100.100.141"
 rmtStnPort[${index}]=0          
