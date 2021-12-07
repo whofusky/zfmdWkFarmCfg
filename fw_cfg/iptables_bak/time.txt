@@ -1,0 +1,27 @@
+pre1-iptables_20191212:-A INPUT -s 100.110.120.10/32 -d 100.110.120.20/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre1-iptables_20191212:-A INPUT -s 100.110.120.30/32 -d 100.110.120.20/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre1-iptables_20191212:-A INPUT -s 100.110.120.40/32 -d 100.110.120.20/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre1-iptables_20191212:-A OUTPUT -s 100.110.120.20/32 -d 100.110.120.10/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre1-iptables_20191212:-A OUTPUT -s 100.110.120.20/32 -d 100.110.120.30/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre1-iptables_20191212:-A OUTPUT -s 100.110.120.20/32 -d 100.110.120.40/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+
+pre2-iptables_20191212:-A INPUT -s 100.110.120.10/32 -d 100.110.120.30/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre2-iptables_20191212:-A INPUT -s 100.110.120.20/32 -d 100.110.120.30/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre2-iptables_20191212:-A INPUT -s 100.110.120.40/32 -d 100.110.120.30/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre2-iptables_20191212:-A OUTPUT -s 100.110.120.30/32 -d 100.110.120.10/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre2-iptables_20191212:-A OUTPUT -s 100.110.120.30/32 -d 100.110.120.20/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+pre2-iptables_20191212:-A OUTPUT -s 100.110.120.30/32 -d 100.110.120.40/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+
+scada-iptables_20191212:-A INPUT -s 100.110.120.20/32 -d 100.110.120.10/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+scada-iptables_20191212:-A INPUT -s 100.110.120.30/32 -d 100.110.120.10/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+scada-iptables_20191212:-A INPUT -s 100.110.120.40/32 -d 100.110.120.10/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+scada-iptables_20191212:-A OUTPUT -s 100.110.120.10/32 -d 100.110.120.20/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+scada-iptables_20191212:-A OUTPUT -s 100.110.120.10/32 -d 100.110.120.30/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+scada-iptables_20191212:-A OUTPUT -s 100.110.120.10/32 -d 100.110.120.40/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+
+workstation-iptables_20191212:-A INPUT -s 100.110.120.10/32 -d 100.110.120.40/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+workstation-iptables_20191212:-A INPUT -s 100.110.120.20/32 -d 100.110.120.40/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+workstation-iptables_20191212:-A INPUT -s 100.110.120.30/32 -d 100.110.120.40/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+workstation-iptables_20191212:-A OUTPUT -s 100.110.120.40/32 -d 100.110.120.10/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+workstation-iptables_20191212:-A OUTPUT -s 100.110.120.40/32 -d 100.110.120.20/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
+workstation-iptables_20191212:-A OUTPUT -s 100.110.120.40/32 -d 100.110.120.30/32 -p tcp -m tcp --sport 6801:6809 --dport 6801:6809 -m state --state NEW,ESTABLISHED -j ACCEPT 
