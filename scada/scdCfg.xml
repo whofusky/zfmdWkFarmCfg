@@ -6568,14 +6568,14 @@
                 <dataId didName="1分钟整场理论功率平均值TPS" serialNo="2135" didVal="FF41FF390208008010309A000000000000"/>
             </phyObjVal>
 
-            <!-- 宁夏用可用功率*0.956 替代样板机法 -->
-            <phyObjVal grpAttr="3" scalFactor="0.001005" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率0.956平均值TPS" grpNo="2" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
+            <!-- 宁夏用可用功率*0.956 替代样板机法:改为直接tps可用 -->
+            <phyObjVal grpAttr="3" scalFactor="1" calcMethd="162" hisMaxNum="0" offsetCoe="0" name="1分钟整场可用功率平均值TPS" grpNo="1" phyValLng="8" phyType="72" dataSource="0" algType="0" zoomMode="0">
                 <algorithmGoal/>
                 <pntAddrs numOfAdd="2">
                     <pntAddr remoteAddr="174" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="174" offset="0" name="可用功率低" unitDesc="" encoding="0"/>
                     <pntAddr remoteAddr="175" codCoefficient="1" type="3" pntDataLng="16" bitLength="16" startBit="0" localAddr="175" offset="0" name="可用功率高" unitDesc="" encoding="0"/>
                 </pntAddrs>
-                <dataId didName="1分钟整场有功功率实时值IAS" serialNo="2138" didVal="FF41FF1901080080103096000000000100"/>
+                <dataId didName="1分钟整场可用功率平均值TPS" serialNo="2137" didVal="FF41FF39020800801030AD000000000000"/>
             </phyObjVal>
 
             <grpSpeOpList> <!--对某个组的物理量特殊操作时需要配置此项 -->
