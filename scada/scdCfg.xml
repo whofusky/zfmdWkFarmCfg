@@ -4880,6 +4880,7 @@
                 <pntAddr remoteAddr="46" codCoefficient="1" type="3" pntDataLng="16" localAddr="46" offset="0" name="1分钟高度70米水平风速实时值低" unitDesc="" encoding="0"/>
                 <pntAddr remoteAddr="47" codCoefficient="1" type="3" pntDataLng="16" localAddr="47" offset="0" name="1分钟高度70米水平风速实时值高" unitDesc="" encoding="0"/>
                 <pntAddr remoteAddr="50" codCoefficient="1" type="3" pntDataLng="16" localAddr="50" offset="0" name="1分钟高度70米水平风速标准差低" unitDesc="" encoding="0"/>
+                    dtCfg_p->phyType,
                 <pntAddr remoteAddr="51" codCoefficient="1" type="3" pntDataLng="16" localAddr="51" offset="0" name="1分钟高度70米水平风速标准差高" unitDesc="" encoding="0"/>
                 <pntAddr remoteAddr="52" codCoefficient="1" type="3" pntDataLng="16" localAddr="52" offset="0" name="1分钟高度70米水平风速最大值低" unitDesc="" encoding="0"/>
                 <pntAddr remoteAddr="53" codCoefficient="1" type="3" pntDataLng="16" localAddr="53" offset="0" name="1分钟高度70米水平风速最大值高" unitDesc="" encoding="0"/>
