@@ -61,7 +61,7 @@
                     <ASDU_CMTBL>0</ASDU_CMTBL>
                     <!--回话配置-->
                 </APDU_DSCR>
-                <remoteIP ip="192.168.143.2" port="502" localip="192.168.143.1" localport="503">
+                <remoteIP ip="192.168.144.2" port="502" localip="192.168.143.1" localport="503">
                     remote
                 </remoteIP>
                 <!--回话配置-->
@@ -1994,7 +1994,7 @@
                     <ASDU_CMTBL>0</ASDU_CMTBL>
                     <!--回话配置-->
                 </APDU_DSCR>
-                <remoteIP ip="192.168.144.2" port="502" localip="192.168.144.1" localport="503">
+                <remoteIP ip="192.168.143.2" port="502" localip="192.168.144.1" localport="503">
                     remote
                 </remoteIP>
                 <!--回话配置-->
