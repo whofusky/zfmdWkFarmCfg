@@ -13046,10 +13046,10 @@
             </stationCfg>
             <sessionCfgList waitTime="3000">
                 <sessionCfg prio="4" ssnMode="0" ssnDscNo="3" check="0" actFlag="0" waitTime="1000" snnMaxRetryNum="0">
-                    <sessionInst addrStart="264" cmnAddr="2" cycTm="" collMethods="1" number="120" instNo="0"/>
-                    <sessionInst addrStart="384" cmnAddr="2" cycTm="" collMethods="1" number="120" instNo="1"/>
-                    <sessionInst addrStart="504" cmnAddr="2" cycTm="" collMethods="1" number="106" instNo="2"/>
-                    <sessionInst addrStart="824" cmnAddr="2" cycTm="" collMethods="1" number="66" instNo="3"/>
+                    <sessionInst addrStart="264" cmnAddr="1" cycTm="" collMethods="1" number="120" instNo="0"/>
+                    <sessionInst addrStart="384" cmnAddr="1" cycTm="" collMethods="1" number="120" instNo="1"/>
+                    <sessionInst addrStart="504" cmnAddr="1" cycTm="" collMethods="1" number="106" instNo="2"/>
+                    <sessionInst addrStart="824" cmnAddr="1" cycTm="" collMethods="1" number="66" instNo="3"/>
                     <ptclStepList>
                         <ptclStep storORload="0" reqORres="0" stepNo="1">
                             <frame VSQ_SQ="" objNum="0" tidORfuncode="3" COT="" serialNo="1" objstartAddr="0" ptclHead="0" TID=""/>
