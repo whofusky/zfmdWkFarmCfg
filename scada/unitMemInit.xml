@@ -61,7 +61,7 @@
                     <ASDU_CMTBL>0</ASDU_CMTBL>
                     <!--回话配置-->
                 </APDU_DSCR>
-                <remoteIP ip="192.168.144.2" port="502" localip="192.168.143.1" localport="503">
+                <remoteIP ip="192.168.143.2" port="502" localip="192.168.143.1" localport="503">
                     remote
                 </remoteIP>
                 <!--回话配置-->
@@ -1994,7 +1994,7 @@
                     <ASDU_CMTBL>0</ASDU_CMTBL>
                     <!--回话配置-->
                 </APDU_DSCR>
-                <remoteIP ip="192.168.143.2" port="502" localip="192.168.144.1" localport="503">
+                <remoteIP ip="192.168.144.2" port="502" localip="192.168.144.1" localport="503">
                     remote
                 </remoteIP>
                 <!--回话配置-->
@@ -18866,7 +18866,7 @@
                 <!--beginAddrVal:开始点地址值,endAddrVal:结束点地址值-->
                 <!--contPntAdd beginAddrVal="1" endAddrVal="362"/-->
                 <!--0x4001=16385; 0x4000+108=16492-->
-                <contPntAdd beginAddrVal="16385" endAddrVal="16402"/>
+                <contPntAdd beginAddrVal="16385" endAddrVal="16403"/>
             </pntAddrCfg>
             <phyQuaCfg>
                 <!-- 1分钟数据 -->
@@ -18880,7 +18880,7 @@
             <!--整场有功功率瞬时值-->
             <phyObjVal phyType="1" calcMethd="PHY_CALC_SAVE" multFactor="1000" valOffset="0" chToDbFlag="0" hisMaxNum="0" phyValLng="8">
                 <pntAddrs numOfAdd="1">
-                    <pntAddr>16385</pntAddr>
+                    <pntAddr>16403</pntAddr>
                 </pntAddrs>
                 <dataId funcType="2" dcatalog="DATACATALOG_PP" dkind="DATAKIND_RTV" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_FARM" ecsn="0" srctype="SOURCETYPE_IAS" srcsn="0" itype="INTERVALUNIT_MINUTE" ivalue="1">2</dataId>
             </phyObjVal>
@@ -18896,7 +18896,7 @@
             <!--整场有功功率1分钟平均值-->
             <phyObjVal phyType="3" calcMethd="PHY_CALC_SUM" multFactor="1000" valOffset="0" chToDbFlag="0" hisMaxNum="0" phyValLng="8">
                 <pntAddrs numOfAdd="1">
-                    <pntAddr>16385</pntAddr>
+                    <pntAddr>16403</pntAddr>
                 </pntAddrs>
                 <dataId funcType="2" dcatalog="DATACATALOG_PP" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_FARM" ecsn="0" srctype="SOURCETYPE_IAS" srcsn="0" itype="INTERVALUNIT_MINUTE" ivalue="1">2</dataId>
             </phyObjVal>
@@ -18912,7 +18912,7 @@
             <!--整场有功功率5分钟平均值-->
             <phyObjVal phyType="5" calcMethd="PHY_CALC_SUM" multFactor="1000" valOffset="0" chToDbFlag="0" hisMaxNum="0" phyValLng="8">
                 <pntAddrs numOfAdd="1">
-                    <pntAddr>16385</pntAddr>
+                    <pntAddr>16403</pntAddr>
                 </pntAddrs>
                 <dataId funcType="2" dcatalog="DATACATALOG_PP" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_FARM" ecsn="0" srctype="SOURCETYPE_IAS" srcsn="0" itype="INTERVALUNIT_MINUTE" ivalue="5">2</dataId>
             </phyObjVal>
@@ -18928,7 +18928,7 @@
             <!--整场有功功率15分钟平均值-->
             <phyObjVal phyType="7" calcMethd="PHY_CALC_SUM" multFactor="1000" valOffset="0" chToDbFlag="0" hisMaxNum="0" phyValLng="8">
                 <pntAddrs numOfAdd="1">
-                    <pntAddr>16385</pntAddr>
+                    <pntAddr>16403</pntAddr>
                 </pntAddrs>
                 <dataId funcType="2" dcatalog="DATACATALOG_PP" dkind="DATAKIND_AVG" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_FARM" ecsn="0" srctype="SOURCETYPE_IAS" srcsn="0" itype="INTERVALUNIT_MINUTE" ivalue="15">2</dataId>
             </phyObjVal>
@@ -18953,7 +18953,7 @@
             <!--AGC整场有功功率1分钟平均值-->
             <phyObjVal phyType="10" calcMethd="PHY_CALC_CHANGE_SAVE" multFactor="1000" valOffset="0" chToDbFlag="1" hisMaxNum="0" phyValLng="8">
                 <pntAddrs numOfAdd="1">
-                    <pntAddr>16385</pntAddr>
+                    <pntAddr>16403</pntAddr>
                 </pntAddrs>
                 <dataId funcType="2" dcatalog="DATACATALOG_PP" dkind="DATAKIND_TLN" dtype="DATATYPE_FLOAT64" dlen="" amount="1" ectype="ENCODETYPE_AGC" ecsn="0" srctype="SOURCETYPE_AGC" srcsn="0" itype="INTERVALUNIT_INVALID" ivalue="1">2</dataId>
             </phyObjVal>

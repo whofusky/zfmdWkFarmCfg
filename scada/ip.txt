@@ -1,0 +1,48 @@
+---------------------------------------------[1;31mprint Data Center[0m----
+
+Data Center
+	In:  lcalIp=100.110.120.10   lcalPort=5406  rmtIp=100.110.120.20   rmtPort=9010  
+	Out: lcalIp=100.110.120.10   lcalPort=6407  rmtIp=100.110.120.20   rmtPort=9010  
+-----------------------------------------------[1;31mprint channels[0m--begine-->
+
+chNo:0  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=18  ip=192.168.143.1    port=503  
+	remote: role=2  equipmentID=    ip=192.168.143.2    port=502  
+
+chNo:1  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=20  ip=192.168.143.1    port=503  
+	remote: role=2  equipmentID=    ip=192.168.143.3    port=502  
+
+chNo:2  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=22  ip=192.168.143.1    port=503  
+	remote: role=2  equipmentID=    ip=192.168.143.4    port=502  
+
+chNo:3  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=19  ip=192.168.144.1    port=503  
+	remote: role=2  equipmentID=    ip=192.168.144.2    port=502  
+
+chNo:4  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=21  ip=192.168.144.1    port=503  
+	remote: role=2  equipmentID=    ip=192.168.144.3    port=502  
+
+chNo:5  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=23  ip=192.168.144.1    port=503  
+	remote: role=2  equipmentID=    ip=192.168.144.4    port=502  
+
+chNo:6  stationNum:   prtlNo:106   putStagFlag:4  
+	local:  role=2  equipmentID=24  ip=192.168.121.11   port=2404 
+	remote: role=1  equipmentID=    ip=192.168.121.12   port=502  
+
+chNo:7  stationNum:   prtlNo:104   putStagFlag:2  
+	local:  role=2  equipmentID=27  ip=192.168.124.11   port=2404 
+	remote: role=1  equipmentID=    ip=192.168.124.12   port=2404 
+
+chNo:8  stationNum:   prtlNo:104   putStagFlag:1  
+	local:  role=1  equipmentID=4   ip=192.168.123.11   port=5406 
+	remote: role=2  equipmentID=    ip=192.168.123.12   port=2404 
+
+chNo:9  stationNum:   prtlNo:106   putStagFlag:1  
+	local:  role=1  equipmentID=2   ip=192.168.122.11   port=2404 
+	remote: role=2  equipmentID=    ip=192.168.122.12   port=502  
+<-------------------------------------------------print channels--end--
+
